@@ -98,14 +98,15 @@ export default function Benefits() {
           <p className="benefits-item-copy">You keep sending your ideas, we&apos;ll keep producing products that will do your business proud.</p>
         </div>
       </div>
-
-      <button className="button-pushable benefits-cta-button">
-        <span className="button-shadow"></span>
-        <span className="button-accent-edge"></span>
-        <span className="button-accent-front text">
-          See plans
-        </span>
-      </button>
+      <a href="#pricing">
+        <button className="button-pushable benefits-cta-button">
+          <span className="button-shadow"></span>
+          <span className="button-accent-edge"></span>
+          <span className="button-accent-front text">
+            See plans
+          </span>
+        </button>
+      </a>
 
     </Section>
   )

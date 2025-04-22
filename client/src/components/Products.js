@@ -43,7 +43,7 @@ export default function Products() {
         <li className="products-item">React</li>
         <li className="products-item">NextJS</li>
         <li className="products-item">E-commerce</li>
-        <li className="products-item">More...</li>
+        <li className="products-item">And More...</li>
       </ul>
     </Section>
   );

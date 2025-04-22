@@ -59,12 +59,13 @@ export default function Intro() {
             <p className="intro-cta-copy intro-cta-copy-4">
               It&apos;s that easy! Yes, really.
             </p>
-            <button className="button-pushable intro-cta-button">
-              <span className="button-shadow"></span>
-              <span className="button-accent-edge"></span>
-              <span className="button-accent-front text">See plans</span>
-            </button>
-
+            <a href="#pricing">
+              <button className="button-pushable intro-cta-button">
+                <span className="button-shadow"></span>
+                <span className="button-accent-edge"></span>
+                <span className="button-accent-front text">See plans</span>
+              </button>
+            </a>
             <span className="intro-radar-text">
               Now accepting new clients <span className="radar"></span>
             </span>

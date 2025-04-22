@@ -84,9 +84,9 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <p className="calendar-booking">Book a call to learn more</p>
+            
             </div>
-
+            <p className="calendar-booking">Book a call to learn more</p>
             <button
               className="pricing-button button-pushable"
               onClick={() => handleCheckout("monthly")}
@@ -122,8 +122,9 @@ export default function Pricing() {
                   </li>
                 </ul>
               </div>
-              <p className="calendar-booking">Book a call to learn more</p>
             </div>
+
+            <p className="calendar-booking">Book a call to learn more</p>
 
             <button
               className="pricing-button button-pushable"
@@ -138,11 +139,10 @@ export default function Pricing() {
           {/* CTA Option */}
           <div className="pricing-option pricing-option-3 flex flex-col justify-center items-center text-center">
             <p className="pricing-cta-copy pricing-cta-copy-1">
-              Think your project might take less than one month to complete?
+             Afraid of <span>any</span> commitment? 
             </p>
             <p className="pricing-cta-copy pricing-cta-copy-2">
-              Let&apos;s have a call to see if a project based quote might fit
-              you better.
+              No problem! Schedule a call or email your ideas today, to receive a project based quote.
             </p>
 
             <button className="button-pushable">

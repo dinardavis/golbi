@@ -199,8 +199,13 @@
     background-size: 100% 1px;
   }
 
+  .main-link .up-arrow-icon {
+    max-height: 20px;
+    margin-bottom: -5px;
+  }
+
   .up-arrow-icon {
-    width: 28px;
+    width: 20px;
     font-size: 1.3rem;
     color: var(--font-secondary);
     transition: all .2s ease-in-out;
@@ -208,12 +213,8 @@
 
   .up-arrow-icon:hover {
     color: var(--font-accent-1);
-    margin-bottom: .2rem;
   }
 
-  .nav-link .rocket-takeoff {
-    margin-bottom: 4px;
-  }
 
   .nav-link.top-icon {
     display: grid;

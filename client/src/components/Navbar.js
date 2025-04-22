@@ -87,8 +87,7 @@ export default function Navbar(props) {
           </a>
           <a
             href="#top"
-            className="nav-link main-link top-icon"
-            onClick={shake}
+            className="nav-link main-link"
           >
             <MdKeyboardDoubleArrowUp className="up-arrow-icon" />
           </a>

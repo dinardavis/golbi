@@ -526,6 +526,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  max-height: 420px;
   padding: 1rem 1rem 1.8rem;
   margin: 2rem 0 2rem;
   background: linear-gradient(to bottom right, var(--white), #fff, var(--white));
@@ -547,6 +549,13 @@ body {
   margin-bottom: 2rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.pricing-cta-copy span {
+  text-decoration: underline;
+  font-style: italic;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .pricing-cta-copy-2 {
@@ -661,7 +670,7 @@ body {
   line-height: 1.4;
   font-size: .9rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: auto;
   color: var(--foreground);
   text-decoration:underline;
   text-decoration-style: dotted;
