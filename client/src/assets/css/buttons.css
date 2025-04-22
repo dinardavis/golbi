@@ -1,0 +1,180 @@
+
+.button-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.button-pushable.intro-cta-button {
+  min-width: 201px;
+  margin: .5rem 0 1rem;
+}
+
+.button-pushable.benefits-cta-button {
+  min-width: 201px;
+  margin: -5rem 0 .5rem;
+}
+
+.button-pushable.bottom-cta-button {
+  min-width: 201px;
+ 
+}
+
+.button-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(5px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-dark-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(225, 25%, 3%) 0%,
+    hsl(229, 25%, 35%) 8%,
+    hsl(229, 25%, 35%) 92%,
+    hsl(225, 25%, 3%) 100%
+  );
+}
+
+.button-dark-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
+  background: var(--background-dark);
+  will-change: transform;
+  transform: translateY(-5px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+  cursor: pointer;
+}
+
+.button-accent-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(8, 83%, 16%) 0%,
+    hsl(8, 69%, 38%) 8%,
+    hsl(8, 69%, 38%) 92%,
+    hsl(8, 83%, 16%) 100%
+  );
+}
+
+.button-accent-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
+  background: var(--accent-1);
+  will-change: transform;
+  transform: translateY(-5px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+  cursor: pointer;
+}
+
+.button-pushable:hover {
+  filter: brightness(95%);
+  -webkit-filter: brightness(95%);
+  cursor: pointer;
+}
+
+.button-pushable:hover .button-dark-front {
+  transform: translateY(-3px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-pushable:active .button-dark-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+
+.button-pushable:hover .button-accent-front {
+  transform: translateY(-3px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-pushable:active .button-aceent-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-pushable:hover .button-shadow {
+  transform: translateY(2px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-pushable:active .button-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .button-dark-front {
+    font-size: 1.05rem;
+    padding: 12px 42px;
+  }
+
+  .button-accent-front {
+    font-size: 1.05rem;
+    padding: 12px 42px;
+  }
+}
