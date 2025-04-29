@@ -18,11 +18,12 @@ function Section({ children }) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} id="benefits" className='benefits-section'  style={{
-      transform: isInView ? "none" : "translateY(340px)",
-      opacity: isInView ? 1 : 0,
-      transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s"
-    }}
+    <section ref={ref} id="about" className='benefits-section' 
+    //  style={{
+    //   transform: isInView ? "none" : "translateY(340px)",
+    //   opacity: isInView ? 1 : 0,
+    //   transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s"
+    // }}
   >
       {children}
     </section>

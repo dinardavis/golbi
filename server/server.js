@@ -26,7 +26,7 @@ app.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: [{ price: prices[plan], quantity: 1 }],
       success_url: `${YOUR_DOMAIN}/success`,
-      cancel_url: `${YOUR_DOMAIN}/#pricing`,
+      cancel_url: `${YOUR_DOMAIN}/?scrollTo=pricing`
     });
 
     res.json({ sessionId: session.id, url: session.url });

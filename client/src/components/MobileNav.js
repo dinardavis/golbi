@@ -1,5 +1,6 @@
 import React from "react";
 import navLogo from "../assets/imgs/golbi_logo.png";
+import MobileLoginBtn from "./MobileLoginBtn";
 
 export default function MobileNav(props) {
   if (props.mobileNavState) {
@@ -44,7 +45,7 @@ export default function MobileNav(props) {
           Why Golbi?
         </a>
         <a href="#work" className="mobile-link">
-          The Work
+          Work
         </a>
         <a href="#pricing" className="mobile-link">
           Pricing
@@ -52,7 +53,7 @@ export default function MobileNav(props) {
         <a href="#faqs" className="mobile-link">
           FAQs
         </a>
-        {/* <a href="#login" className="mobile-link nav-link login">Login</a> */}
+        <MobileLoginBtn />
       </div>
     </div>
   );

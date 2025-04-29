@@ -16,11 +16,11 @@ function Section({ children }) {
       ref={ref}
       id="pricing"
       className="pricing-section"
-      style={{
-        transform: isInView ? "none" : "translateY(340px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s",
-      }}
+      // style={{
+      //   transform: isInView ? "none" : "translateY(340px)",
+      //   opacity: isInView ? 1 : 0,
+      //   transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s",
+      // }}
     >
       {children}
     </section>
@@ -142,7 +142,7 @@ export default function Pricing() {
              Afraid of <span>any</span> commitment? 
             </p>
             <p className="pricing-cta-copy pricing-cta-copy-2">
-              No problem! Schedule a call or email your ideas today, to receive a project based quote.
+              No problem! Schedule a call, or email your ideas today to receive a project based quote.
             </p>
 
             <button className="button-pushable">

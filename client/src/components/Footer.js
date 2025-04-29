@@ -47,24 +47,34 @@ export default function Footer() {
   return (
     <>
       <div className="footer-container">
-        <a href="#pricing" className="footer-link">
-          Pricing
-        </a>
-        <a href="" className="footer-link">
-          Client login
-        </a>
-        <a href="" className="footer-link">
-          Terms & Conditions
-        </a>
-        <a href="" className="footer-link">
-          Privacy policy
-        </a>
-        <a href="" className="footer-link">
-          Contact: <br></br>
-          support@golbi.co<br></br>
-          +1.510.982.6565
-        </a>
-      </div>
+        <div className="footer-row-1">
+          <a href="#pricing" className="footer-link">
+            Pricing
+          </a>
+          <a href="" className="footer-link">
+            Client login
+          </a>
+          <a href="" className="footer-link">
+            Terms & Conditions
+          </a>
+          <a href="" className="footer-link">
+            Privacy policy
+          </a>
+        </div>
+       
+        <div className="footer-row-2">
+          <p href="" className="footer-desc">
+            Contact:
+          </p>
+          <a href="" className="footer-link">
+            support@golbi.co
+          </a>
+          <a href="" className="footer-link">
+            +1.510.982.6565
+          </a>
+        </div>
+        </div>
+     
     </>
   );
 }

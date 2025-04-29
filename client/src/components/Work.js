@@ -19,11 +19,11 @@ function Section({ children }) {
       ref={ref}
       id="work"
       className="work-section"
-      style={{
-        transform: isInView ? "none" : "translateY(340px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s",
-      }}
+      // style={{
+      //   transform: isInView ? "none" : "translateY(340px)",
+      //   opacity: isInView ? 1 : 0,
+      //   transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) .5s",
+      // }}
     >
       {children}
     </section>
