@@ -51,7 +51,7 @@ const questionData = [
   },
   {
     question: "What if I just have a one-off project?",
-    answer: "That works perfectly. Once your task is complete, just pause your plan. You can come back any time when new needs pop up. It’s completely flexible.",
+    answer: "That's when working with Golbi really comes in handy! You can either request a project based quote, or sign up for the monthly plan, and once your job is complete, just pause your plan. You can come back any time when new needs pop up. It’s completely flexible.",
     showAnswer: false,
     id: 9,
   },
