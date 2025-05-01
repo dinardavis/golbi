@@ -145,7 +145,10 @@ export default function Pricing() {
               No problem! Schedule a call, or email your ideas today to receive a project based quote.
             </p>
 
-            <button className="button-pushable">
+            <button
+              className="button-pushable"
+              onClick={() => window.open("https://calendly.com/golbi/30min", "_blank")}
+            >
               <span className="button-shadow"></span>
               <span className="button-accent-edge"></span>
               <span className="button-accent-front text">Schedule now</span>

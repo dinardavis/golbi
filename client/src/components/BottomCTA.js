@@ -23,7 +23,10 @@ export default function BottomCTA() {
           That&apos;s ok, we like a challenge! Just reach out, and we&apos;re
           happy to answer any other questions that you have.
         </p>
-        <button className="button-pushable bottom-cta-button">
+        <button
+          className="button-pushable bottom-cta-button"
+          onClick={() => window.open("https://calendly.com/golbi/30min", "_blank")}
+        >
           <span className="button-shadow"></span>
           <span className="button-accent-edge"></span>
           <span className="button-accent-front text">Book a call</span>
