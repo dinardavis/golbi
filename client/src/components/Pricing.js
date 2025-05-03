@@ -139,7 +139,7 @@ export default function Pricing() {
           {/* CTA Option */}
           <div className="pricing-option pricing-option-3 flex flex-col justify-center items-center text-center">
             <p className="pricing-cta-copy pricing-cta-copy-1">
-             Afraid of <span>any</span> commitment? 
+             Wary of <span>any</span> commitment? 
             </p>
             <p className="pricing-cta-copy pricing-cta-copy-2">
               No problem! Schedule a call, or email your ideas today to receive a project based quote.
