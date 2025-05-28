@@ -6,9 +6,9 @@ import Work from "./Work";
 import Pricing from "./Pricing";
 import Faqs from "./Faqs";
 import Footer from "./Footer";
-import Products from "./Products";
 import ServicesTicker from "./ServicesTicker";
-import DesktopLoginBtn from "./DesktopLoginBtn";
+import TopNavigation from "./TopNavigation";
+import Steps from "./Steps";
 
 export default function Home() {
   React.useEffect(() => {
@@ -23,17 +23,17 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="main-container">
+    <>
       <Navbar />
-      <DesktopLoginBtn />
+      <TopNavigation />
       <Intro />
       <ServicesTicker />
+      <Steps />
       <Benefits />
-      <Products />
       <Work />
       <Pricing />
       <Faqs />
       <Footer />
-    </main>
+    </>
   );
 }

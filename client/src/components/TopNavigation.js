@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-export default function MobileLoginBtn() {
+export default function TopNavigation() {
   const [showModal, setShowModal] = useState(false);
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [email, setEmail] = useState("");
@@ -30,7 +30,6 @@ export default function MobileLoginBtn() {
   const handlePauseSubmit = async (e) => {
     e.preventDefault();
 
-    // Basic email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.");
@@ -41,7 +40,6 @@ export default function MobileLoginBtn() {
     setIsSubmitting(true);
 
     try {
-      // Simulate async API request
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
       setIsSubmitting(false);
@@ -53,7 +51,7 @@ export default function MobileLoginBtn() {
         setShowModal(false);
         setShowEmailForm(false);
         setSuccess(false);
-      }, 2000);
+      }, 3000);
     } catch (err) {
       setError("Something went wrong. Please try again.");
       setIsSubmitting(false);
@@ -70,7 +68,13 @@ export default function MobileLoginBtn() {
   };
 
   return (
-    <>
+    <div className='top-nav-container'>
+        <a href="#pricing" className="top-nav-btns">
+            See Pricing
+          </a>
+          <a href="https://calendly.com/golbi/30min" target="_blank" className="top-nav-btns">
+            Book a call
+          </a>
       <div className="login-btn">
         <button onClick={() => setShowModal(true)} className="login-button-pushable">
           <span className="login-button-shadow"></span>
@@ -82,15 +86,18 @@ export default function MobileLoginBtn() {
       {showModal && (
         <div className="modal-backdrop">
           <div className="modal">
+            <div className='modal-content'>
             <button className="modal-close-button" onClick={handleClose}>&times;</button>
 
-            <h2>Manage Your Subscription</h2>
+            {!success && (
+              <h2>Manage Your Subscription</h2>
+            )}
 
             {!success && (
               <>
-                <button onClick={handleBillingRedirect}>Go to Billing Portal</button>
+                <button className='modal-btns' onClick={handleBillingRedirect}>Go to Billing Portal</button>
 
-                <button onClick={() => setShowEmailForm((prev) => !prev)}>
+                <button className='modal-btns' onClick={() => setShowEmailForm((prev) => !prev)}>
                   {showEmailForm ? 'Cancel Pause Request' : 'Pause Subscription'}
                 </button>
               </>
@@ -98,17 +105,15 @@ export default function MobileLoginBtn() {
 
             {showEmailForm && !success && (
               <form onSubmit={handlePauseSubmit} className="pause-form">
-                <label>
-                  Your Email:
                   <input
                     type="email"
+                    placeholder='Enter Account Email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
-                </label>
-                {error && <div className="error">{error}</div>}
-                <button type="submit" disabled={isSubmitting}>
+                {error && <div className="submit-error">{error}</div>}
+                <button className="submit-pause-btn" type="submit" disabled={isSubmitting}>
                   {isSubmitting ? 'Submitting...' : 'Submit Pause Request'}
                 </button>
               </form>
@@ -116,12 +121,13 @@ export default function MobileLoginBtn() {
 
             {success && (
               <div className="success-message">
-                ✅ Your pause request has been submitted!
+                Your pause request has been submitted!
               </div>
             )}
+            </div>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }

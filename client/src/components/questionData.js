@@ -3,13 +3,13 @@
 const questionData = [
   {
     question: "Why not just bring on a full-time developer?",
-    answer: "Totally fair question. Hiring a full-time dev can run well over $100k per year—plus benefits, equipment, and onboarding time. With Golbi, you’re not locked into ongoing costs. You only pay when you’ve got actual projects in motion. Need a break? Just pause your plan and resume when you’re ready. No wasted budget. No downtime payroll.",
+    answer: "Most small businesses don’t need a full-time developer, and hiring one can run well over $100k per year—plus benefits, equipment, and onboarding time. With Golbi, we’re here when you need work done, then you can pause. ",
     showAnswer: false,
     id: 1,
   },
   {
     question: "Is there a cap on how many projects I can request?",
-    answer: "Nope—there’s no set limit. Once you’re subscribed, you can send over as many project requests as you like via email. Golbi will work through them one by one, based on your priorities.",
+    answer: "Nope—there’s no set limit. Once you’re subscribed, you keep sending, and we keep building.",
     showAnswer: false,
     id: 2,
   },
@@ -21,7 +21,7 @@ const questionData = [
   },
   {
     question: "Who will I actually be working with?",
-    answer: "When you hire Golbi, you work directly with me—the founder, designer, and developer behind it all. It’s a solo operation, which means full transparency and zero handoffs. If your project grows and needs more hands, I have a vetted network of pros I can tap into.",
+    answer: "When you hire Golbi, you work directly with me—the owner/operator. I have a decade plus of experience copywriting, designing and developing for brands like, General Motors, Disney, Pfizer and Procter & Gamble. So you're in good hands. And if your project grows, I have a vetted network of pros I can tap into as well.",
     showAnswer: false,
     id: 4,
   },
@@ -45,7 +45,7 @@ const questionData = [
   },
   {
     question: "What if I’m not happy with the result?",
-    answer: "No problem at all. Golbi will revise and refine your project until you're fully satisfied. That’s the standard, not the exception.",
+    answer: "No problem at all. Golbi will revise and refine your project until you're fully satisfied.",
     showAnswer: false,
     id: 8,
   },
@@ -57,7 +57,7 @@ const questionData = [
   },
   {
     question: "Can I get a refund if I change my mind?",
-    answer: "Because of the nature and quality of the work, Golbi does not offer refunds. That said, the focus is always on making sure you’re happy with the outcome.",
+    answer: "Because of the quality of the work, Golbi does not offer refunds. That being said, the focus is always on making sure you’re happy with the outcome.",
     showAnswer: false,
     id: 10,
   },

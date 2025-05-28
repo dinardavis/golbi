@@ -1,14 +1,8 @@
 import React from "react";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import donutSite from "../assets/imgs/donutmissit_thumbnail.png";
-import dacSite from "../assets/imgs/dac_thumbnail.png";
-import suitSite from "../assets/imgs/suitsupply_thumbnail.png";
-import spaceSite from "../assets/imgs/spacexclone_thumbnail.png";
-import travelSite from "../assets/imgs/travel_thumbnail.png";
-import yourSite from "../assets/imgs/yourproject_thumbnail.png";
-import overlay1 from "../assets/imgs/overlay-1.png";
-import overlay2 from "../assets/imgs/overlay-2.png";
+import doodle1 from "../assets/imgs/doodle1.png";
+import ImageMosaic from "./ImageMosaic";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -36,69 +30,40 @@ export default function Work() {
 
   return (
     <Section>
-      <div className="work-content section-content">
-        <div className="work-grid">
-          <div className="work-item">
-            <img className="work-overlay" src={overlay1} alt="work sample" />
-            <img
-              className="work-screenshot"
-              src={donutSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
+      <img className="doodle-1" src={doodle1} alt="" />
+      <div className="work-container section-content">    
+        <h1 className="products-header section-header">
+          <span>Big web energy.</span> For your small biz.
+        </h1>
+        <div className="work-content">
+
+        <ImageMosaic />
+
+        <div className="products-items-container">
+          <p className="products-items-header">
+          From full builds to quick updates, we support everything your business needs.
+          </p>
+          <div className="products-items">
+         
+          <div className="products-item">Web Design</div>
+          <div className="products-item">Landing Pages</div>
+          <div className="products-item">WordPress</div>
+          <div className="products-item">E-commerce</div>
+          <div className="products-item">Shopify Integration</div>
+          <div className="products-item">Blog Posts</div>
+          <div className="products-item">Mobile Ready</div>
+          <div className="products-item">Branding</div>
+          <div className="products-item">Email Automation</div>
+          <div className="products-item">Next.js</div>
+       
+          <div className="products-item">Static Sites</div>
+          <div className="products-item">UI/UX Updates</div>
+          <div className="products-item">SEO</div>
+          <div className="products-item">Site Support</div>
+            <div className="products-item">And More...</div>
           </div>
-          <div className="work-item">
-            <img className="work-overlay" src={overlay2} alt="work sample" />
-            <img
-              className="work-screenshot"
-              src={dacSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
-          </div>
-          <div className="work-item">
-            <img className="work-overlay" src={overlay1} alt="work sample" />
-            <img
-              className="work-screenshot"
-              src={suitSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
-          </div>
-          <div className="work-item">
-            <img className="work-overlay" src={overlay2} alt="work sample" />
-            <img
-              className="work-screenshot"
-              src={spaceSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
-          </div>
-          <div className="work-item">
-            <img className="work-overlay" src={overlay1} alt="work sample" />
-            <img
-              className="work-screenshot"
-              src={travelSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
-          </div>
-          <div className="work-item">
-            <div className="work-overlay"></div>
-            <img
-              className="work-screenshot"
-              src={yourSite}
-              width={workWidth}
-              height={workHeight}
-              alt="work sample"
-            />
-          </div>
-        </div>
+        </div> 
+        </div> 
       </div>
     </Section>
   );

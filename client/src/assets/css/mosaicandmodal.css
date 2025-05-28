@@ -1,0 +1,157 @@
+/* Main wrapper */
+.mosaic-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Container for all columns */
+.mosaic-container {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  width: 100%;
+  max-height: 500px;
+  padding: .5rem;
+  background-color: var(--background-dark);
+  border-radius: 8px;
+}
+
+/* Columns */
+.mosaic-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+/* Image wrapper */
+.photo {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Image styling */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Responsive Columns --- */
+
+/* 3 columns by default (desktop) */
+@media (max-width: 1024px) {
+  .mosaic-container > .column {
+    width: 50%;
+  }
+
+  .mosaic-container > .column:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .mosaic-container {
+    height: 100%;
+  }
+
+  .mosaic-container > .column {
+    width: 100%;
+  }
+
+  .mosaic-container > .column:nth-child(2),
+  .mosaic-container > .column:nth-child(3) {
+    display: none;
+  }
+}
+
+/* --- Modal Styles --- */
+
+.image-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+  border-radius: 8px;
+}
+
+.image-modal-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Modal content animation */
+.image-modal-content {
+  position: relative;
+  width: 85%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.image-modal-content.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image-modal-content.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.image-modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 85%;
+  max-height: 400px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Close button */
+.image-modal-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5rem;
+  background: var(--accent-1);
+  color: var(--background-light);
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.image-modal-close:hover {
+  opacity: 0.8;
+}

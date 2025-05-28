@@ -3,6 +3,7 @@
 import React from "react";
 import MobileNav from "./MobileNav";
 import { debounce } from "./utilities/helpers";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const [prevScroll, setPrevScroll] = React.useState(0);
@@ -47,34 +48,32 @@ export default function Footer() {
   return (
     <>
       <div className="footer-container">
-        <div className="footer-row-1">
-          <a href="#pricing" className="footer-link">
-            Pricing
-          </a>
-          <a href="" className="footer-link">
-            Client login
-          </a>
-          <a href="" className="footer-link">
-            Terms & Conditions
-          </a>
-          <a href="" className="footer-link">
-            Privacy policy
-          </a>
-        </div>
-       
         <div className="footer-row-2">
           <p href="" className="footer-desc">
             Contact:
           </p>
-          <a href="" className="footer-link">
+          <a  
+            href="mailto:support@golbi.co?subject=Greetings%20Golbi%20support!%20I%20have%20a%20question."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link">
             support@golbi.co
           </a>
-          <a href="" className="footer-link">
+          <a href="tel:+15109826565" className="footer-link">
             +1.510.982.6565
           </a>
         </div>
-        </div>
-     
+        <div className="footer-row-1">
+          <a href="#pricing" className="footer-link">
+            Pricing
+          </a>
+          <a href="https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00" target="_blank" className="footer-link">
+            Client login
+          </a>
+          <Link to="/terms" className="footer-link">Terms of Service</Link>
+          <Link to="/privacy" className="footer-link">Privacy Policy</Link>
+        </div> 
+      </div>
     </>
   );
 }

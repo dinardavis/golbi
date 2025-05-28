@@ -175,7 +175,7 @@
 
   .main-link {
     text-decoration: none;
-    color: var(--font-secondary);
+    color: var(--font-primary);
     transition: all .2s ease-in-out;
     font-size: .92rem;
     font-weight: 400;
@@ -207,7 +207,7 @@
   .up-arrow-icon {
     width: 20px;
     font-size: 1.3rem;
-    color: var(--font-secondary);
+    color: var(--font-primary);
     transition: all .2s ease-in-out;
   }
 
@@ -236,17 +236,4 @@
     top: .5rem;
     width: calc(100% - 2rem);
   }
-}
-
-
-/* FOOTER LINK  */
-
-.footer-link {
-  color: var(--font-primary);
-  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 6px;
-  transition: all 0.2s ease-in-out;
-}
-
-.footer-link:hover {
-  color: var(--accent-1);
 }

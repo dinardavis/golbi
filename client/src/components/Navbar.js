@@ -85,6 +85,13 @@ export default function Navbar(props) {
           <a href="#faqs" className="nav-link main-link">
             FAQs
           </a>
+          <span
+            className="nav-link main-link"
+            onClick={() => props.setShowModal(true)}
+            style={{ cursor: "pointer" }}
+          >
+            Account
+          </span>
           <a
             href="#top"
             className="nav-link main-link"

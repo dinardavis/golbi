@@ -1,21 +1,36 @@
-import React from 'react'
+import React from 'react';
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
-import "./assets/css/nav_style.css"
-import "./assets/css/buttons.css"
-import "./assets/css/misc_animations.css"
-import "./assets/css/doodles.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './components/Navbar'
-import Home from './components/Home'
-
+import "./assets/css/nav_style.css";
+import "./assets/css/buttons.css";
+import "./assets/css/misc_animations.css";
+import "./assets/css/doodles.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Added Link here
+import './components/Navbar';
+import Home from './components/Home';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
+import ScrollToTop from './components/ScrollToTop';
+import mainLogo from "../src/assets/imgs/golbi_logo.png";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <ScrollToTop />
+      <main className="main-container">
+        <Link to="/" className="intro-logo-link">
+          <div className="intro-logo-container">
+            <img className="intro-logo" src={mainLogo} alt="Golbi Logo" />
+            <div className="intro-logo-arch-right"></div>
+            <div className="intro-logo-arch-left"></div>
+          </div>
+        </Link>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
+      </main>
     </BrowserRouter>
   );
 }

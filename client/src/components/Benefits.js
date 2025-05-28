@@ -48,7 +48,7 @@ export default function Benefits() {
           </div>
        
           <h2 className="benefits-item-header">Face-to-face...or not</h2>
-          <p className="benefits-item-copy">Please schedule lots of meetings. Said NO ONE ever! <br></br>That&apos;s why with Golbi you send over your brief, and we get to work. But if you&apos;d like to schedule a chat first, that&apos;s cool too!</p>
+          <p className="benefits-item-copy">Please schedule lots of meetings. Said NO ONE ever! <br></br>That&apos;s why with Golbi you send over your ideas, and we get to work. But if you&apos;d like to schedule a chat first, that&apos;s cool too!</p>
         </div>
 
         <div className="benefits-item">
@@ -60,7 +60,7 @@ export default function Benefits() {
             />
           </div>
           <h2 className="benefits-item-header">HR departments love us</h2>
-          <p className="benefits-item-copy">Onboarding a new hire? Nope! Tracking billable time? No need! When is the benefits open enrollment? Ha! <br></br>Golbi offers all the perks of a team member, with none of the hassle. </p>
+          <p className="benefits-item-copy">Onboarding a new hire? Nope! Tracking billable time? No need! When is open enrollment? Who cares!<br></br>Golbi offers all the perks of a team member, with none of the hassle. </p>
         </div>
 
         <div className="benefits-item">
@@ -99,7 +99,7 @@ export default function Benefits() {
           <p className="benefits-item-copy">You keep sending your ideas, we&apos;ll keep producing products that will do your business proud.</p>
         </div>
       </div>
-      <a href="#pricing">
+      <a href="#pricing" className="benefits-pricing-btn">
         <button className="button-pushable benefits-cta-button">
           <span className="button-shadow"></span>
           <span className="button-accent-edge"></span>
@@ -108,7 +108,6 @@ export default function Benefits() {
           </span>
         </button>
       </a>
-
     </Section>
   )
 }
