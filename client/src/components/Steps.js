@@ -62,7 +62,7 @@ export default function Steps() {
 
         <div className="step-offer-container steps-right">
    
-          <div className="steps-header oswald">How it works:</div>
+          <div className="steps-header oswald">How <span className="steps-golbi-name">it</span> works:</div>
           <p className="intro-cta-copy">Add Golbi to your team <br></br><span className="intro-cta-italic">only when you need to.</span></p>
         
           <div className="intro-cta-copy-container">

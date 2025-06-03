@@ -539,7 +539,7 @@ body {
   padding: .5rem .75rem;
   margin: .5rem .5rem;
   border-radius: 2rem;
-  font-size: .85rem;
+  font-size: 1rem;
   border: 1.5px solid var(--font-primary);
   color: var(--font-primary);
   box-shadow: 6px 6px 14px #292f4141;
@@ -1366,11 +1366,11 @@ body {
 
 .terms-container .back-button, 
 .privacy-container .back-button {
+  align-self: flex-start;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 70px;
-  padding: .2rem;
+  padding: .3rem 1rem .3rem .5rem;
   color: var(--font-primary);
   font-size: 1.1rem;
   margin-bottom: .5rem;
@@ -1550,6 +1550,10 @@ body {
     line-height: 1.1;
   }
 
+  .products-item {
+    font-size: .85rem;
+  }
+  
   .bottom-cta-logo {
     max-width: 190px;
   }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function MobileLoginBtn() {
   const [showModal, setShowModal] = useState(false);
@@ -10,22 +10,41 @@ export default function MobileLoginBtn() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleBillingRedirect = () => {
-    window.location.href = 'https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00';
-  };
-
   useEffect(() => {
     if (showModal) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = 'auto'; // Restore on unmount
+      document.body.style.overflow = "auto"; // Restore on unmount
     };
   }, [showModal]);
 
+  if (showModal) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  const handleClose = () => {
+    setShowModal(false);
+    setShowEmailForm(false);
+    setEmail("");
+    setError("");
+    setIsSubmitting(false);
+    setSuccess(false);
+  };
+
+  const handleBillingRedirect = (e) => {
+    e.preventDefault();
+    window.open(
+      "https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
 
   const handlePauseSubmit = async (e) => {
     e.preventDefault();
@@ -53,26 +72,27 @@ export default function MobileLoginBtn() {
         setShowModal(false);
         setShowEmailForm(false);
         setSuccess(false);
-      }, 2000);
+      }, 3000);
     } catch (err) {
       setError("Something went wrong. Please try again.");
       setIsSubmitting(false);
     }
   };
 
-  const handleClose = () => {
-    setShowModal(false);
-    setShowEmailForm(false);
-    setEmail("");
-    setError("");
-    setIsSubmitting(false);
-    setSuccess(false);
+  // Handle clicking outside the modal
+  const handleBackdropClick = (e) => {
+    if (e.target.classList.contains("modal-backdrop")) {
+      handleClose();
+    }
   };
 
   return (
     <>
       <div className="login-btn">
-        <button onClick={() => setShowModal(true)} className="login-button-pushable">
+        <button
+          onClick={() => setShowModal(true)}
+          className="login-button-pushable"
+        >
           <span className="login-button-shadow"></span>
           <span className="login-button-accent-edge"></span>
           <span className="login-button-accent-front text">Manage Account</span>
@@ -80,45 +100,61 @@ export default function MobileLoginBtn() {
       </div>
 
       {showModal && (
-        <div className="modal-backdrop">
-          <div className="modal">
-            <button className="modal-close-button" onClick={handleClose}>&times;</button>
+        <div className="modal-backdrop" onClick={handleBackdropClick}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-content">
+              <button className="modal-close-button" onClick={handleClose}>
+                &times;
+              </button>
 
-            <h2>Manage Your Subscription</h2>
+              {!success && <h2>Manage Your Subscription</h2>}
 
-            {!success && (
-              <>
-                <button onClick={handleBillingRedirect}>Go to Billing Portal</button>
+              {!success && (
+                <>
+                  <button
+                    className="modal-btns"
+                    onClick={handleBillingRedirect}
+                  >
+                    Go to Billing Portal
+                  </button>
 
-                <button onClick={() => setShowEmailForm((prev) => !prev)}>
-                  {showEmailForm ? 'Cancel Pause Request' : 'Pause Subscription'}
-                </button>
-              </>
-            )}
+                  <button
+                    className="modal-btns"
+                    onClick={() => setShowEmailForm((prev) => !prev)}
+                  >
+                    {showEmailForm
+                      ? "Cancel Pause Request"
+                      : "Pause Subscription"}
+                  </button>
+                </>
+              )}
 
-            {showEmailForm && !success && (
-              <form onSubmit={handlePauseSubmit} className="pause-form">
-                <label>
-                  Your Email:
+              {showEmailForm && !success && (
+                <form onSubmit={handlePauseSubmit} className="pause-form">
                   <input
                     type="email"
+                    placeholder="Enter Account Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
-                </label>
-                {error && <div className="error">{error}</div>}
-                <button type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? 'Submitting...' : 'Submit Pause Request'}
-                </button>
-              </form>
-            )}
+                  {error && <div className="submit-error">{error}</div>}
+                  <button
+                    className="submit-pause-btn"
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Submitting..." : "Submit Pause Request"}
+                  </button>
+                </form>
+              )}
 
-            {success && (
-              <div className="success-message">
-                ✅ Your pause request has been submitted!
-              </div>
-            )}
+              {success && (
+                <div className="success-message">
+                  Your pause request has been submitted!
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

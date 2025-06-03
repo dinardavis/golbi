@@ -7,7 +7,20 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { debounce } from "./utilities/helpers";
 
-export default function Navbar(props) {
+export default function Navbar({
+  showModal,
+  setShowModal,
+  showEmailForm,
+  setShowEmailForm,
+  email,
+  setEmail,
+  error,
+  setError,
+  isSubmitting,
+  setIsSubmitting,
+  success,
+  setSuccess,
+}) {
   const [prevScroll, setPrevScroll] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
   const [mobileNavState, setMobileNavState] = React.useState(false);
@@ -28,6 +41,21 @@ export default function Navbar(props) {
     10,
     10
   );
+
+  console.log({
+    showModal,
+    setShowModal,
+    showEmailForm,
+    setShowEmailForm,
+    email,
+    setEmail,
+    error,
+    setError,
+    isSubmitting,
+    setIsSubmitting,
+    success,
+    setSuccess,
+  });
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -87,15 +115,17 @@ export default function Navbar(props) {
           </a>
           <span
             className="nav-link main-link"
-            onClick={() => props.setShowModal(true)}
+            onClick={() => {
+              setShowModal(true);
+              setShowEmailForm(false);
+              setError("");
+              setSuccess(false);
+            }}
             style={{ cursor: "pointer" }}
           >
             Account
           </span>
-          <a
-            href="#top"
-            className="nav-link main-link"
-          >
+          <a href="#top" className="nav-link main-link">
             <MdKeyboardDoubleArrowUp className="up-arrow-icon" />
           </a>
           {/* <div className="nav-line-right"></div> */}
@@ -106,6 +136,18 @@ export default function Navbar(props) {
         closeMobileNav={closeMobileNav}
         mobileNavState={mobileNavState}
         handleToggle={handleToggle}
+        showModal={showModal}
+        setShowModal={setShowModal}
+        showEmailForm={showEmailForm}
+        setShowEmailForm={setShowEmailForm}
+        email={email}
+        setEmail={setEmail}
+        error={error}
+        setError={setError}
+        isSubmitting={isSubmitting}
+        setIsSubmitting={setIsSubmitting}
+        success={success}
+        setSuccess={setSuccess}
       />
     </>
   );
