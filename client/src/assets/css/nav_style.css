@@ -140,6 +140,17 @@
 
 
 /* DESKTOP NAVIGATION */
+@media screen and (max-width: 800px) {
+  .main-container {
+    border-top-left-radius: 1rem;
+  }
+
+  .intro-logo-container,
+  .top-nav-container {
+    display: none;
+  }
+}
+
 
 @media screen and (min-width: 800px) {
   .mobile-nav {
@@ -232,8 +243,5 @@
 
 
 @media (max-width: 600px) {
-  .mobile-logo-container {
-    top: .5rem;
-    width: calc(100% - 2rem);
-  }
+
 }

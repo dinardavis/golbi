@@ -69,12 +69,12 @@ export default function Steps() {
             <div className="intro-cta-copy intro-cta-copy-2">
             <div className="intro-cta-numbers">Step 1</div> Hire Golbi for your next project in less than 5-minutes.
             </div>
-            <p className="intro-cta-copy intro-cta-copy-3">
+            <div className="intro-cta-copy intro-cta-copy-3">
             <span className="intro-cta-numbers">Step 2</span>We get to work delivering content that will boost your business.
-            </p>
-            <p className="intro-cta-copy intro-cta-copy-4">
+            </div>
+            <div className="intro-cta-copy intro-cta-copy-4">
             <span className="intro-cta-numbers">Step 3</span>   When the project’s done, just pause or cancel. That’s it. No strings attached.
-            </p>
+            </div>
           </div>
 
           <div className="intro-button-container">

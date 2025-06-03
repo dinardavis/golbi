@@ -49,7 +49,7 @@ export default function Faqs() {
     <Section>
       <div className='faqs-content section-content'>
         <div className='faqs-question-container'>
-        <h1 className='faqs-header section-header'>Frequently Asked <br></br>Questions</h1>
+        <h1 className='faqs-header section-header'>Frequently Asked Questions</h1>
           {allQuestions}
         </div>
 

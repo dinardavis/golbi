@@ -12,16 +12,20 @@ import yourSite from '../assets/imgs/yourproject_thumbnail.png';
 import keystone from '../assets/imgs/keystone_thumbnail.png';
 import stratuspoint from '../assets/imgs/stratuspoint_thumbnail.png';
 import toyd from '../assets/imgs/toyd_thumbnail.png';
+import elowen from '../assets/imgs/elowen_thumbnail.png';
 
 const rawImages = [
+  dacSite,
+  elowen,
   keystone,
   stratuspoint,
-  toyd,
-  donutSite,
-  dacSite,
-  suitSite,
   spaceSite,
-  stratuspoint,
+  donutSite,
+  suitSite,
+  toyd,
+
+
+
   yourSite,
 ];
 

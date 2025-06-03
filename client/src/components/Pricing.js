@@ -80,7 +80,7 @@ export default function Pricing() {
           </div>
 
           {/* CTA Option */}
-          <div className="pricing-option pricing-option-3 flex flex-col justify-center items-center text-center">
+          <div className="pricing-option pricing-option-3">
             <p className="pricing-cta-copy pricing-cta-copy-1">Have a one-off project?</p>
             <p className="pricing-cta-copy pricing-cta-copy-2">No problem. Shoot us an email, or schedule a call and we’ll put a quote together.</p>
             <button
