@@ -1284,7 +1284,7 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 900px;
-  padding: 7rem 2rem;
+  padding: 0rem 2rem 7rem;
 }
 
 .terms-container > *, 
@@ -1305,6 +1305,42 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px ;
   margin-bottom: .5rem;
+}
+
+.legal-logo {
+  position: absolute;
+  top: -1rem;
+  left: -.5rem;
+  width: 152px;
+  padding: 1rem 0rem 1rem .5rem;
+  background-color: var(--white);
+  border-bottom-right-radius: 1rem;
+}
+
+.legal-logo-arch-right,
+.legal-logo-arch-left {
+  position: absolute;
+}
+
+.legal-logo-arch-right {
+  top: -14.5px;
+  left: 129.5px;
+  width: 30px;
+  aspect-ratio: 1;
+  background-image: 
+   radial-gradient(
+    circle at 100% 100%, 
+    transparent 15px, 
+    var(--white) 15.5px);
+}
+
+.legal-logo-arch-left {
+  top: 62.5px;
+  left: -14.5px;
+  width: 30px;
+  aspect-ratio: 1;
+  background-image: 
+   radial-gradient(circle at 100% 100%, transparent 15px, var(--white) 15.5px);
 }
 
 .legal-header, 
@@ -1360,6 +1396,10 @@ body {
     flex-direction: column;
   }
 
+  .steps-content > * {
+    margin: 0;
+  }
+
   .steps-left {
     margin-bottom: 2rem;
   }
@@ -1389,6 +1429,10 @@ body {
   .intro-cta-copy-container {
     flex-direction: column;
     margin-bottom: 0;
+  }
+  
+  .intro-cta-copy {
+    margin: .5rem 0;
   }
 
   .products-items-container {
@@ -1432,11 +1476,20 @@ body {
 }
 
 @media (max-width: 800px) { 
+  .intro-headline {
+    margin-top: 7rem;
+  }
+
   .hire-to-section {
     display: flex;
     flex-direction: column;
   }
 
+  .benefits-item {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 0 2rem;
+  }
 
   .pricing-content {
     margin: 0;
@@ -1447,8 +1500,58 @@ body {
     margin-top: 2.5rem;
   }
 
+  .faqs-section {
+    margin-top: 2rem;
+  }
+
 }
 
 @media (max-width: 600px) {
+  .steps-section, 
+  .benefits-section,
+  .work-section,
+  .pricing-section,
+  .faqs-section {
+    padding: 1rem;
+  }
 
+  .intro-headline {
+    font-size: 3rem;
+    line-height: 1.05;
+    margin-top: 8rem;
+  }
+
+  .intro-subhead {
+    font-size: 1.1rem;
+  }
 }
+
+@media (max-width: 450px) {
+
+  .intro-headline {
+    font-size: 2.5rem;
+    line-height: 1.05;
+    margin-top: 8rem;
+  }
+
+  .intro-subhead {
+    font-size: 1rem;
+  }
+
+  .benefits-header .benefits-name {
+    font-size: 3rem;
+  }
+
+  .benefits-header,
+  .products-header,
+  .faqs-header,
+  .bottom-cta-header {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .bottom-cta-logo {
+    max-width: 190px;
+  }
+}
+

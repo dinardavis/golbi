@@ -300,19 +300,17 @@
 
 
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .button-dark-front {
-    font-size: 1.05rem;
     padding: 12px 42px;
+    max-width: 100%;
   }
 
   .button-accent-front {
-    font-size: 1.05rem;
     padding: 12px 42px;
+    min-width: 50%;
   }
-}
 
-@media (max-width: 800px) {
   .desktop-login-btn {
     visibility: hidden;
   }

@@ -1,12 +1,23 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
+import mainLogo from "../../src/assets/imgs/golbi_logo.png";
+
+
 
 export default function Terms() {
   const navigate = useNavigate();
 
   return (
     <div className='legal-page-container'> 
+      <Link to="/" className="legal-logo-link">
+        <div className="legal-logo-container">
+          <img className="legal-logo" src={mainLogo} alt="Golbi Logo" />
+          <div className="legal-logo-arch-right"></div>
+          <div className="legal-logo-arch-left"></div>
+        </div>
+      </Link>
       <div className="terms-container">
         <button onClick={() => navigate(-1)} className="back-button">
         <IoIosArrowBack className='back-button-icon'/>Back
@@ -15,7 +26,7 @@ export default function Terms() {
         <p className='legal-last-updated'><strong>Last Updated:</strong> January 1, 2022</p>
 
         <section>
-          <h2>1. Introduction</h2>
+          <h2>1. introduction</h2>
           <p>
             Welcome to Golbi. These Terms & Conditions ("Terms") govern your access to and use of our website and services. By accessing Golbi’s site or engaging our services, you agree to be bound by these Terms. If you do not agree, you must cease use immediately.
           </p>

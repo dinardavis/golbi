@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
-
+import { Link } from "react-router-dom";
+import mainLogo from "../../src/assets/imgs/golbi_logo.png";
 
 
 export default function Privacy() {
@@ -9,7 +10,14 @@ export default function Privacy() {
 
 
   return (
-  <div className='legal-page-container'>  
+  <div className='legal-page-container'> 
+    <Link to="/" className="legal-logo-link">
+      <div className="legal-logo-container">
+        <img className="legal-logo" src={mainLogo} alt="Golbi Logo" />
+        <div className="legal-logo-arch-right"></div>
+        <div className="legal-logo-arch-left"></div>
+      </div>
+    </Link> 
     <div className="privacy-container">
       <button onClick={() => navigate(-1)} className="back-button">
       <IoIosArrowBack className='back-button-icon'/>Back
