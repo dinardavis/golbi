@@ -1,23 +1,26 @@
-import React from 'react';
+import React from "react";
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
 import "./assets/css/nav_style.css";
 import "./assets/css/buttons.css";
+import "./assets/css/toggle_slider.css";
 import "./assets/css/misc_animations.css";
 import "./assets/css/doodles.css";
+import "./assets/css/starter-site.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Added Link here
-import './components/Navbar';
-import Home from './components/Home';
-import Terms from './pages/Terms';
-import Privacy from './pages/Privacy';
-import ScrollToTop from './components/ScrollToTop';
+import "./components/Navbar";
+import Home from "./components/Home";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import StarterSite from "./pages/StarterSite";
+import ScrollToTop from "./components/ScrollToTop";
 import mainLogo from "../src/assets/imgs/golbi_logo.png";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <main className="main-container">
+      <main id="top" className="main-container">
         <Link to="/" className="intro-logo-link">
           <div className="intro-logo-container">
             <img className="intro-logo" src={mainLogo} alt="Golbi Logo" />
@@ -29,6 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/starter-site" element={<StarterSite />} />
         </Routes>
       </main>
     </BrowserRouter>

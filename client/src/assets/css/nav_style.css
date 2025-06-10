@@ -140,7 +140,7 @@
 
 
 /* DESKTOP NAVIGATION */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
   .main-container {
     border-top-left-radius: 1rem;
   }
@@ -172,9 +172,9 @@
     display: block;
     position: fixed;
     bottom: .7rem;
-    left: calc(50% - (500px / 2));
+    left: calc(50% - (560px / 2));
     align-self: center;
-    width: 500px;
+    width: 560px;
     padding: 1rem;
     z-index: 100;
   }

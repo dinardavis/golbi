@@ -1,10 +1,9 @@
 import React from "react";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { FaTools, FaSyncAlt, FaBullhorn } from "react-icons/fa";
-import { ImBullhorn } from "react-icons/im";
-
-import { HiOutlineAdjustments } from "react-icons/hi";
+import { FaTools, FaRegGem } from "react-icons/fa";
+import { FaMagnifyingGlassDollar } from "react-icons/fa6";
+import { RxRocket } from "react-icons/rx";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -13,7 +12,6 @@ function Section({ children }) {
   return (
     <section
       ref={ref}
-      id="steps"
       className="steps-section"
       // style={{
       //   transform: isInView ? "none" : "translateY(340px)",
@@ -30,37 +28,38 @@ export default function Steps() {
   return (
     <Section>
       <div className="steps-content text-center font-light">
-        <div className="step-offer-container steps-left">
-        <div className="intro-cta-copy intro-cta-copy-1">
-          <div className="steps-header oswald">Hire <span className="steps-golbi-name">Golbi</span> to:</div>
-          <div className="hire-to-section"> 
-            <div className="hire-to-item">  
-              <div className="icon-container">
-                <FaTools className="hire-to-icon" />
-              </div>
-              Build a new site, with easy-to-follow update instructions</div> 
-            <div className="hire-to-item">
-                  <div className="icon-container">
-              <FaSyncAlt className="hire-to-icon" />
-              </div>
-              Keep your existing site up to date with new content</div> 
-            <div className="hire-to-item">
-                  <div className="icon-container">
-              <HiOutlineAdjustments className="hire-to-icon" />
-              </div>
-              Redesign or refresh a site that you already have</div> 
-            <div className="hire-to-item">
-                  <div className="icon-container">
-              <ImBullhorn className="hire-to-icon" />
-              </div>
-              Launch landing pages, blog posts, promos, or anything new
-            </div>
+      <div className="step-offer-container steps-left">
+    <div className="intro-cta-copy intro-cta-copy-1">
+      <div className="steps-header oswald">Hire <span className="steps-golbi-name">Golbi</span> to:</div>
+      <div className="hire-to-section">
+        <div className="hire-to-item">
+          <div className="icon-container">
+            <FaTools className="hire-to-icon" />
           </div>
-        </div>
-      </div>
-      
+          Build a site that works for you - more clicks, more leads, and more customers.</div> 
 
-        <div className="step-offer-container steps-right">
+        <div className="hire-to-item">
+          <div className="icon-container">
+            <FaRegGem className="hire-to-icon" />
+          </div>
+          Create a bold, unique brand presence that your audience will remember.</div> 
+
+        <div className="hire-to-item">
+          <div className="icon-container">
+            <RxRocket className="hire-to-icon" />
+          </div>
+          Transform your online store into a revenue-generating machine.</div> 
+
+        <div className="hire-to-item">
+          <div className="icon-container">
+            <FaMagnifyingGlassDollar className="hire-to-icon" />
+          </div>
+          Boost your site’s visibility and optimize for more traffic.</div>
+      </div>
+    </div>
+  </div>
+
+        <div id="how" className="step-offer-container steps-right">
    
           <div className="steps-header oswald">How <span className="steps-golbi-name">it</span> works:</div>
           <p className="intro-cta-copy">Add Golbi to your team <br></br><span className="intro-cta-italic">only when you need to.</span></p>

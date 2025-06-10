@@ -28,57 +28,25 @@ export default function ServicesTicker() {
   return (
     <div className="service-ticker">
       <ul>
-        <li className="service-item-container">
-        Branding
-        </li>
-        <li className="service-item-container">
-        Landing Pages
-        </li>
-        <li className="service-item-container">
-        Mobile Apps
-        </li>
-        <li className="service-item-container">
-        WordPress
-        </li>
-        <li className="service-item-container">
-        LMS
-        </li>
-        <li className="service-item-container">
-        Blogs
-        </li>
-        <li className="service-item-container">
-        Static Site
-        </li>
-        <li className="service-item-container">
-        E-commerce
-        </li>
+        <li className="service-item-container">Brand Makeovers</li>
+        <li className="service-item-container">Online Stores</li>
+        <li className="service-item-container">Blog Setup</li>
+        <li className="service-item-container">Course Platforms</li>
+        <li className="service-item-container">Custom UI/UX</li>
+        <li className="service-item-container">Mobile-First Sites</li>
+        <li className="service-item-container">Launch Funnels</li>
+        <li className="service-item-container">SEO Boosts</li>
       </ul>
 
       <ul aria-hidden="true">
-      <li className="service-item-container">
-        Branding
-        </li>
-        <li className="service-item-container">
-        Landing Pages
-        </li>
-        <li className="service-item-container">
-        Mobile Apps
-        </li>
-        <li className="service-item-container">
-        WordPress
-        </li>
-        <li className="service-item-container">
-        LMS
-        </li>
-        <li className="service-item-container">
-        Blogs
-        </li>
-        <li className="service-item-container">
-        Static Site
-        </li>
-        <li className="service-item-container">
-        E-commerce
-        </li>
+        <li className="service-item-container">Brand Makeovers</li>
+        <li className="service-item-container">Online Stores</li>
+        <li className="service-item-container">Blog Setup</li>
+        <li className="service-item-container">Course Platforms</li>
+        <li className="service-item-container">Custom UI/UX</li>
+        <li className="service-item-container">Mobile-First Sites</li>
+        <li className="service-item-container">Launch Funnels</li>
+        <li className="service-item-container">SEO Boosts</li>
       </ul>
     </div>
   )

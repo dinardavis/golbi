@@ -1,20 +1,36 @@
 import React from "react";
 import navLogo from "../assets/imgs/golbi_logo.png";
 import MobileLoginBtn from "./MobileLoginBtn";
+import { useScrollNavigation } from "../hooks/useScrollNavigation";
 
 export default function MobileNav(props) {
-  if (props.mobileNavState) {
-    document.body.classList.add("fixed-position");
-  } else {
-    document.body.classList.remove("fixed-position");
-  }
+  const { handleNavigation } = useScrollNavigation();
+
+  // Prevent page scrolling when mobile nav is open
+  React.useEffect(() => {
+    if (props.mobileNavState) {
+      document.body.classList.add("fixed-position");
+    } else {
+      document.body.classList.remove("fixed-position");
+    }
+  }, [props.mobileNavState]);
+
+  // Logo click scrolls to top only (no toggle)
+  const handleLogoClick = () => {
+    handleNavigation("top");
+  };
+
+  // Nav item click scrolls and closes menu
+  const handleNavClick = (sectionId) => {
+    handleNavigation(sectionId, props.handleToggle);
+  };
 
   return (
     <div className="mobile-nav">
       <div className="mobile-logo-container">
-        <a href="#top" onClick={props.closeMobileNav}>
+        <span onClick={handleLogoClick} style={{ cursor: "pointer" }}>
           <img src={navLogo} width={100} alt="Golbi Logo" />
-        </a>
+        </span>
 
         <div className="hamburger" onClick={props.handleToggle}>
           <div
@@ -39,20 +55,42 @@ export default function MobileNav(props) {
         className={`mobile-nav-container ${
           props.mobileNavState ? "show-mobile-nav" : ""
         }`}
-        onClick={props.handleToggle}
       >
-        <a href="#about" className="mobile-link">
-          Why Golbi?
-        </a>
-        <a href="#work" className="mobile-link">
+        <span
+          className="mobile-link"
+          onClick={() => handleNavClick("how")}
+          style={{ cursor: "pointer" }}
+        >
+          How To
+        </span>
+        <span
+          className="mobile-link"
+          onClick={() => handleNavClick("about")}
+          style={{ cursor: "pointer" }}
+        >
+          Why Golbi
+        </span>
+        <span
+          className="mobile-link"
+          onClick={() => handleNavClick("work")}
+          style={{ cursor: "pointer" }}
+        >
           Work
-        </a>
-        <a href="#pricing" className="mobile-link">
+        </span>
+        <span
+          className="mobile-link"
+          onClick={() => handleNavClick("pricing")}
+          style={{ cursor: "pointer" }}
+        >
           Pricing
-        </a>
-        <a href="#faqs" className="mobile-link">
+        </span>
+        <span
+          className="mobile-link"
+          onClick={() => handleNavClick("faqs")}
+          style={{ cursor: "pointer" }}
+        >
           FAQs
-        </a>
+        </span>
         <MobileLoginBtn />
       </div>
     </div>

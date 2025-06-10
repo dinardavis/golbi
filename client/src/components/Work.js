@@ -33,36 +33,31 @@ export default function Work() {
       <img className="doodle-1" src={doodle1} alt="" />
       <div className="work-container section-content">    
         <h1 className="products-header section-header">
-          <span>Big web energy.</span> For your small biz.
+          <span>Big web energy,</span> for your small biz.
         </h1>
         <div className="work-content">
 
-        <ImageMosaic />
+          <ImageMosaic />
 
-        <div className="products-items-container">
-          <p className="products-items-header">
-          From full builds to quick updates, we support everything your business needs.
-          </p>
-          <div className="products-items">
-         
-          <div className="products-item">Web Design</div>
-          <div className="products-item">Landing Pages</div>
-          <div className="products-item">WordPress</div>
-          <div className="products-item">E-commerce</div>
-          <div className="products-item">Shopify Integration</div>
-          <div className="products-item">Blog Posts</div>
-          <div className="products-item">Mobile Ready</div>
-          <div className="products-item">Branding</div>
-          <div className="products-item">Email Automation</div>
-          <div className="products-item">Next.js</div>
-       
-          <div className="products-item">Static Sites</div>
-          <div className="products-item">UI/UX Updates</div>
-          <div className="products-item">SEO</div>
-          <div className="products-item">Site Support</div>
-            <div className="products-item">And More...</div>
-          </div>
-        </div> 
+          <div className="products-items-container">
+            <p className="products-items-header">
+            From full builds to quick updates, we support everything your business needs to grow.
+            </p>
+            <div className="products-items">
+              <div className="products-item">Lead Captures</div>
+              <div className="products-item">List Builders</div>
+              <div className="products-item">Launch Pages</div>
+              <div className="products-item">Brand Stories</div>
+              <div className="products-item">Promo Countdown Timers</div>
+              <div className="products-item">Testimonials</div>
+              <div className="products-item">Quick Edits</div>
+              <div className="products-item">Zapier Hooks</div>
+              <div className="products-item">Mobile Views</div>
+              <div className="products-item">Shop Pages</div>
+              <div className="products-item">SEO Enhancements</div>
+              <div className="products-item">And More...</div>
+            </div>
+          </div> 
         </div> 
       </div>
     </Section>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useScrollNavigation } from "../hooks/useScrollNavigation";
 
 export default function TopNavigation({
   showModal,
@@ -16,6 +17,8 @@ export default function TopNavigation({
   success,
   setSuccess,
 }) {
+  const { handleNavigation } = useScrollNavigation();
+
   const handleBillingRedirect = () => {
     window.location.href =
       "https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00";
@@ -40,7 +43,6 @@ export default function TopNavigation({
       setSuccess(true);
       setEmail("");
 
-      // Automatically close modal after 2 seconds
       setTimeout(() => {
         setShowModal(false);
         setShowEmailForm(false);
@@ -63,9 +65,13 @@ export default function TopNavigation({
 
   return (
     <div className="top-nav-container">
-      <a href="#pricing" className="top-nav-btns">
+      <span
+        className="top-nav-btns"
+        onClick={() => handleNavigation("pricing")}
+        style={{ cursor: "pointer" }}
+      >
         See Pricing
-      </a>
+      </span>
       <a
         href="https://calendly.com/golbi/30min"
         target="_blank"

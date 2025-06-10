@@ -8,6 +8,7 @@ import mainLogo from "../../src/assets/imgs/golbi_logo.png";
 
 export default function Terms() {
   const navigate = useNavigate();
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className='legal-page-container'> 
@@ -23,7 +24,9 @@ export default function Terms() {
         <IoIosArrowBack className='back-button-icon'/>Back
         </button>
         <h1 className='legal-header'>Terms & Conditions</h1>
-        <p className='legal-last-updated'><strong>Last Updated:</strong> January 1, 2022</p>
+        <p className='legal-last-updated'>
+          <strong>Last Updated:</strong> January 1, {currentYear}
+        </p>
 
         <section>
           <h2>1. introduction</h2>

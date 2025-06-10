@@ -7,7 +7,7 @@ import mainLogo from "../../src/assets/imgs/golbi_logo.png";
 
 export default function Privacy() {
   const navigate = useNavigate();
-
+  const currentYear = new Date().getFullYear();
 
   return (
   <div className='legal-page-container'> 
@@ -23,8 +23,10 @@ export default function Privacy() {
       <IoIosArrowBack className='back-button-icon'/>Back
       </button>
 
-      <h1 className='legal-header'>Privacy Policy</h1>
-      <p className='legal-last-updated'><strong>Last Updated:</strong> January 1, 2022</p>
+        <h1 className='legal-header'>Privacy Policy</h1>
+        <p className='legal-last-updated'>
+          <strong>Last Updated:</strong> January 1, {currentYear}
+        </p>
 
       <section>
         <h2>1. Information We Collect</h2>

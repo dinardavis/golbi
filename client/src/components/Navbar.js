@@ -2,10 +2,9 @@
 
 import React from "react";
 import MobileNav from "./MobileNav";
-import { MdOutlineRocket } from "react-icons/md";
-import { MdOutlineRocketLaunch } from "react-icons/md";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { debounce } from "./utilities/helpers";
+import { useScrollNavigation } from "../hooks/useScrollNavigation";
 
 export default function Navbar({
   showModal,
@@ -25,6 +24,7 @@ export default function Navbar({
   const [visible, setVisible] = React.useState(true);
   const [mobileNavState, setMobileNavState] = React.useState(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const { handleNavigation } = useScrollNavigation();
 
   function handleToggle() {
     setMobileNavState((prevNav) => !prevNav);
@@ -42,20 +42,6 @@ export default function Navbar({
     10
   );
 
-  console.log({
-    showModal,
-    setShowModal,
-    showEmailForm,
-    setShowEmailForm,
-    email,
-    setEmail,
-    error,
-    setError,
-    isSubmitting,
-    setIsSubmitting,
-    success,
-    setSuccess,
-  });
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -101,18 +87,41 @@ export default function Navbar({
         <div className="main-nav">
           {/* <div className="nav-line-left"></div> */}
           <span className="nav-dark-edge"></span>
-          <a href="#about" className="nav-link main-link">
-            Why Golbi?
-          </a>
-          <a href="#work" className="nav-link main-link">
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("how")}
+            style={{ cursor: "pointer" }}
+          >
+            How To
+          </span>
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("about")}
+            style={{ cursor: "pointer" }}
+          >
+            Why Golbi
+          </span>
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("work")}
+            style={{ cursor: "pointer" }}
+          >
             Work
-          </a>
-          <a href="#pricing" className="nav-link main-link">
+          </span>
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("pricing")}
+            style={{ cursor: "pointer" }}
+          >
             Pricing
-          </a>
-          <a href="#faqs" className="nav-link main-link">
+          </span>
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("faqs")}
+            style={{ cursor: "pointer" }}
+          >
             FAQs
-          </a>
+          </span>
           <span
             className="nav-link main-link"
             onClick={() => {
@@ -125,9 +134,13 @@ export default function Navbar({
           >
             Account
           </span>
-          <a href="#top" className="nav-link main-link">
+          <span
+            className="nav-link main-link"
+            onClick={() => handleNavigation("top")}
+            style={{ cursor: "pointer" }}
+          >
             <MdKeyboardDoubleArrowUp className="up-arrow-icon" />
-          </a>
+          </span>
           {/* <div className="nav-line-right"></div> */}
         </div>
       </nav>
