@@ -67,7 +67,7 @@ export default function Footer() {
           <a href="#pricing" className="footer-link">
             Pricing
           </a>
-          <a href="https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00" target="_blank" className="footer-link">
+          <a href="https://billing.stripe.com/p/login/bJebJ3ezL8wd4nD22j2cg00" target="_blank" className="footer-link">
             Client login
           </a>
           <Link to="/terms" className="footer-link">Terms of Service</Link>

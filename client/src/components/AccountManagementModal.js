@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import emailjs from 'emailjs-com';
+
 
 export default function AccountManagementModal({
   showModal,
@@ -40,7 +42,7 @@ export default function AccountManagementModal({
   const handleBillingRedirect = (e) => {
     e.preventDefault(); // Prevent any default behavior
     window.open(
-      "https://billing.stripe.com/p/login/test_bJebJ3ezL8wd4nD22j2cg00",
+      "https://billing.stripe.com/p/login/bJebJ3ezL8wd4nD22j2cg00",
       "_blank",
       "noopener,noreferrer"
     );
@@ -48,36 +50,50 @@ export default function AccountManagementModal({
 
   const handlePauseSubmit = async (e) => {
     e.preventDefault();
-
-    // Basic email format validation
+  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.");
       return;
     }
-
+  
     setError("");
     setIsSubmitting(true);
-
+  
+    const pauseDate = new Date().toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  
+    const templateParams = {
+      user_email: email,
+      pause_date: pauseDate,
+    };
+  
     try {
-      // Simulate async API request
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-
+      await emailjs.send(
+        "service_holhsaj",
+        "template_tqt2t98",
+        templateParams,
+        "euK1uJlEz06f6lmSX"
+      );
+  
       setIsSubmitting(false);
       setSuccess(true);
       setEmail("");
-
-      // Automatically close modal after 2 seconds
+  
       setTimeout(() => {
         setShowModal(false);
         setShowEmailForm(false);
         setSuccess(false);
       }, 3000);
     } catch (err) {
+      console.error("EmailJS Error:", err);
       setError("Something went wrong. Please try again.");
       setIsSubmitting(false);
     }
-  };
+  };  
 
   // Handle clicking outside the modal
   const handleBackdropClick = (e) => {

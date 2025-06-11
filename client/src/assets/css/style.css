@@ -1043,7 +1043,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 60%;
-  max-height: 665px;
+  max-height: 622px;
   padding: 2rem;
   text-align: center;
   background: linear-gradient(
@@ -1430,6 +1430,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.terms-copy {
+  margin-bottom: .7rem;
+}
+
 .legal-logo {
   position: absolute;
   top: -1rem;
@@ -1509,6 +1513,87 @@ body {
   font-size: 1.2rem;
 }
 
+/* 404 PAGES STYLES */
+.not-found-logo {
+  position: absolute;
+  top: -1rem;
+  left: -0.5rem;
+  width: 152px;
+  padding: 1rem 0rem 1rem 0.5rem;
+  background-color: var(--white);
+  border-bottom-right-radius: 1rem;
+}
+
+.not-found-logo-arch-right,
+.not-found-logo-arch-left {
+  position: absolute;
+}
+
+.not-found-logo-arch-right {
+  top: -14.5px;
+  left: 129.5px;
+  width: 30px;
+  aspect-ratio: 1;
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent 15px,
+    var(--white) 15.5px
+  );
+}
+
+.not-found-logo-arch-left {
+  top: 62.5px;
+  left: -14.5px;
+  width: 30px;
+  aspect-ratio: 1;
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent 15px,
+    var(--white) 15.5px
+  );
+}
+
+.not-found-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+  height: calc(100vh - 2rem);
+  color: var(--accent-1);
+  font-family: "Oswald";
+  font-weight: 600;
+  text-align: center;
+}
+
+.not-found-header-container {
+  display: flex;
+  align-items: center;
+  font-size: 7rem;
+}
+
+.not-found-header {
+  margin-top: .5rem;
+  font-size: 3rem;
+}
+
+.not-found-subhead {
+  margin: 1rem 0 3.5rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.not-found-eyes {
+  width: 100px;
+  height: auto;
+  transform: rotate(-25deg);
+}
+
+
+
+
 /* MOBILE MEDIA QUERIES  */
 
 @media (max-width: 1100px) {
@@ -1547,6 +1632,22 @@ body {
   .intro-cta-numbers {
     height: 100%;
   }
+
+  .faqs-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .faqs-header,
+  .faqs-copy,
+  .faqs-question-container {
+    width: 100%;
+  }
+
+  .bottom-cta-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1579,7 +1680,6 @@ body {
     height: 100%;
   }
 
-  .faqs-content,
   .work-content,
   .steps-content {
     flex-direction: column;
@@ -1643,6 +1743,14 @@ body {
     margin-top: 8rem;
   }
 
+  .benefits-header,
+  .products-header,
+  .pricing-header,
+  .faqs-header {
+    font-size: 3rem;
+    line-height: 1.05;
+  }
+
   .intro-subhead {
     font-size: 1.1rem;
   }
@@ -1689,6 +1797,27 @@ body {
   .bottom-cta-logo {
     max-width: 190px;
   }
+
+  .not-found-header-container {
+    font-size: 5rem;
+  }
+
+  .not-found-header {
+    margin-top: .5rem;
+  }
+
+  .not-found-subhead {
+    font-size: 1.2rem;
+
+  }
+
+  .not-found-eyes {
+    width: 70px;
+    height: auto;
+    transform: rotate(-25deg);
+    z-index: -1;
+  }
+
 }
 
 

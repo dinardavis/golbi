@@ -34,10 +34,11 @@
   margin: -5rem 0 .5rem;
 }
 
-.button-pushable.bottom-cta-button {
+.button-pushable.bottom-cta-button,
+.button-pushable.pricing-schedule-btn {
   min-width: 201px;
- 
 }
+
 
 .button-shadow {
   position: absolute;

@@ -29,7 +29,7 @@ export default function Terms() {
         </p>
 
         <section>
-          <h2>1. introduction</h2>
+          <h2>1. Introduction</h2>
           <p>
             Welcome to Golbi. These Terms & Conditions ("Terms") govern your access to and use of our website and services. By accessing Golbi’s site or engaging our services, you agree to be bound by these Terms. If you do not agree, you must cease use immediately.
           </p>
@@ -117,9 +117,25 @@ export default function Terms() {
           </a>.
           </p>
         </section>
-          <button onClick={() => navigate(-1)} className="back-button">
-          <IoIosArrowBack className='back-button-icon'/>Back
-          </button>
+        <section>
+          <h2>13. Termination of Services</h2>
+          <p className='terms-copy'>
+            Either party reserves the right to terminate the subscription or service agreement at any time, with or without cause, by providing written notice. In the event of cancellation by either the client or Golbi, Golbi will initiate an offboarding process.
+          </p>
+          <p className='terms-copy'>
+            Upon termination, Golbi will transfer all relevant credentials, including hosting login information and file access details, to the client within <strong>fourteen (14) business days</strong>, excluding weekends and recognized holidays. This transfer marks the conclusion of Golbi's responsibility for maintaining or managing the client’s website or services.
+          </p>
+          <p className='terms-copy'>
+            After the credentials are transferred, the client assumes full responsibility for the hosting, upkeep, security, and technical functionality of their website or application. Golbi is not liable for any issues that arise following the transfer of assets.
+          </p>
+          <p className='terms-copy'>
+            If applicable, Golbi may offer continued support or migration assistance at an additional rate, subject to a new agreement.
+          </p>
+        </section>
+
+        <button onClick={() => navigate(-1)} className="back-button">
+        <IoIosArrowBack className='back-button-icon'/>Back
+        </button>
       </div>
     </div>
   )

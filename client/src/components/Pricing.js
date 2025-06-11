@@ -60,8 +60,8 @@ export default function Pricing() {
         "Monthly performance report",
         "1 contact form + business email setup",
       ],
-      linkMonthly: "https://buy.stripe.com/test_dRmbJ377jfYF7zP7mD2cg06",
-      linkQuarterly: "https://buy.stripe.com/test_quarterly_link_1",
+      linkMonthly: "https://buy.stripe.com/bJebJ3ezL8wd4nD22j2cg00",
+      linkQuarterly: "https://buy.stripe.com/dRm3cx1MZh2Jf2hcGX2cg03",
     },
     {
       key: "growth",
@@ -77,8 +77,8 @@ export default function Pricing() {
           (Mailchimp, ConvertKit, etc.)
         </>,
       ],
-      linkMonthly: "https://buy.stripe.com/test_7sY6oJ63f3bT8DTeP52cg05",
-      linkQuarterly: "https://buy.stripe.com/test_quarterly_link_2",
+      linkMonthly: "https://buy.stripe.com/7sY6oJ63f3bT8DTeP52cg05",
+      linkQuarterly: "https://buy.stripe.com/28E3cx8bn3bT5rH36n2cg02",
     },
     {
       key: "scale",
@@ -92,8 +92,8 @@ export default function Pricing() {
         "1 promo landing page/month",
         "CRM or scheduler integration",
       ],
-      linkMonthly: "https://buy.stripe.com/test_7sY6oJ63f3bT8DTeP52cg05",
-      linkQuarterly: "https://buy.stripe.com/test_quarterly_link_3",
+      linkMonthly: "https://buy.stripe.com/00w5kFdvH3bT9HXfT92cg04",
+      linkQuarterly: "https://buy.stripe.com/9B614pfDPfYF3jzgXd2cg01",
     },
   ];
 
@@ -136,20 +136,17 @@ export default function Pricing() {
                   <span>/month</span>
                 </h1>
 
-                <p
-                  className="pricing-toggle-details"
-                  onClick={toggleAllPlanDetails}
-                >
-                  {showAllDetails ? (
-                    <>
-                      Plan details <IoChevronUp className="pricing-toggle-arrow" />
-                    </>
-                  ) : (
-                    <>
-                      Plan details <IoChevronDown className="pricing-toggle-arrow" />
-                    </>
-                  )}
-                </p>
+                <p className="pricing-toggle-details" onClick={toggleAllPlanDetails} style={{ cursor: "pointer" }}>
+                    Plan details{" "}
+                    <motion.span
+                      className="pricing-toggle-arrow"
+                      animate={{ rotate: showAllDetails ? 180 : 0 }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                      style={{ display: "inline-block", transformOrigin: "50% 47%" }}
+                    >
+                      <IoChevronDown />
+                    </motion.span>
+                  </p>
               </div>
 
    
@@ -212,8 +209,10 @@ export default function Pricing() {
               No problem. Shoot us an email, or schedule a call and we'll come
               up with a solution that fit your needs.
             </p>
+
+            
             <button
-              className="button-pushable"
+              className="button-pushable pricing-schedule-btn"
               onClick={() =>
                 window.open("https://calendly.com/golbi/30min", "_blank")
               }
@@ -222,6 +221,7 @@ export default function Pricing() {
               <span className="button-accent-edge"></span>
               <span className="button-accent-front text">Schedule now</span>
             </button>
+
             <p className="pricing-cta-email">
               Prefer to email? Us too!
               <br />

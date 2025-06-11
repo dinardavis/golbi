@@ -12,6 +12,7 @@ import "./components/Navbar";
 import Home from "./components/Home";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import NotFound from "./pages/NotFound";
 import StarterSite from "./pages/StarterSite";
 import ScrollToTop from "./components/ScrollToTop";
 import mainLogo from "../src/assets/imgs/golbi_logo.png";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/starter-site" element={<StarterSite />} />
+          <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
       </main>
     </BrowserRouter>
