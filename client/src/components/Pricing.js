@@ -4,7 +4,10 @@ import React, { useState, useRef } from "react";
 import doodle2 from "../assets/imgs/doodle2.png";
 import { useInView } from "framer-motion";
 import { motion, AnimatePresence } from "framer-motion";
-import { IoChevronUp, IoChevronDown } from "react-icons/io5";
+import { IoChevronDown } from "react-icons/io5";
+import { FaCheck } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
+
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -22,8 +25,8 @@ const containerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      staggerChildren: 0.07,  // faster cascade
-      duration: 0.2,           // quicker rise-in
+      staggerChildren: 0.07,
+      duration: 0.2,
     },
   },
 };
@@ -33,7 +36,6 @@ const itemVariants = {
   show: { opacity: 1, y: 0 },
 };
 
-
 export default function Pricing() {
   const [isQuarterly, setIsQuarterly] = useState(false);
   const [showAllDetails, setShowAllDetails] = useState(false);
@@ -42,7 +44,7 @@ export default function Pricing() {
   const toggleAllPlanDetails = () => setShowAllDetails((prev) => !prev);
 
   const getPrice = (monthlyPrice) => {
-    const price = isQuarterly ? Math.round(monthlyPrice * 0.80) : monthlyPrice;
+    const price = isQuarterly ? Math.round(monthlyPrice * 0.8) : monthlyPrice;
     return `$${price}`;
   };
 
@@ -50,15 +52,14 @@ export default function Pricing() {
     {
       key: "launch",
       name: "Launch Plan",
-      desc: "Professional one-pager with essential support to get you online fast.",
-      monthly: 995,
+      desc: "Get a professional web presence to boost your credibility.",
+      monthly: 1995,
       features: [
-        "Custom mobile-optimized landing page",
-        "Hosting, SSL & maintenance",
-        "1 hour/month of content updates",
-        "Basic SEO setup",
-        "Monthly performance report",
-        "1 contact form + business email setup",
+        "Up to 3 custom pages",
+        "Mobile-optimized design",
+        "1 lead-gen form (contact, quote, etc.)",
+        "Basic SEO and site speed setup",
+        "Business email setup",
       ],
       linkMonthly: "https://buy.stripe.com/bJebJ3ezL8wd4nD22j2cg00",
       linkQuarterly: "https://buy.stripe.com/dRm3cx1MZh2Jf2hcGX2cg03",
@@ -67,15 +68,13 @@ export default function Pricing() {
       key: "growth",
       name: "Growth Plan",
       desc: "Robust website ideal for growing visibility and increased conversions.",
-      monthly: 1995,
-     features: [
-        "Up to 5 custom pages",
-        "4 hours/month of content updates",
-        "Google Analytics integration",
-        <>
-          Lead capture setup <br />
-          (Mailchimp, ConvertKit, etc.)
-        </>,
+      monthly: 3995,
+      features: [
+        "Up to 6 custom pages",
+        "Copy editing and CTA refinement",
+        "SEO foundation (metadata, image compression)",
+        "Brand polish (fonts, color tweaks)",
+        "Lead capture setup",
       ],
       linkMonthly: "https://buy.stripe.com/7sY6oJ63f3bT8DTeP52cg05",
       linkQuarterly: "https://buy.stripe.com/28E3cx8bn3bT5rH36n2cg02",
@@ -83,14 +82,14 @@ export default function Pricing() {
     {
       key: "scale",
       name: "Scale Plan",
-      desc: "For businesses with expanding audiences and evolving needs.",
-      monthly: 2995,
+      desc: "For businesses with expanding audiences, and nuanced messaging.",
+      monthly: 5995,
       features: [
-        "Up to 15 pages",
-        "30-min monthly strategy call",
-        "6 hours/month of edits or new feature development",
-        "1 promo landing page/month",
-        "CRM or scheduler integration",
+        "Up to 10 custom pages",
+        "Copywriting assistance (headline + messaging support)",
+        "Integrated scheduler, CRM, or forms (Calendly, HubSpot, etc.)",
+        "1 landing page or funnel sequence",
+        "Analytics + goal tracking",
       ],
       linkMonthly: "https://buy.stripe.com/00w5kFdvH3bT9HXfT92cg04",
       linkQuarterly: "https://buy.stripe.com/9B614pfDPfYF3jzgXd2cg01",
@@ -105,21 +104,8 @@ export default function Pricing() {
           <span>Our</span> Pricing
         </h1>
         <div className="pricing-header-copy-container">
-          <div className="pricing-timespan-toggle">
-            <label className="switch">
-              <input
-                type="checkbox"
-                onChange={toggleBilling}
-                checked={isQuarterly}
-              />
-              <span className="slider">
-                <span>Monthly</span>
-                <span>Quarterly (Save 20%)</span>
-              </span>
-            </label>
-          </div>
           <p className="pricing-header-copy">
-            No bloated agency retainers. No piecemeal hourly quotes. Just clear, flexible plans designed to grow with your business.
+            <span>Need a new website? </span>You buy it once, and you own it. No contracts. No retainers. Just results.
           </p>
         </div>
       </div>
@@ -131,25 +117,19 @@ export default function Pricing() {
               <div className="pricing-subgrid-top">
                 <h1 className="pricing-plan-name">{plan.name}</h1>
                 <p className="pricing-desc">{plan.desc}</p>
-                <h1 className="pricing-price">
-                  {getPrice(plan.monthly)}
-                  <span>/month</span>
-                </h1>
-
+                <h1 className="pricing-price">{getPrice(plan.monthly)}</h1>
                 <p className="pricing-toggle-details" onClick={toggleAllPlanDetails} style={{ cursor: "pointer" }}>
-                    Plan details{" "}
-                    <motion.span
-                      className="pricing-toggle-arrow"
-                      animate={{ rotate: showAllDetails ? 180 : 0 }}
-                      transition={{ duration: 0.4, ease: "easeInOut" }}
-                      style={{ display: "inline-block", transformOrigin: "50% 47%" }}
-                    >
-                      <IoChevronDown />
-                    </motion.span>
-                  </p>
+                  Plan details{" "}
+                  <motion.span
+                    className="pricing-toggle-arrow"
+                    animate={{ rotate: showAllDetails ? 180 : 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    style={{ display: "inline-block", transformOrigin: "50% 47%" }}
+                  >
+                    <IoChevronDown />
+                  </motion.span>
+                </p>
               </div>
-
-   
 
               <AnimatePresence>
                 {showAllDetails && (
@@ -199,48 +179,146 @@ export default function Pricing() {
           ))}
         </div>
 
+       {/* Support Plans Section */}
+    <div className="pricing-header pricing-header-2">
+      <div className="pricing-header-copy-container pricing-header-copy-container-bottom">
+        <p className="pricing-header-copy">
+          <span>Need support after launch?</span> Great! We’ve got you covered with these site care plans.
+        </p>
+      </div>
+    </div>
 
-         <div className="pricing-option pricing-option-3">
+    <div className="plan-feature-header">
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Plan</h3>
+      </div>
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Hosting, SSL & Backups</h3>
+      </div>
+      <div className="plan-feature-col">
+        <h3 className="plan-name">SEO Optimization</h3>
+      </div>
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Monthly<br/> Edits</h3>
+      </div>
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Monthly Feature Add</h3>
+      </div>
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Analytics Reporting</h3>
+      </div>
+      <div className="plan-feature-col">
+      </div>
+    </div>
 
+    <div className="plan-feature-row">
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Site Care</h3>
+        <p>$295/mo</p>
+      </div>
+      <div className="plan-feature-col">
+        <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col">
+        <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col plan-feature-text">
+        2 hours
+      </div>
+      <div className="plan-feature-col">
+        <ImCross className="plan-feature-x"/>
+      </div>
+      <div className="plan-feature-col">
+        <ImCross className="plan-feature-x"/>
+      </div>
+      <div className="plan-feature-col">
+        <button
+          // onClick={() => setShowModal(true)}
+          className="support-button-pushable"
+        >
+          <span className="support-button-shadow"></span>
+          <span className="support-button-accent-edge"></span>
+          <span className="support-button-accent-front text">Subscribe</span>
+        </button>
+      </div>
+    </div>
+
+
+    <div className="plan-feature-row">
+      <div className="plan-feature-col">
+        <h3 className="plan-name">Site Grow</h3>
+        <p>$595/mo</p>
+      </div>
+      <div className="plan-feature-col">
+      <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col">
+      <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col plan-feature-text">
+        4 hours
+      </div>
+      <div className="plan-feature-col">
+      <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col">
+      <FaCheck className="plan-feature-check"/>
+      </div>
+      <div className="plan-feature-col">
+        <button
+          // onClick={() => setShowModal(true)}
+          className="support-button-pushable"
+        >
+          <span className="support-button-shadow"></span>
+          <span className="support-button-accent-edge"></span>
+          <span className="support-button-accent-front text">Subscribe</span>
+        </button>
+      </div>
+    </div>
+
+
+  {/* Custom Plan Inquiry Card */}
+        <div className="pricing-option-3">
+          <div>
             <p className="pricing-cta-copy pricing-cta-copy-1">
-              Don't see exactly<br />the services that you need?
+            Don't see exactly<br />the services you need?
             </p>
             <p className="pricing-cta-copy pricing-cta-copy-2">
-              No problem. Shoot us an email, or schedule a call and we'll come
-              up with a solution that fit your needs.
+            Reach out and let us know what you're looking for.
             </p>
+          </div>
 
-            
-            <button
-              className="button-pushable pricing-schedule-btn"
-              onClick={() =>
-                window.open("https://calendly.com/golbi/30min", "_blank")
-              }
-            >
-              <span className="button-shadow"></span>
-              <span className="button-accent-edge"></span>
-              <span className="button-accent-front text">Schedule now</span>
-            </button>
-
+          <div>
             <p className="pricing-cta-email">
-              Prefer to email? Us too!
+              Drop us an email:
               <br />
               <a
-                href="mailto:hello@golbi.co?subject=Greetings%20Golbi!%20I%20have%20a%20question."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pricing-cta-email"
+              href="mailto:hello@golbi.co?subject=Greetings%20Golbi!%20I%20have%20a%20question."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pricing-cta-email"
               >
-                <span>hello@golbi.co</span>
+              <span>hello@golbi.co</span>
               </a>
+              < br/>
+              Or:
             </p>
-            <div className="pricing-radar-container">
-              <span className="pricing-radar-text">
-                Now accepting new clients!
-              </span>
-              <span className="radar"></span>
-            </div>
+
+            <button
+            className="button-pushable pricing-schedule-btn"
+            onClick={() => window.open("https://calendly.com/scheduling-golbi/30min", "_blank")}
+            >
+            <span className="button-shadow"></span>
+            <span className="button-accent-edge"></span>
+            <span className="button-accent-front text">Schedule a Call</span>
+            </button>
           </div>
+
+
+        </div>
+
+
+      
       </div>
     </Section>
   );

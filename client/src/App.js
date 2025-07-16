@@ -7,14 +7,15 @@ import "./assets/css/toggle_slider.css";
 import "./assets/css/misc_animations.css";
 import "./assets/css/doodles.css";
 import "./assets/css/starter-site.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"; // Added Link here
-import "./components/Navbar";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/Home";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
-import NotFound from "./pages/NotFound";
 import StarterSite from "./pages/StarterSite";
-import ScrollToTop from "./components/ScrollToTop";
+import Plans from "./pages/Plans";
+import NotFound from "./pages/NotFound";
 import mainLogo from "../src/assets/imgs/golbi_logo.png";
 
 function App() {
@@ -31,10 +32,11 @@ function App() {
         </Link>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/plans" element={<Plans />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/starter-site" element={<StarterSite />} />
-          <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </BrowserRouter>

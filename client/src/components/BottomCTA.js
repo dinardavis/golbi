@@ -25,7 +25,7 @@ export default function BottomCTA() {
         </p>
         <button
           className="button-pushable bottom-cta-button"
-          onClick={() => window.open("https://calendly.com/golbi/30min", "_blank")}
+          onClick={() => window.open("https://calendly.com/scheduling-golbi/30min", "_blank")}
         >
           <span className="button-shadow"></span>
           <span className="button-accent-edge"></span>

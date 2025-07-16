@@ -65,19 +65,19 @@ export default function TopNavigation({
 
   return (
     <div className="top-nav-container">
-      <span
+      {/* <span
         className="top-nav-btns"
         onClick={() => handleNavigation("pricing")}
         style={{ cursor: "pointer" }}
       >
         See Pricing
-      </span>
+      </span> */}
       <a
-        href="https://calendly.com/golbi/30min"
+        href="https://calendly.com/scheduling-golbi/30min"
         target="_blank"
         className="top-nav-btns"
       >
-        Book a call
+        Book a Call Now
       </a>
       <div className="login-btn">
         <button

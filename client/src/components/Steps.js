@@ -36,25 +36,25 @@ export default function Steps() {
           <div className="icon-container">
             <FaTools className="hire-to-icon" />
           </div>
-          Build a site that works for you - more clicks, more leads, and more customers.</div> 
-
+          Build fast, clean sites designed to convert - not just look good.
+          </div> 
         <div className="hire-to-item">
           <div className="icon-container">
             <FaRegGem className="hire-to-icon" />
           </div>
-          Create a bold, unique brand presence that your audience will remember.</div> 
+          Move on from <span className="no-wrap">cookie-cutter</span> templates. We design with intention and personality.</div> 
 
         <div className="hire-to-item">
           <div className="icon-container">
             <RxRocket className="hire-to-icon" />
           </div>
-          Transform your online store into a revenue-generating machine.</div> 
+          Create custom Shopify or <span className="no-wrap">e-commerce</span> setups that move real product.</div> 
 
         <div className="hire-to-item">
           <div className="icon-container">
             <FaMagnifyingGlassDollar className="hire-to-icon" />
           </div>
-          Boost your site’s visibility and optimize for more traffic.</div>
+          We optimize your site structure, speed, and content for search visibility.</div>
       </div>
     </div>
   </div>
@@ -62,17 +62,17 @@ export default function Steps() {
         <div id="how" className="step-offer-container steps-right">
    
           <div className="steps-header oswald">How <span className="steps-golbi-name">it</span> works:</div>
-          <p className="intro-cta-copy">Add Golbi to your team <br></br><span className="intro-cta-italic">only when you need to.</span></p>
+          <p className="intro-cta-copy">Sign up with Golbi <br></br><span className="intro-cta-italic">only when you need to.</span></p>
         
           <div className="intro-cta-copy-container">
             <div className="intro-cta-copy intro-cta-copy-2">
-            <div className="intro-cta-numbers">Step 1</div> Hire Golbi for your next project in less than 5-minutes.
+            <div className="intro-cta-numbers">Step 1</div> Pick your build package and tell us what type of site your business needs.
             </div>
             <div className="intro-cta-copy intro-cta-copy-3">
-            <span className="intro-cta-numbers">Step 2</span>We get to work delivering content that will boost your business.
+            <span className="intro-cta-numbers">Step 2</span> We get to work designing, building, and launching a site that converts.
             </div>
             <div className="intro-cta-copy intro-cta-copy-4">
-            <span className="intro-cta-numbers">Step 3</span>   When the project’s done, just pause or cancel. That’s it. No strings attached.
+            <span className="intro-cta-numbers">Step 3</span> Subscribe for monthly support, and tech peace of mind. Or don’t. It's up to you.
             </div>
           </div>
 

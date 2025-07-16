@@ -10,6 +10,7 @@ import ServicesTicker from "./ServicesTicker";
 import TopNavigation from "./TopNavigation";
 import Steps from "./Steps";
 import AccountManagementModal from "./AccountManagementModal";
+import About from "./About";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -88,6 +89,7 @@ export default function Home() {
       />
       <Intro />
       <ServicesTicker />
+      <About />
       <Steps />
       <Benefits />
       <Work />
