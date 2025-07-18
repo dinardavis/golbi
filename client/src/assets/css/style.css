@@ -928,7 +928,6 @@ body {
   box-shadow: 2px 2px 6px #dee4ea27;
 }
 
-
 .pricing-cta-copy {
   font-size: 1.1em;
   font-weight: 400;
@@ -942,15 +941,24 @@ body {
   text-underline-offset: 4px;
 }
 
+.pricing-cta-copy-1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 .pricing-cta-copy-2 {
   max-width: 600px;
   font-weight: 200;
 }
 
+.pricing-option-3 {
+  margin-top: 2.4rem;
+}
+
 .pricing-option-3 .pricing-cta-email {
   font-size: 1rem;
   font-weight: 200;
-  line-height: 1.25;
+  line-height: 1.4;
   cursor: pointer;
 }
 
@@ -963,6 +971,12 @@ body {
 
 .pricing-option-3 .pricing-cta-email span:hover {
   color: var(--font-accent-3);
+}
+
+.pricing-option-3 .pricing-cta-divider {
+  padding: .5rem 0 .2rem;
+  color: var(--white);
+  font-weight: 200;
 }
 
 .pricing-radar-container {
@@ -1126,6 +1140,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.header-name {
+  padding: 0 1rem;
+}
+
 .plan-feature-row {
   display: flex;
   justify-content: space-evenly;
@@ -1137,6 +1155,9 @@ body {
 
 .plan-name {
   padding: 0 1rem;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .plan-feature-check {

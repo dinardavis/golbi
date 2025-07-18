@@ -51,7 +51,7 @@ export default function Pricing() {
   const pricingPlans = [
     {
       key: "launch",
-      name: "Launch Plan",
+      name: "Launch Site",
       desc: "Get a professional web presence to boost your credibility.",
       monthly: 1995,
       features: [
@@ -66,7 +66,7 @@ export default function Pricing() {
     },
     {
       key: "growth",
-      name: "Growth Plan",
+      name: "Growth Site",
       desc: "Robust website ideal for growing visibility and increased conversions.",
       monthly: 3995,
       features: [
@@ -81,7 +81,7 @@ export default function Pricing() {
     },
     {
       key: "scale",
-      name: "Scale Plan",
+      name: "Scale Site",
       desc: "For businesses with expanding audiences, and nuanced messaging.",
       monthly: 5995,
       features: [
@@ -89,7 +89,7 @@ export default function Pricing() {
         "Copywriting assistance (headline + messaging support)",
         "Integrated scheduler, CRM, or forms (Calendly, HubSpot, etc.)",
         "1 landing page or funnel sequence",
-        "Analytics + goal tracking",
+        "Analytics setup",
       ],
       linkMonthly: "https://buy.stripe.com/00w5kFdvH3bT9HXfT92cg04",
       linkQuarterly: "https://buy.stripe.com/9B614pfDPfYF3jzgXd2cg01",
@@ -190,22 +190,22 @@ export default function Pricing() {
 
     <div className="plan-feature-header">
       <div className="plan-feature-col">
-        <h3 className="plan-name">Plan</h3>
+        <h3 className="header-name">Plan</h3>
       </div>
       <div className="plan-feature-col">
-        <h3 className="plan-name">Hosting, SSL & Backups</h3>
+        <h3 className="header-name">Hosting, SSL & Backups</h3>
       </div>
       <div className="plan-feature-col">
-        <h3 className="plan-name">SEO Optimization</h3>
+        <h3 className="header-name">SEO<br/> Reviews</h3>
       </div>
       <div className="plan-feature-col">
-        <h3 className="plan-name">Monthly<br/> Edits</h3>
+        <h3 className="header-name">Monthly<br/> Edits</h3>
       </div>
       <div className="plan-feature-col">
-        <h3 className="plan-name">Monthly Feature Add</h3>
+        <h3 className="header-name">Monthly Feature Adds</h3>
       </div>
       <div className="plan-feature-col">
-        <h3 className="plan-name">Analytics Reporting</h3>
+        <h3 className="header-name">Analytics Reporting</h3>
       </div>
       <div className="plan-feature-col">
       </div>
@@ -279,18 +279,18 @@ export default function Pricing() {
 
   {/* Custom Plan Inquiry Card */}
         <div className="pricing-option-3">
-          <div>
-            <p className="pricing-cta-copy pricing-cta-copy-1">
-            Don't see exactly<br />the services you need?
+          <div className="pricing-cta-copy">
+            <p className=" pricing-cta-copy-1">
+            Don't see exactly the services you need?
             </p>
-            <p className="pricing-cta-copy pricing-cta-copy-2">
-            Reach out and let us know what you're looking for.
+            <p className="pricing-cta-copy-2">
+            Reach out and let us know <br/>what you're looking for.
             </p>
           </div>
 
           <div>
             <p className="pricing-cta-email">
-              Drop us an email:
+              Drop us an email at:
               <br />
               <a
               href="mailto:hello@golbi.co?subject=Greetings%20Golbi!%20I%20have%20a%20question."
@@ -301,9 +301,11 @@ export default function Pricing() {
               <span>hello@golbi.co</span>
               </a>
               < br/>
-              Or:
+           
             </p>
 
+            <p className="pricing-cta-divider">or</p>
+            <br/>
             <button
             className="button-pushable pricing-schedule-btn"
             onClick={() => window.open("https://calendly.com/scheduling-golbi/30min", "_blank")}
