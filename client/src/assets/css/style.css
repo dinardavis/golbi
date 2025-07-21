@@ -1094,6 +1094,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 1.5rem 0;
+  color: var(--background-dark);
   font-size: .9rem;
   font-weight: 300;
   text-align: center;

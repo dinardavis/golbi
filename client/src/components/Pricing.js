@@ -179,6 +179,100 @@ export default function Pricing() {
           ))}
         </div>
 
+
+        ""<div className="plan-feature-header">
+  <div className="plan-feature-col"></div>
+  <div className="plan-feature-col">
+    <h3 className="plan-name">Starter Site</h3>
+    <p>$1995</p>
+    <p className="plan-description">Get a professional web presence to boost your credibility.</p>
+  </div>
+  <div className="plan-feature-col">
+    <h3 className="plan-name">Growth Site</h3>
+    <p>$3995</p>
+    <p className="plan-description">Robust website ideal for growing visibility and increased conversions.</p>
+  </div>
+  <div className="plan-feature-col">
+    <h3 className="plan-name">Scale Site</h3>
+    <p>$5995</p>
+    <p className="plan-description">For businesses with expanding audiences, and nuanced messaging.</p>
+  </div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col">
+    <h3 className="header-name">Custom Pages</h3>
+  </div>
+  <div className="plan-feature-col">Up to 3</div>
+  <div className="plan-feature-col">Up to 6</div>
+  <div className="plan-feature-col">Up to 10</div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col">
+    <h3 className="header-name">Mobile Optimization</h3>
+  </div>
+  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col">
+    <h3 className="header-name">Lead-Gen Form</h3>
+  </div>
+  <div className="plan-feature-col">1 form</div>
+  <div className="plan-feature-col">Lead capture setup</div>
+  <div className="plan-feature-col">Integrated scheduler, CRM, or forms</div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col">
+    <h3 className="header-name">SEO Setup</h3>
+  </div>
+  <div className="plan-feature-col">Basic SEO & speed</div>
+  <div className="plan-feature-col">SEO foundation</div>
+  <div className="plan-feature-col">Analytics & SEO</div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col">
+    <h3 className="header-name">Branding / Copy</h3>
+  </div>
+  <div className="plan-feature-col">Business email setup</div>
+  <div className="plan-feature-col">Copy editing, CTA, brand polish</div>
+  <div className="plan-feature-col">Copywriting, landing page, funnel</div>
+</div>
+
+<div className="plan-feature-row">
+  <div className="plan-feature-col"></div>
+  <div className="plan-feature-col">
+    <button className="support-button-pushable">
+      <span className="support-button-shadow"></span>
+      <span className="support-button-accent-edge"></span>
+      <span className="support-button-accent-front text">Book a Call</span>
+    </button>
+  </div>
+  <div className="plan-feature-col">
+    <button className="support-button-pushable">
+      <span className="support-button-shadow"></span>
+      <span className="support-button-accent-edge"></span>
+      <span className="support-button-accent-front text">Book a Call</span>
+    </button>
+  </div>
+  <div className="plan-feature-col">
+    <button className="support-button-pushable">
+      <span className="support-button-shadow"></span>
+      <span className="support-button-accent-edge"></span>
+      <span className="support-button-accent-front text">Book a Call</span>
+    </button>
+  </div>
+</div>
+
+
+
+        
+
        {/* Support Plans Section */}
     <div className="pricing-header pricing-header-2">
       <div className="pricing-header-copy-container pricing-header-copy-container-bottom">
