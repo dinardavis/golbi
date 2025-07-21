@@ -1088,12 +1088,13 @@ body {
   margin-top: auto;
 }
 
-.plan-feature-col {
+
+.site-feature-col {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   color: var(--background-dark);
   font-size: .9rem;
   font-weight: 300;
@@ -1102,11 +1103,185 @@ body {
   box-shadow: 10px 0 10px inset #83838348;
 }
 
-.plan-feature-header .plan-feature-col:first-child {
+.site-feature-desc {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.site-feature-header .site-feature-col {
+  box-shadow: 10px 0 10px inset #d1cfcf36;
+}
+
+.site-name-container.left {
+  box-shadow: none;
+}
+
+.site-feature-col-blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.site-feature-col.site-name-container {
+  background-color: var(--accent-1);
+}
+
+.site-header-name {
+  font-size: 1.2rem;
+  color: var(--white);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.site-header-name span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.site-feature-col.site-feature-col-blank {
+  background-color: transparent;
+}
+
+.site-feature-col.site-feature-cta-container {
+  flex-direction: column;
+}
+
+.site-name-container.left, 
+.site-feature-cta-container.left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.site-feature-header .site-feature-col:first-child {
   border-radius: 10px 0 0 10px;
 }
 
+.site-feature-header .site-feature-col {
+  color: var(--font-primary);
+}
 
+.site-feature-row .site-feature-col:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-2);
+  border-radius: 10px 0 0 10px;
+  box-shadow: none;
+}
+
+.site-feature-col:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px 10px 10px 0;
+}
+
+.site-feature-header {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: none;
+  border-radius: 10px;
+  min-height: 70px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.site-feature-row {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 70px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.site-name {
+  padding: 0 1rem;
+  font-size: .9rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.site-feature-check {
+  font-size: 1.4rem;
+  color: var(--accent-2);
+}
+
+.site-feature-text {
+  font-size: 1rem;
+  color: var(--accent-2);
+}
+
+.site-feature-x {
+  font-size: 1.1rem;
+  color: var(--accent-1);
+}
+
+
+
+
+
+
+
+
+/* SUPPORT SUBSCRIPTION PLANS */
+
+.plan-feature-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  color: var(--background-dark);
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 10px 0 10px inset #83838348;
+}
+
+.plan-feature-col-blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  color: var(--background-dark);
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: center;
+  box-shadow: 10px 0 10px inset #83838348;
+}
+
+.plan-feature-col.site-plan-name-container {
+  background-color: var(--accent-1);
+}
+
+.plan-feature-col.site-plan-name-container .header-name {
+  font-size: 1.2rem;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.header-name span {
+  font-size: 1.5rem;
+}
+
+.plan-feature-col.plan-feature-col-blank {
+  background-color: transparent;
+}
+
+.plan-feature-col.plan-feature-cta-container {
+  flex-direction: column;
+}
+
+.plan-feature-header .plan-feature-col:first-child {
+  border-radius: 10px 0 0 10px;
+}
 
 .plan-feature-header .plan-feature-col {
   color: var(--font-primary);
@@ -1118,6 +1293,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--accent-2);
+  color: var(--white);
+  font-size: 1rem;
   border-radius: 10px 0 0 10px;
   box-shadow: none;
 }
@@ -1133,7 +1310,7 @@ body {
 .plan-feature-header {
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   box-shadow: none;
   border-radius: 10px;
   min-height: 70px;
@@ -1156,8 +1333,7 @@ body {
 
 .plan-name {
   padding: 0 1rem;
-  margin-bottom: 5px;
-  font-size: 1rem;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -1167,7 +1343,6 @@ body {
 }
 
 .plan-feature-text {
-  font-size: 1rem;
   color: var(--accent-2);
 }
 

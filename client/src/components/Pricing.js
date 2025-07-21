@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoChevronDown } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-
+import spider from "../assets/imgs/logo_spider_only.png";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -111,164 +111,163 @@ export default function Pricing() {
       </div>
 
       <div className="pricing-content">
-        <div className="pricing-grid">
-          {pricingPlans.map((plan) => (
-            <div className="pricing-option" key={plan.key}>
-              <div className="pricing-subgrid-top">
-                <h1 className="pricing-plan-name">{plan.name}</h1>
-                <p className="pricing-desc">{plan.desc}</p>
-                <h1 className="pricing-price">{getPrice(plan.monthly)}</h1>
-                <p className="pricing-toggle-details" onClick={toggleAllPlanDetails} style={{ cursor: "pointer" }}>
-                  Plan details{" "}
-                  <motion.span
-                    className="pricing-toggle-arrow"
-                    animate={{ rotate: showAllDetails ? 180 : 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
-                    style={{ display: "inline-block", transformOrigin: "50% 47%" }}
-                  >
-                    <IoChevronDown />
-                  </motion.span>
-                </p>
-              </div>
-
-              <AnimatePresence>
-                {showAllDetails && (
-                  <motion.div
-                    className="pricing-included-container"
-                    initial="hidden"
-                    animate="show"
-                    variants={containerVariants}
-                  >
-                    <motion.p className="pricing-included-header" variants={itemVariants}>
-                      What's included:
-                    </motion.p>
-                    <motion.ul className="pricing-included-list">
-                      {plan.features.map((feature, i) => (
-                        <motion.li key={i} variants={itemVariants}>
-                          - {feature}
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <p
-                className="calendar-booking"
-                onClick={() =>
-                  window.open("https://calendly.com/golbi/30min", "_blank")
-                }
-              >
-                Book a call to learn more
-              </p>
-
-              <button
-                className="pricing-button button-pushable"
-                onClick={() =>
-                  window.open(
-                    isQuarterly ? plan.linkQuarterly : plan.linkMonthly,
-                    "_blank"
-                  )
-                }
-              >
-                <span className="button-shadow"></span>
-                <span className="button-dark-edge"></span>
-                <span className="button-dark-front text">Get started</span>
-              </button>
-            </div>
-          ))}
+        <div className="site-feature-header">
+          <div className="site-feature-col-blank"></div>
+          <div className="site-feature-col site-name-container left">
+            <h3 className="site-header-name">Starter Site<br/><span>$1995</span></h3>
+          </div>
+          <div className="site-feature-col site-name-container">
+            <h3 className="site-header-name">Growth Site<br/><span>$3995</span></h3>
+          </div>
+          <div className="site-feature-col site-name-container">
+            <h3 className="site-header-name">Scale Site<br/><span>$5995</span></h3>
+          </div>
         </div>
 
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Your Business Phase</h3>
+          </div>
+          <div className="site-feature-col site-feature-desc">Ideal for solopreneurs and early-stage businesses with a clear, focused offering.</div>
+          <div className="site-feature-col site-feature-desc">Built for growing teams focused on boosting visibility and conversions.</div>
+          <div className="site-feature-col site-feature-desc">Designed for established brands with layered messaging and more complex needs.</div>
+        </div>
 
-        ""<div className="plan-feature-header">
-  <div className="plan-feature-col"></div>
-  <div className="plan-feature-col">
-    <h3 className="plan-name">Starter Site</h3>
-    <p>$1995</p>
-    <p className="plan-description">Get a professional web presence to boost your credibility.</p>
-  </div>
-  <div className="plan-feature-col">
-    <h3 className="plan-name">Growth Site</h3>
-    <p>$3995</p>
-    <p className="plan-description">Robust website ideal for growing visibility and increased conversions.</p>
-  </div>
-  <div className="plan-feature-col">
-    <h3 className="plan-name">Scale Site</h3>
-    <p>$5995</p>
-    <p className="plan-description">For businesses with expanding audiences, and nuanced messaging.</p>
-  </div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Custom Pages</h3>
+          </div>
+          <div className="site-feature-col">Up to 3 Pages</div>
+          <div className="site-feature-col">Up to 6 Pages</div>
+          <div className="site-feature-col">Up to 10 Pages</div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col">
-    <h3 className="header-name">Custom Pages</h3>
-  </div>
-  <div className="plan-feature-col">Up to 3</div>
-  <div className="plan-feature-col">Up to 6</div>
-  <div className="plan-feature-col">Up to 10</div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Mobile-Optimized</h3>
+          </div>
+          <div className="site-feature-col"><FaCheck className="site-feature-check" /></div>
+          <div className="site-feature-col"><FaCheck className="site-feature-check" /></div>
+          <div className="site-feature-col"><FaCheck className="site-feature-check" /></div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col">
-    <h3 className="header-name">Mobile Optimization</h3>
-  </div>
-  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
-  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
-  <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Lead-Gen Form</h3>
+          </div>
+          <div className="site-feature-col">1 Form</div>
+          <div className="site-feature-col">Lead Capture Setup</div>
+          <div className="site-feature-col">Integrated Tools</div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col">
-    <h3 className="header-name">Lead-Gen Form</h3>
-  </div>
-  <div className="plan-feature-col">1 form</div>
-  <div className="plan-feature-col">Lead capture setup</div>
-  <div className="plan-feature-col">Integrated scheduler, CRM, or forms</div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">SEO & Speed Setup</h3>
+          </div>
+          <div className="site-feature-col">Basic</div>
+          <div className="site-feature-col">Foundation</div>
+          <div className="site-feature-col">Advanced</div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col">
-    <h3 className="header-name">SEO Setup</h3>
-  </div>
-  <div className="plan-feature-col">Basic SEO & speed</div>
-  <div className="plan-feature-col">SEO foundation</div>
-  <div className="plan-feature-col">Analytics & SEO</div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Copy Support</h3>
+          </div>
+          <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+          <div className="site-feature-col">Copy Editing</div>
+          <div className="site-feature-col">Headline & Messaging</div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col">
-    <h3 className="header-name">Branding / Copy</h3>
-  </div>
-  <div className="plan-feature-col">Business email setup</div>
-  <div className="plan-feature-col">Copy editing, CTA, brand polish</div>
-  <div className="plan-feature-col">Copywriting, landing page, funnel</div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Landing Page or Funnel</h3>
+          </div>
+          <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+          <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+          <div className="site-feature-col"><FaCheck className="site-feature-check" /></div>
+        </div>
 
-<div className="plan-feature-row">
-  <div className="plan-feature-col"></div>
-  <div className="plan-feature-col">
-    <button className="support-button-pushable">
-      <span className="support-button-shadow"></span>
-      <span className="support-button-accent-edge"></span>
-      <span className="support-button-accent-front text">Book a Call</span>
-    </button>
-  </div>
-  <div className="plan-feature-col">
-    <button className="support-button-pushable">
-      <span className="support-button-shadow"></span>
-      <span className="support-button-accent-edge"></span>
-      <span className="support-button-accent-front text">Book a Call</span>
-    </button>
-  </div>
-  <div className="plan-feature-col">
-    <button className="support-button-pushable">
-      <span className="support-button-shadow"></span>
-      <span className="support-button-accent-edge"></span>
-      <span className="support-button-accent-front text">Book a Call</span>
-    </button>
-  </div>
-</div>
+        <div className="site-feature-row">
+          <div className="site-feature-col">
+            <h3 className="site-name">Analytics Setup</h3>
+          </div>
+          <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+          <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+          <div className="site-feature-col"><FaCheck className="site-feature-check" /></div>
+        </div>
 
+        <div className="site-feature-row">
+          <div className="site-feature-col-blank"></div>
+          <div className="site-feature-col site-feature-cta-container left">
+            <p
+              className="calendar-booking"
+              onClick={() =>
+                window.open("https://calendly.com/golbi/30min", "_blank")
+              }
+            >
+              Book a call to learn more
+            </p>
+
+            <button
+              className="pricing-button button-pushable"
+              onClick={() =>
+                (
+                  "_blank"
+                )
+              }
+            >
+              <span className="button-shadow"></span>
+              <span className="button-accent-edge"></span>
+              <span className="button-accent-front text">Get started</span>
+            </button>
+          </div>
+          <div className="site-feature-col site-feature-cta-container">
+            <p
+              className="calendar-booking"
+              onClick={() =>
+                window.open("https://calendly.com/golbi/30min", "_blank")
+              }
+            >
+              Book a call to learn more
+            </p>
+
+            <button
+              className="pricing-button button-pushable"
+              onClick={() =>
+                (
+                  "_blank"
+                )
+              }
+            >
+              <span className="button-shadow"></span>
+              <span className="button-accent-edge"></span>
+              <span className="button-accent-front text">Get started</span>
+            </button>
+          </div>
+          <div className="site-feature-col site-feature-cta-container">
+            <p
+              className="calendar-booking"
+              onClick={() =>
+                window.open("https://calendly.com/golbi/30min", "_blank")
+              }
+            >
+              Book a call to learn more
+            </p>
+
+            <button
+              className="pricing-button button-pushable"
+              onClick={() =>
+                (
+                  "_blank"
+                )
+              }
+            >
+              <span className="button-shadow"></span>
+              <span className="button-accent-edge"></span>
+              <span className="button-accent-front text">Get started</span>
+            </button>
+        </div>    
+      </div>
 
 
         
@@ -307,7 +306,7 @@ export default function Pricing() {
 
     <div className="plan-feature-row">
       <div className="plan-feature-col">
-        <h3 className="plan-name">Site Care</h3>
+        <h3 className="plan-name">Site Care Plan</h3>
         <p>$295/mo</p>
       </div>
       <div className="plan-feature-col">
@@ -340,7 +339,7 @@ export default function Pricing() {
 
     <div className="plan-feature-row">
       <div className="plan-feature-col">
-        <h3 className="plan-name">Site Grow</h3>
+        <h3 className="plan-name">Site Grow Plan</h3>
         <p>$595/mo</p>
       </div>
       <div className="plan-feature-col">
