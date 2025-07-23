@@ -11,6 +11,7 @@ import TopNavigation from "./TopNavigation";
 import Steps from "./Steps";
 import AccountManagementModal from "./AccountManagementModal";
 import About from "./About";
+import CaseStudies from "./CaseStudies";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -92,7 +93,7 @@ export default function Home() {
       <About />
       <Steps />
       <Benefits />
-      <Work />
+      <CaseStudies />
       <Pricing />
       <Faqs />
       <Footer />

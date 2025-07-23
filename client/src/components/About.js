@@ -30,11 +30,11 @@ export default function About() {
       <Section>
         <div className="about-content">
           <img className="about-spider-1" src={spider} alt="Golbi spider" />
-          <p className="about-copy">Before founding Golbi, its founder (<a className="about-link">Dinar</a>) spent years shaping campaigns for global giants like Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
+          <p className="about-copy">Before creating Golbi, its founder (<a className="about-link">Dinar</a>) spent years shaping advertising and marketing initiatives for global giants like Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
 
-          <p className="about-copy">Now, he provides that same standard of execution to small businesses without the overhead, inflated timelines, or agency fluff.</p>
+          <p className="about-copy">Now, he provides that same standard of execution to small businesses without the overhead or agency fluff.</p>
 
-          <p className="about-copy">Golbi is lean by design, delivering sharp, fast, web work for businesses that want results, not the runaround.</p>
+          <p className="about-copy">Golbi is lean by design, delivering sharp, targeted, web work for businesses that want real results, not the runaround.</p>
           <img className="about-spider-2" src={spider} alt="Golbi spider" />
         </div>
 

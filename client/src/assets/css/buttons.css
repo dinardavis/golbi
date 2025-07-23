@@ -425,6 +425,138 @@
 }
 
 
+
+
+/* LIVE DEMO BUTTON  */
+
+.demo-button-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.demo-button-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.demo-button-dark-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    to left,
+    hsl(225, 25%, 3%) 0%,
+    hsl(229, 25%, 35%) 8%,
+    hsl(229, 25%, 35%) 92%,
+    hsl(225, 25%, 3%) 100%
+  );
+}
+
+
+.demo-button-accent-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    to left,
+    hsl(8, 83%, 16%) 0%,
+    hsl(8, 69%, 38%) 8%,
+    hsl(8, 69%, 38%) 92%,
+    hsl(8, 83%, 16%) 100%
+  );
+}
+
+.demo-button-accent-front {
+  display: block;
+  position: relative;
+  padding: 2px 12px;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  color: white;
+  background: var(--accent-1);
+  will-change: transform;
+  transform: translateY(-5px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+  cursor: pointer;
+}
+
+.demo-button-pushable:hover {
+  filter: brightness(95%);
+  -webkit-filter: brightness(95%);
+  cursor: pointer;
+}
+
+
+.demo-button-pushable:hover .demo-button-accent-front {
+  transform: translateY(-3px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.demo-button-pushable:active .demo-button-accent-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.demo-button-pushable:hover .demo-button-shadow {
+  transform: translateY(2px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.demo-button-pushable:active .demo-button-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.demo-button-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
   .button-dark-front {
     padding: 12px 42px;

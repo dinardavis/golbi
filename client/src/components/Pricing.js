@@ -114,13 +114,13 @@ export default function Pricing() {
         <div className="site-feature-header">
           <div className="site-feature-col-blank"></div>
           <div className="site-feature-col site-name-container left">
-            <h3 className="site-header-name">Starter Site<br/><span>$1995</span></h3>
+            <h3 className="site-header-name">Starter Site<br/><span>$1,995</span></h3>
           </div>
           <div className="site-feature-col site-name-container">
-            <h3 className="site-header-name">Growth Site<br/><span>$3995</span></h3>
+            <h3 className="site-header-name">Growth Site<br/><span>$3,995</span></h3>
           </div>
           <div className="site-feature-col site-name-container">
-            <h3 className="site-header-name">Scale Site<br/><span>$5995</span></h3>
+            <h3 className="site-header-name">Scale Site<br/><span>$5,995</span></h3>
           </div>
         </div>
 
@@ -137,9 +137,9 @@ export default function Pricing() {
           <div className="site-feature-col">
             <h3 className="site-name">Custom Pages</h3>
           </div>
-          <div className="site-feature-col">Up to 3 Pages</div>
+          <div className="site-feature-col">Single Page Site</div>
           <div className="site-feature-col">Up to 6 Pages</div>
-          <div className="site-feature-col">Up to 10 Pages</div>
+          <div className="site-feature-col">Up to 12 Pages</div>
         </div>
 
         <div className="site-feature-row">
@@ -276,7 +276,7 @@ export default function Pricing() {
     <div className="pricing-header pricing-header-2">
       <div className="pricing-header-copy-container pricing-header-copy-container-bottom">
         <p className="pricing-header-copy">
-          <span>Need support after launch?</span> Great! We’ve got you covered with these site care plans.
+          <span>Still want support after the launch?</span> Great! We’ve got you covered with that, too.
         </p>
       </div>
     </div>

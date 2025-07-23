@@ -32,10 +32,10 @@ function App() {
         </Link>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/plans" element={<Plans />} />
+          {/* <Route path="/plans" element={<Plans />} /> */}
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/starter-site" element={<StarterSite />} />
+          {/* <Route path="/starter-site" element={<StarterSite />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
