@@ -149,7 +149,7 @@
 
 
 .diagonal-scroll-wrapper {
-  width: 400px;
+  width: 500px;
   height: 280px;
   overflow: hidden;
   position: relative;
@@ -161,7 +161,7 @@
   height: 110%;
   overflow: hidden;
   position: relative;
-  transform: scale(1.2) rotate(12deg) translate(0%, -4%);
+  transform: scale(1.1) rotate(5deg) translate(0%, -4%);
   transform-origin: center;
 }
 
