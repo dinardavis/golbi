@@ -4,6 +4,7 @@ import { useInView } from "framer-motion";
 import doodle1 from "../assets/imgs/doodle1.png";
 import CaseStudyCard from "./CaseStudyCard"
 import caseStudyData from "../data/caseStudyData";
+import DiagonalScroller from "./DiagonalScroller";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -33,10 +34,13 @@ export default function CaseStudies() {
         </h1>
         <div className="case-studies-content">
           <div className="case-studies-main-content">
+            <div>
+            <DiagonalScroller />
             <p className="case-studies-subheader">
               From full builds to quick updates, we support everything your business needs to grow.
             </p>
-            <div className="case-study-items">
+            </div>
+            <div className="products-items">
               <div className="products-item">Lead Captures</div>
               <div className="products-item">List Builders</div>
               <div className="products-item">Launch Pages</div>

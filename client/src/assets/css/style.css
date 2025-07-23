@@ -651,6 +651,7 @@ body {
   justify-content: center;
   width: 100%;
   margin: 2rem 0 5rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   max-width: 1190px;
   background-color: var(--background-dot);
@@ -659,6 +660,7 @@ body {
 .case-studies-header {
   font-family: "Oswald", sans-serif;
   text-align: left;
+  align-self: flex-start;
   color: var(--font-accent-1);
   font-size: 3.5rem;
   font-weight: 700;
@@ -683,7 +685,7 @@ body {
 }
 
 .case-studies-header span {
-  color: var(--background-dark);
+  color: var(--white);
 }
 
 .case-studies-content {
@@ -696,8 +698,8 @@ body {
   margin: 1rem 0 0 2rem;
   font-size: 1.2rem;
   line-height: 1.1;
-  color: var(--font-primary);
-  max-width: 200px;
+  color: var(--white);
+  max-width: 300px;
 }
 
 .case-studies-main-content {
@@ -758,7 +760,6 @@ body {
 .case-studies-content-container {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
   width: 100%;
 }
 
@@ -868,9 +869,9 @@ body {
 
 .products-items-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 1rem;
   margin-left: 2rem;
   border: 2px solid var(--background-dark);
@@ -887,17 +888,17 @@ body {
   line-height: 1.15;
 }
 
-.products-item {
+.products-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 400px;
 }
 
 .products-item {
   padding: 0.5rem 0.75rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.1rem 0.5rem;
   border-radius: 2rem;
   font-size: 1rem;
   border: 1.5px solid var(--font-secondary);
