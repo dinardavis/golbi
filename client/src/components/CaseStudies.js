@@ -35,10 +35,10 @@ export default function CaseStudies() {
         <div className="case-studies-content">
           <div className="case-studies-main-content">
             <div>
-            <DiagonalScroller />
             <p className="case-studies-subheader">
               From full builds to quick updates, we support everything your business needs to grow.
             </p>
+            <DiagonalScroller />
             </div>
             <div className="products-items">
               <div className="products-item">Lead Captures</div>

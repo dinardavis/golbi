@@ -690,16 +690,15 @@ body {
 
 .case-studies-content {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0 3rem;
 }
 
 .case-studies-subheader {
   align-self: flex-start;
-  margin: 1rem 0 0 2rem;
+  margin: 1rem 0;
   font-size: 1.2rem;
   line-height: 1.1;
   color: var(--white);
-  max-width: 300px;
 }
 
 .case-studies-main-content {
@@ -893,7 +892,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 400px;
+  padding: 4rem 2rem;
 }
 
 .products-item {
