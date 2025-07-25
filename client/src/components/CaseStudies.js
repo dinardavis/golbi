@@ -34,26 +34,28 @@ export default function CaseStudies() {
         </h1>
         <div className="case-studies-content">
           <div className="case-studies-main-content">
-            <div>
             <p className="case-studies-subheader">
               From full builds to quick updates, we support everything your business needs to grow.
             </p>
-            <DiagonalScroller />
-            </div>
-            <div className="products-items">
-              <div className="products-item">Lead Captures</div>
-              <div className="products-item">List Builders</div>
-              <div className="products-item">Launch Pages</div>
-              <div className="products-item">Brand Stories</div>
-              <div className="products-item">Promo Countdown Timers</div>
-              <div className="products-item">Testimonials</div>
-              <div className="products-item">Quick Edits</div>
-              <div className="products-item">Zapier Hooks</div>
-              <div className="products-item">Mobile Views</div>
-              <div className="products-item">Shop Pages</div>
-              <div className="products-item">SEO Enhancements</div>
-              <div className="products-item">And More...</div>
-            </div>
+            <div className="case-studies-top-content-container">
+              <DiagonalScroller />
+            
+              <div className="products-items">
+                <div className="products-item">Lead Captures</div>
+                <div className="products-item">List Builders</div>
+                <div className="products-item">Launch Pages</div>
+                <div className="products-item">Brand Stories</div>
+                <div className="products-item">Promo Countdown Timers</div>
+                <div className="products-item">Testimonials</div>
+                <div className="products-item">Quick Edits</div>
+                <div className="products-item">Zapier Hooks</div>
+                <div className="products-item">Mobile Views</div>
+                <div className="products-item">Shop Pages</div>
+                <div className="products-item">SEO Enhancements</div>
+                <div className="products-item">And More...</div>
+              </div>
+
+            </div>         
           </div>
         </div>
 

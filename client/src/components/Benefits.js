@@ -47,8 +47,8 @@ export default function Benefits() {
             />
           </div>
        
-          <h2 className="benefits-item-header">Face-to-face...or not</h2>
-          <p className="benefits-item-copy">Please schedule lots of meetings. Said NO ONE ever! <br></br>That&apos;s why with Golbi you send over your ideas, and we get to work. But if you&apos;d like to schedule a chat first, that&apos;s cool too!</p>
+          <h2 className="benefits-item-header">Skip the Song & Dance</h2>
+          <p className="benefits-item-copy">Endless Zooms? Status calls? Slack check-ins? Nah. Just send us what you’ve got — we’ll get to work. Prefer to talk it out first? Cool. We can do that too.</p>
         </div>
 
         <div className="benefits-item">
@@ -59,8 +59,8 @@ export default function Benefits() {
               loop={true} 
             />
           </div>
-          <h2 className="benefits-item-header">HR departments love us</h2>
-          <p className="benefits-item-copy">Onboarding a new hire? Nope! Tracking billable time? No need! When is open enrollment? Who cares!<br></br>Golbi offers all the perks of a team member, with none of the hassle. </p>
+          <h2 className="benefits-item-header">Like a Teammate...but no Drama</h2>
+          <p className="benefits-item-copy">No onboarding. No time tracking. No HR paperwork. Just clean, effective web builds from a studio that gets it. You get results, not red tape.</p>
         </div>
 
         <div className="benefits-item">
@@ -71,8 +71,8 @@ export default function Benefits() {
               loop={true} 
             />
           </div>
-          <h2 className="benefits-item-header">No one-size-fits-all</h2>
-          <p className="benefits-item-copy">It&apos;s so cringe when you wear the same thing as someone else, right? Imagine how your biz feels wearing that same old AI-generated, hand-me-down template! At Golbi we build products just for YOU.</p>
+          <h2 className="benefits-item-header">Built for Your Business</h2>
+          <p className="benefits-item-copy">Cookie cutters are for cookies — not your site. Golbi delivers tailored, thoughtful builds with your voice and goals baked in. No templates. No fluff. No identity crisis.</p>
         </div>
 
         <div className="benefits-item">
@@ -83,8 +83,8 @@ export default function Benefits() {
               loop={true} 
             />
           </div>
-          <h2 className="benefits-item-header">Flexible availability</h2>
-          <p className="benefits-item-copy">Never pay for your dev&apos;s twiddled thumbs again. We work when there IS work. It&apos;s kinda perfect, when you think about it.</p>
+          <h2 className="benefits-item-header">Pay for Output, Not Overhead</h2>
+          <p className="benefits-item-copy">No retainers. No idle hours. No mystery invoices. You pay for what gets done — simple as that. Want ongoing support? We offer that too, on your terms.</p>
         </div>
 
         <div className="benefits-item">
@@ -95,8 +95,8 @@ export default function Benefits() {
               loop={true} 
             />
           </div>
-          <h2 className="benefits-item-header">Unlimited Submissions</h2>
-          <p className="benefits-item-copy">You keep sending your ideas, we&apos;ll keep producing products that will do your business proud.</p>
+          <h2 className="benefits-item-header">Add-Ons, Not Add-Ons</h2>
+          <p className="benefits-item-copy">Need a new page? A landing campaign? We’re always here when you need us — and only then. Think of us like a web team on call, without the payroll.</p>
         </div>
       </div>
       <a href="#pricing" className="benefits-pricing-btn">

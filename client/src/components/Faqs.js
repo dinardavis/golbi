@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import questionData from "./questionData"
+import questionData from "../data/questionData"
 import QAelement from './QAelement'
 import BottomCTA from './BottomCTA'
 
