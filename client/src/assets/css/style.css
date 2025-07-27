@@ -774,7 +774,7 @@ body {
   height: 100%;
   box-shadow: 4px 10px 12px #292f412f;
 }
-
+/* 
 .case-studies-content-container {
   display: flex;
   flex-direction: column;
@@ -822,19 +822,17 @@ body {
   z-index: 10;
 }
 
-.case-study-copy {
+.case-study-img-placeholder {
   position: absolute;
+  left: 0;
   top: 0;
-  opacity: 0;
-  transform: translateY(400px);
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  padding: 1rem;
-  max-width: 500px;
-  height: 100%;
-  color: var(--font-primary);
-  z-index: 1;
-  overflow-y: auto;
+  height: 200px;
+  width: 600px;
+  background-color: red;
+  z-index: 20;
 }
+
+
 
 .case-study-copy.from-left {
   left: 0;
@@ -854,6 +852,73 @@ body {
   font-size: 1rem;
   line-height: 1.1;
 }
+
+
+.case-study-copy {
+  flex: 0 0 40%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none; /* optional, blocks clicks when hidden 
+}
+  */
+
+/* .case-study-copy.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+} */ 
+
+.case-study-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.case-study-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.case-study-copy {
+  flex: 0 0 40%;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.case-study-copy.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.case-study-copy.from-left {
+  transform: translateX(-40px);
+}
+
+.case-study-copy.from-right {
+  transform: translateX(40px);
+}
+
+.case-study-copy.show.from-left,
+.case-study-copy.show.from-right {
+  transform: translateX(0);
+}
+
+.case-study-hero-img {
+  flex: 0 0 60%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
 
 .case-study-copy-item:first-child {
   color: var(--font-accent-1);
@@ -931,8 +996,6 @@ body {
   color: var(--font-secondary);
   border: 1.5px solid var(--accent-1);
 }
-
-
 
 
 
