@@ -33,29 +33,35 @@ export default function CaseStudyCard({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-    <div className={`case-study-type ${alignment === "right" ? "type-left" : "type-right"}`}>
-      <p>{type}</p>
-    </div>
-  
-      <div className="case-study-container-overlay"></div>
-      <div className={`case-study-copy-container ${delayedHover ? "show" : ""}`}>
-        <p className="case-study-copy-item"><span>Industry: </span>{industry}</p>
-        <p className="case-study-copy-item"><span>Objective: </span>{objective}</p>
-        <ul className="case-study-copy-item case-study-copy-list">
-          <span>Project Deliverable: </span>
-          {deliverables.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-        <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
-        <div className="demo-btn">
-          <button className="demo-button-pushable">
-            <span className="demo-button-shadow"></span>
-            <span className="demo-button-accent-edge"></span>
-            <span className="demo-button-accent-front text">See Live Demo</span>
-          </button>
+
+      <div className="case-study-container-overlay">
+      </div>
+
+      <div>
+        <div className={`case-study-type ${alignment === "right" ? "type-left" : "type-right"}`}>
+          <p>{type}</p>
+        </div>
+    
+        <div className={`case-study-copy-container ${delayedHover ? "show" : ""}`}>
+          <p className="case-study-copy-item"><span>Industry: </span>{industry}</p>
+          <p className="case-study-copy-item"><span>Objective: </span>{objective}</p>
+          <ul className="case-study-copy-item case-study-copy-list">
+            <span>Project Deliverable: </span>
+            {deliverables.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
+          <div className="demo-btn">
+            <button className="demo-button-pushable">
+              <span className="demo-button-shadow"></span>
+              <span className="demo-button-accent-edge"></span>
+              <span className="demo-button-accent-front text">See Live Demo</span>
+            </button>
+          </div>
         </div>
       </div>
+      
       
 
 
