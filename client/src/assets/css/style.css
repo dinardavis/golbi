@@ -734,27 +734,60 @@ body {
   border-radius: 10px;
 }
 
-.case-study-type {
+.case-study-card.reverse .case-study-inner > .case-study-text-container {
+  order: 2;
+}
+.case-study-card.reverse .case-study-inner > img {
+  order: 1;
+}
+
+.case-study-text-container {
+  max-height: 350px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  transition: max-height 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.case-study-text-container::-webkit-scrollbar {
+  display: none;
+}
+
+.case-study-text {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 100%;
   font-family: "Oswald", sans-serif;
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
   color: var(--font-accent-1);
-  text-shadow: 1px 1px 8px var(--background-dark);
+  /* text-shadow: 1px 1px 8px var(--background-dark); */
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.1;
+  overflow: hidden;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 0.8s ease, opacity 0.2s ease, height 0.4s;
+  will-change: transform, opacity, height;
 }
 
-.case-study-type.type-right {
+.case-study-card.hovered .case-study-text {
+  height: 0px;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.case-study-text.type-right {
   right: 5%;
 }
 
-.case-study-type.type-left {
+.case-study-text.type-left {
   left: 5%;
 }
 
@@ -825,8 +858,7 @@ body {
 
 .case-study-copy-container {
   opacity: 0;
-  max-height: 0;
-  overflow: hidden;
+  height: 0;
   transform: translateY(20px);
   transition: opacity 0.4s ease, max-height 0.4s ease, transform 0.4s ease;
   pointer-events: none;
@@ -835,15 +867,15 @@ body {
   height: 100%;
   color: var(--font-primary);
   z-index: 1;
-  overflow-y: auto;
 }
 
 .case-study-copy-container.show {
   opacity: 1;
-  max-height: 500px; /* adjust based on expected content size */
-  transform: translateY(0);
+  height: 0%;
+  transform: translateY(-20px);
   pointer-events: auto;
 }
+
 
 .case-study-copy.from-left {
   left: 0;
@@ -863,14 +895,6 @@ body {
   font-size: 1rem;
   line-height: 1.1;
 }
-
-/* .case-study-copy {
-  flex: 0 0 40%;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none;
-} */
 
 .case-study-copy.show {
   opacity: 1;
