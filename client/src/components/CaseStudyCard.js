@@ -49,8 +49,6 @@ const handleMouseLeave = () => {
   onMouseEnter={() => setHovered(true)}
   onMouseLeave={() => setHovered(false)}
 >
-   {/* <div className="case-study-container-overlay">
-      </div> */}
 
   <div className="case-study-inner">
     {/* Text section */}
@@ -81,12 +79,15 @@ const handleMouseLeave = () => {
       
       
 
-
+    <div className="case-study-hero-img-container">
+       <div className="case-study-container-overlay">
+      </div>
       <img
         src={thumbnail}
         className="case-study-hero-img"
         alt="case study thumbnail"
       />
+    </div>
     </div>
     </div>
   );

@@ -764,12 +764,11 @@ body {
   padding: 1rem;
   border-radius: 10px;
   color: var(--font-accent-1);
-  /* text-shadow: 1px 1px 8px var(--background-dark); */
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.1;
   overflow: hidden;
-  transform: translateY(0);
+  transform: translateY(20);
   opacity: 1;
   pointer-events: auto;
   transition: transform 0.8s ease, opacity 0.2s ease, height 0.4s;
@@ -846,6 +845,14 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.case-study-hero-img-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 7px;
+  z-index: 10;
 }
 
 .case-study-hero-img {
