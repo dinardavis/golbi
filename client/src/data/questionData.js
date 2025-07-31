@@ -12,7 +12,7 @@ const questionData = [
     id: 2,
     question: "Can I still get ongoing support if I need it?",
     answer:
-      "Absolutely. Every build comes with a 14-day post-launch window for tweaks and questions. If you’d like more long-term support, flexible monthly plans are available for updates, landing pages, or new features.",
+      "Absolutely! If you’d like more long-term support, flexible monthly plans are available for updates, landing pages, or new features.",
     showAnswer: false,
   },
   {
@@ -26,14 +26,14 @@ const questionData = [
     id: 4,
     question: "How long does a typical project take?",
     answer:
-      "Timelines vary depending on scope, but most projects are completed in 1–3 weeks. You’ll get a clear start date and timeline upfront—no surprises.",
+      "Timelines vary depending on scope, but most projects are completed in 2–4 weeks. You’ll get a clear start date and timeline upfront—no surprises.",
     showAnswer: false,
   },
   {
     id: 5,
     question: "Who will I be working with?",
     answer:
-      "You’ll work directly with me—Dinar, Golbi’s founder. I bring over a decade of experience in writing, design, and dev for brands like Disney, GM, and P&G. You’re in good hands from day one.",
+      "You’ll work directly with me—Dinar, Golbi’s founder. I bring over a decade of experience in writing, design, and dev for brands like Disney, GM, and P&G. So you’re in good hands from day one.",
     showAnswer: false,
   },
   {
@@ -54,7 +54,7 @@ const questionData = [
     id: 8,
     question: "How do I share my project idea?",
     answer:
-      "You can email a description, share a doc, or even record a Loom video. Whatever makes it easiest to explain what you need, Golbi will take it from there.",
+      "You can email a description, share a doc, or even record a video. Whatever makes it easiest to explain what you need, Golbi will take it from there.",
     showAnswer: false,
   },
   {
@@ -68,7 +68,7 @@ const questionData = [
     id: 10,
     question: "Do you offer refunds?",
     answer:
-      "Due to the nature of custom work, refunds aren’t offered. But the goal is always to get it right—and revisions are always part of the process.",
+      "Due to the nature of custom work, refunds aren’t offered. But the goal is always to get it right, and revisions are always part of the process.",
     showAnswer: false,
   },
 ]
