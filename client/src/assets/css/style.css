@@ -1901,6 +1901,10 @@ body {
   color: var(--accent-1);
 }
 
+.footer-copyright {
+  margin-top: 1.4rem;
+}
+
 .subscribe-container {
   display: flex;
   flex-direction: column;

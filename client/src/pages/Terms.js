@@ -137,6 +137,10 @@ export default function Terms() {
         <IoIosArrowBack className='back-button-icon'/>Back
         </button>
       </div>
+
+      <div className="footer-copyright">
+          &copy; {new Date().getFullYear()} Golbi LLC. All rights reserved.
+        </div>
     </div>
   )
 };

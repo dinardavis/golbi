@@ -72,7 +72,12 @@ export default function Footer() {
           </a>
           <Link to="/terms" className="footer-link">Terms of Service</Link>
           <Link to="/privacy" className="footer-link">Privacy Policy</Link>
-        </div> 
+        </div>
+
+        <div className="footer-copyright">
+          &copy; {new Date().getFullYear()} Golbi LLC. All rights reserved.
+        </div>
+ 
       </div>
     </>
   );
