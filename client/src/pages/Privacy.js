@@ -115,7 +115,7 @@ export default function Privacy() {
     </div>
 
     <div className="footer-copyright">
-          &copy; {new Date().getFullYear()} Golbi LLC. All rights reserved.
+      Copyright &copy; {new Date().getFullYear()} Golbi LLC. All rights reserved.
         </div>
   </div>
   )
