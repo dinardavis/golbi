@@ -864,6 +864,7 @@ body {
   object-fit: cover;
   border-radius: 7px;
   z-index: 10;
+  object-position: 0 100%;
 }
 
 .case-study-copy-container {
