@@ -66,7 +66,7 @@ export default function CaseStudyCard({
               ))}
             </ul>
             <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
-            <div className="demo-btn">
+            <div className="demo-button">
               <button className="demo-button-pushable">
                 <span className="demo-button-shadow"></span>
                 <span className="demo-button-accent-edge"></span>

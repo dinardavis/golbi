@@ -926,20 +926,8 @@ body {
   margin-left: 1rem;
 }
 
-.demo-btn {
-  margin-top: 1rem;
-}
-
-.case-study-demo-btn {
-  padding: 1rem 1.5rem;
-  border-radius: 2rem;
-  font-size: .95rem;
-  color: var(--white);
-  font-weight: 300;
-  background-image: linear-gradient(to bottom right, #ff5d44 10%, #ef3e23 30%);
-  box-shadow: 6px 6px 14px #292f4141;
-  border: none;
-  cursor: pointer;
+.demo-button {
+  margin-top: 1.5rem;
 }
 
 .products-items-container {

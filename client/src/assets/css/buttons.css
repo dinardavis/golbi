@@ -433,6 +433,7 @@
   position: relative;
   border: none;
   background: transparent;
+  width: 100%;
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;
@@ -495,7 +496,7 @@
 .demo-button-accent-front {
   display: block;
   position: relative;
-  padding: 2px 12px;
+  padding: 5px 12px;
   border-radius: 6px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
