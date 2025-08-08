@@ -664,8 +664,10 @@ body {
 }
 
 .case-studies-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Oswald", sans-serif;
-  text-align: center;
   color: var(--font-accent-1);
   background-color: var(--font-primary);
   background-image: radial-gradient(var(--background-dot) 1px, transparent 1.5px);
@@ -676,7 +678,7 @@ body {
   line-height: 1.1;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .75rem 1rem;
+  padding: .75rem 1rem 1rem;
   border-radius: 10px;
 }
 
