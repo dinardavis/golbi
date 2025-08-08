@@ -187,3 +187,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 900px) {
+  .diagonal-scroll-wrapper {
+    width: 100%;
+  }
+}

@@ -664,15 +664,13 @@ body {
 }
 
 .case-studies-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: "Oswald", sans-serif;
   color: var(--font-accent-1);
   background-color: var(--font-primary);
   background-image: radial-gradient(var(--background-dot) 1px, transparent 1.5px);
-    background-position: -4px 5px, 50px 50px;
-    background-size: 20px 20px;
+  background-position: -4px 5px, 50px 50px;
+  background-size: 20px 20px;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.1;
@@ -681,6 +679,7 @@ body {
   padding: .75rem 1rem 1rem;
   border-radius: 10px;
 }
+
 
 .case-studies-content-header {
   font-family: "Oswald", sans-serif;
@@ -701,6 +700,9 @@ body {
 
 .case-studies-header span {
   color: var(--white);
+  display: inline;
+  line-height: inherit;
+  vertical-align: baseline;
 }
 
 .case-studies-top-content-container {
@@ -2379,6 +2381,10 @@ body {
     margin: 0.5rem 0;
   }
 
+  .case-studies-top-content-container {
+    flex-direction: column;
+  }
+
   .products-items-container {
     display: flex;
     flex-direction: column;
@@ -2387,6 +2393,11 @@ body {
     margin: 2rem 0 1.5rem;
     border: 2px solid var(--background-dark);
     border-radius: 0.5rem;
+  }
+
+  .products-items {
+    max-width: 100%;
+    margin-top: 1.5rem;
   }
 
   .pricing-section {
