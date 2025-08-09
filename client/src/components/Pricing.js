@@ -370,6 +370,64 @@ export default function Pricing() {
     </div>
 
 
+
+
+
+    <div className="pricing-table-mobile">
+  {/* Column 1: Feature Headers */}
+  <div className="pricing-col">
+    <div className="plan-feature-col header-name">Plan</div>
+    <div className="plan-feature-col header-name">Hosting, SSL & Backups</div>
+    <div className="plan-feature-col header-name">SEO Reviews</div>
+    <div className="plan-feature-col header-name">Monthly Edits</div>
+    <div className="plan-feature-col header-name">Monthly Feature Adds</div>
+    <div className="plan-feature-col header-name">Analytics Reporting</div>
+    <div className="plan-feature-col"></div>
+  </div>
+
+  {/* Column 2: Site Care Plan */}
+  <div className="pricing-col">
+    <div className="plan-feature-col">
+      <h3 className="plan-name">Site Care Plan</h3>
+      <p>$295/mo</p>
+    </div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col plan-feature-text">2 hours</div>
+    <div className="plan-feature-col"><ImCross className="plan-feature-x" /></div>
+    <div className="plan-feature-col"><ImCross className="plan-feature-x" /></div>
+    <div className="plan-feature-col">
+      <button className="support-button-pushable">
+        <span className="support-button-shadow"></span>
+        <span className="support-button-accent-edge"></span>
+        <span className="support-button-accent-front text">Subscribe</span>
+      </button>
+    </div>
+  </div>
+
+  {/* Column 3: Site Grow Plan */}
+  <div className="pricing-col">
+    <div className="plan-feature-col">
+      <h3 className="plan-name">Site Grow Plan</h3>
+      <p>$595/mo</p>
+    </div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col plan-feature-text">4 hours</div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col"><FaCheck className="plan-feature-check" /></div>
+    <div className="plan-feature-col">
+      <button className="support-button-pushable">
+        <span className="support-button-shadow"></span>
+        <span className="support-button-accent-edge"></span>
+        <span className="support-button-accent-front text">Subscribe</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
   {/* Custom Plan Inquiry Card */}
         <div className="pricing-option-3">
           <div className="pricing-cta-copy">
