@@ -2426,6 +2426,26 @@ body {
     width: 100%;
     margin-top: 2rem;
   }
+
+  .case-study-card .case-study-inner {
+    flex-direction: column;
+  }
+
+  .case-study-card:nth-of-type(odd) .case-study-inner {
+    flex-direction: column-reverse;
+  }
+
+  .case-study-hero-img-container {
+    max-width: 100%;
+  }
+
+  .case-study-hero-img {
+    max-width: 100%;
+  }
+
+  .case-study-copy-container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
