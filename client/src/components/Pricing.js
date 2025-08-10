@@ -281,93 +281,97 @@ export default function Pricing() {
       </div>
     </div>
 
-    <div className="plan-feature-header">
-      <div className="plan-feature-col">
-        <h3 className="header-name">Plan</h3>
+    {/* Pricing Table Desktop */}
+    <div className="pricing-table-desktop">
+      <div className="plan-feature-header">
+        <div className="plan-feature-col">
+          <h3 className="header-name">Plan</h3>
+        </div>
+        <div className="plan-feature-col">
+          <h3 className="header-name">Hosting, SSL & Backups</h3>
+        </div>
+        <div className="plan-feature-col">
+          <h3 className="header-name">SEO<br/> Reviews</h3>
+        </div>
+        <div className="plan-feature-col">
+          <h3 className="header-name">Monthly<br/> Edits</h3>
+        </div>
+        <div className="plan-feature-col">
+          <h3 className="header-name">Monthly Feature Adds</h3>
+        </div>
+        <div className="plan-feature-col">
+          <h3 className="header-name">Analytics Reporting</h3>
+        </div>
+        <div className="plan-feature-col">
+        </div>
       </div>
-      <div className="plan-feature-col">
-        <h3 className="header-name">Hosting, SSL & Backups</h3>
-      </div>
-      <div className="plan-feature-col">
-        <h3 className="header-name">SEO<br/> Reviews</h3>
-      </div>
-      <div className="plan-feature-col">
-        <h3 className="header-name">Monthly<br/> Edits</h3>
-      </div>
-      <div className="plan-feature-col">
-        <h3 className="header-name">Monthly Feature Adds</h3>
-      </div>
-      <div className="plan-feature-col">
-        <h3 className="header-name">Analytics Reporting</h3>
-      </div>
-      <div className="plan-feature-col">
-      </div>
-    </div>
 
-    <div className="plan-feature-row">
-      <div className="plan-feature-col">
-        <h3 className="plan-name">Site Care Plan</h3>
-        <p>$295/mo</p>
+      <div className="plan-feature-row">
+        <div className="plan-feature-col">
+          <h3 className="plan-name">Site Care Plan</h3>
+          <p>$295/mo</p>
+        </div>
+        <div className="plan-feature-col">
+          <FaCheck className="plan-feature-check"/>
+        </div>
+        <div className="plan-feature-col">
+          <FaCheck className="plan-feature-check"/>
+        </div>
+        <div className="plan-feature-col plan-feature-text">
+          2 hours
+        </div>
+        <div className="plan-feature-col">
+          <ImCross className="plan-feature-x"/>
+        </div>
+        <div className="plan-feature-col">
+          <ImCross className="plan-feature-x"/>
+        </div>
+        <div className="plan-feature-col">
+          <button
+            // onClick={() => setShowModal(true)}
+            className="support-button-pushable"
+          >
+            <span className="support-button-shadow"></span>
+            <span className="support-button-accent-edge"></span>
+            <span className="support-button-accent-front text">Subscribe</span>
+          </button>
+        </div>
       </div>
-      <div className="plan-feature-col">
+
+
+      <div className="plan-feature-row">
+        <div className="plan-feature-col">
+          <h3 className="plan-name">Site Grow Plan</h3>
+          <p>$595/mo</p>
+        </div>
+        <div className="plan-feature-col">
         <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col">
+        </div>
+        <div className="plan-feature-col">
         <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col plan-feature-text">
-        2 hours
-      </div>
-      <div className="plan-feature-col">
-        <ImCross className="plan-feature-x"/>
-      </div>
-      <div className="plan-feature-col">
-        <ImCross className="plan-feature-x"/>
-      </div>
-      <div className="plan-feature-col">
-        <button
-          // onClick={() => setShowModal(true)}
-          className="support-button-pushable"
-        >
-          <span className="support-button-shadow"></span>
-          <span className="support-button-accent-edge"></span>
-          <span className="support-button-accent-front text">Subscribe</span>
-        </button>
-      </div>
-    </div>
-
-
-    <div className="plan-feature-row">
-      <div className="plan-feature-col">
-        <h3 className="plan-name">Site Grow Plan</h3>
-        <p>$595/mo</p>
-      </div>
-      <div className="plan-feature-col">
-      <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col">
-      <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col plan-feature-text">
-        4 hours
-      </div>
-      <div className="plan-feature-col">
-      <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col">
-      <FaCheck className="plan-feature-check"/>
-      </div>
-      <div className="plan-feature-col">
-        <button
-          // onClick={() => setShowModal(true)}
-          className="support-button-pushable"
-        >
-          <span className="support-button-shadow"></span>
-          <span className="support-button-accent-edge"></span>
-          <span className="support-button-accent-front text">Subscribe</span>
-        </button>
+        </div>
+        <div className="plan-feature-col plan-feature-text">
+          4 hours
+        </div>
+        <div className="plan-feature-col">
+        <FaCheck className="plan-feature-check"/>
+        </div>
+        <div className="plan-feature-col">
+        <FaCheck className="plan-feature-check"/>
+        </div>
+        <div className="plan-feature-col">
+          <button
+            // onClick={() => setShowModal(true)}
+            className="support-button-pushable"
+          >
+            <span className="support-button-shadow"></span>
+            <span className="support-button-accent-edge"></span>
+            <span className="support-button-accent-front text">Subscribe</span>
+          </button>
+        </div>
       </div>
     </div>
+    
 
 
 

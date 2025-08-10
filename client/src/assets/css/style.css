@@ -1644,13 +1644,14 @@ body {
 
 .pricing-table-mobile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
 
 .pricing-col {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .plan-feature-col {
@@ -2613,6 +2614,12 @@ body {
   }
 }
 
+@media (max-width: 849px) {
+  .pricing-table-desktop {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   /* Existing styles */
   .intro-cta-copy-container {
@@ -2691,5 +2698,11 @@ body {
   #about,
   #faqs {
     scroll-margin-top: 15px; /* Slightly reduced for mobile */
+  }
+}
+
+@media (min-width: 850px) {
+  .pricing-table-mobile {
+    display: none;
   }
 }
