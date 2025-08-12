@@ -1510,10 +1510,6 @@ body {
 
 
 
-
-
-
-
 /* SUPPORT SUBSCRIPTION PLANS */
 
 .plan-feature-col {
@@ -1645,7 +1641,12 @@ body {
 }
 
 .pricing-table-mobile .plan-feature-col {
-  min-height: 125px;
+  min-height: 85px;
+  margin-bottom: 10px;
+}
+
+.pricing-table-mobile .plan-feature-col:first-child {
+  min-height: 105px;
 }
 
 .pricing-table-mobile .plan-feature-header,
@@ -1656,13 +1657,10 @@ body {
   justify-content: initial;
 }
 
-.pricing-table-mobile .plan-feature-header .plan-feature-col:first-child {
-  border-bottom-left-radius: 0;
-}
-
-.pricing-table-mobile .plan-feature-header .plan-feature-col:last-child {
+.pricing-table-mobile .plan-feature-header .plan-feature-col {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
@@ -1676,9 +1674,9 @@ body {
 }
 
 
-.pricing-table-mobile .plan-feature-row:last-child .plan-feature-col:first-child {
+.pricing-table-mobile .plan-feature-row:last-child .plan-feature-col {
   border-top-right-radius: 10px;
-
+  border-bottom-right-radius: 10px;
 }
 
 .pricing-table-mobile .plan-feature-row .plan-feature-col:last-child {
@@ -1687,6 +1685,7 @@ body {
 }
 
 .pricing-table-mobile .plan-feature-row:last-child .plan-feature-col:last-child {
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
