@@ -117,7 +117,7 @@
 }
 
 .mobile-link:hover {
-  color: var(--font-secondary);
+  color: var(--font-primary);
 }
 
 .nav-line-left,
