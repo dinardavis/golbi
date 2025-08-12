@@ -1604,10 +1604,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.header-name {
-  padding: 0 1rem;
-}
-
 .plan-feature-row {
   display: flex;
   justify-content: space-evenly;
