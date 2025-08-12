@@ -8,6 +8,7 @@ import { IoChevronDown } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import spider from "../assets/imgs/logo_spider_only.png";
+import MobilePricing from "./MobilePricing";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -109,6 +110,8 @@ export default function Pricing() {
           </p>
         </div>
       </div>
+
+      <MobilePricing />
 
       <div className="pricing-content">
         <div className="site-feature-header">
@@ -374,95 +377,7 @@ export default function Pricing() {
     
 
 
- {/* Pricing Table Mobile */}
- <div className="pricing-table-mobile">
-      <div className="plan-feature-header">
-        <div className="plan-feature-col">
-          <h3 className="header-name">Plan</h3>
-        </div>
-        <div className="plan-feature-col">
-          <h3 className="header-name">Hosting, SSL & Backups</h3>
-        </div>
-        <div className="plan-feature-col">
-          <h3 className="header-name">SEO<br/> Reviews</h3>
-        </div>
-        <div className="plan-feature-col">
-          <h3 className="header-name">Monthly<br/> Edits</h3>
-        </div>
-        <div className="plan-feature-col">
-          <h3 className="header-name">Monthly Feature Adds</h3>
-        </div>
-        <div className="plan-feature-col">
-          <h3 className="header-name">Analytics Reporting</h3>
-        </div>
-        <div className="plan-feature-col">
-        </div>
-      </div>
-
-      <div className="plan-feature-row">
-        <div className="plan-feature-col">
-          <h3 className="plan-name">Site Care Plan</h3>
-          <p>$295/mo</p>
-        </div>
-        <div className="plan-feature-col">
-          <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col">
-          <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col plan-feature-text">
-          2 hours
-        </div>
-        <div className="plan-feature-col">
-          <ImCross className="plan-feature-x"/>
-        </div>
-        <div className="plan-feature-col">
-          <ImCross className="plan-feature-x"/>
-        </div>
-        <div className="plan-feature-col">
-          <button
-            // onClick={() => setShowModal(true)}
-            className="support-button-pushable"
-          >
-            <span className="support-button-shadow"></span>
-            <span className="support-button-accent-edge"></span>
-            <span className="support-button-accent-front text">Subscribe</span>
-          </button>
-        </div>
-      </div>
-
-      <div className="plan-feature-row">
-        <div className="plan-feature-col">
-          <h3 className="plan-name">Site Grow Plan</h3>
-          <p>$595/mo</p>
-        </div>
-        <div className="plan-feature-col">
-        <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col">
-        <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col plan-feature-text">
-          4 hours
-        </div>
-        <div className="plan-feature-col">
-        <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col">
-        <FaCheck className="plan-feature-check"/>
-        </div>
-        <div className="plan-feature-col">
-          <button
-            // onClick={() => setShowModal(true)}
-            className="support-button-pushable"
-          >
-            <span className="support-button-shadow"></span>
-            <span className="support-button-accent-edge"></span>
-            <span className="support-button-accent-front text">Subscribe</span>
-          </button>
-        </div>
-      </div>
-    </div>
+ 
 
 
 
