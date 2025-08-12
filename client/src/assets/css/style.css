@@ -1662,7 +1662,6 @@ body {
 
 .pricing-table-mobile .plan-feature-header .plan-feature-col:first-child {
   border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .pricing-table-mobile .plan-feature-header .plan-feature-col:last-child {
@@ -1676,8 +1675,14 @@ body {
   border-bottom-left-radius: 0;
 }
 
+.pricing-table-mobile .plan-feature-row .plan-feature-col:first-child {
+  box-shadow: 10px 0 10px inset #57575748;
+}
+
+
 .pricing-table-mobile .plan-feature-row:last-child .plan-feature-col:first-child {
   border-top-right-radius: 10px;
+
 }
 
 .pricing-table-mobile .plan-feature-row .plan-feature-col:last-child {
