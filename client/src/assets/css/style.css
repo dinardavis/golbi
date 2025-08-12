@@ -1645,28 +1645,49 @@ body {
 .pricing-table-mobile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  width: 100%;
 }
 
-.pricing-col {
+.pricing-table-mobile .plan-feature-col {
+  min-height: 125px;
+}
+
+.pricing-table-mobile .plan-feature-header,
+.pricing-table-mobile .plan-feature-row,
+.pricing-table-mobile .plan-feature-row {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  justify-content: initial;
 }
 
-.plan-feature-col {
-  padding: 0.5rem;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+.pricing-table-mobile .plan-feature-header .plan-feature-col:first-child {
+  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.header-name {
-  font-weight: bold;
+.pricing-table-mobile .plan-feature-header .plan-feature-col:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
 }
 
+.pricing-table-mobile .plan-feature-row .plan-feature-col:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
+.pricing-table-mobile .plan-feature-row:last-child .plan-feature-col:first-child {
+  border-top-right-radius: 10px;
+}
 
+.pricing-table-mobile .plan-feature-row .plan-feature-col:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
+.pricing-table-mobile .plan-feature-row:last-child .plan-feature-col:last-child {
+  border-bottom-right-radius: 10px;
+}
 
 
 /* FAQ SECTION */
@@ -2334,8 +2355,6 @@ body {
 }
 
 
-
-
 /* MOBILE MEDIA QUERIES  */
 
 @media (max-width: 1100px) {
@@ -2603,14 +2622,12 @@ body {
 /* MOBILE MEDIA QUERIES  */
 
 @media (max-width: 1100px) {
-  /* Existing styles */
-
   #work {
-    scroll-margin-top: -150px; /* Slightly reduced for medium screens */
+    scroll-margin-top: -150px; 
   }
 
   #pricing {
-    scroll-margin-top: -65px; /* Slightly reduced for medium screens */
+    scroll-margin-top: -65px; 
   }
 }
 
@@ -2621,7 +2638,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* Existing styles */
   .intro-cta-copy-container {
     flex-direction: column;
     margin-bottom: 0;
@@ -2674,30 +2690,33 @@ body {
     margin-top: 2rem;
   }
 
-  /* Add scroll margin adjustments */
   #work {
-    scroll-margin-top: -120px; /* Further reduced for tablet */
+    scroll-margin-top: -120px; 
   }
 
   #pricing {
-    scroll-margin-top: -50px; /* Further reduced for tablet */
+    scroll-margin-top: -50px; 
   }
 }
 
 @media (max-width: 600px) {
-
-  /* Add scroll margin adjustments */
   #work {
-    scroll-margin-top: -80px; /* Much smaller for mobile */
+    scroll-margin-top: -80px; 
   }
 
   #pricing {
-    scroll-margin-top: -30px; /* Much smaller for mobile */
+    scroll-margin-top: -30px;
   }
 
   #about,
   #faqs {
-    scroll-margin-top: 15px; /* Slightly reduced for mobile */
+    scroll-margin-top: 15px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-table-mobile .plan-feature-header {
+    max-width: 100px;
   }
 }
 
@@ -2706,3 +2725,7 @@ body {
     display: none;
   }
 }
+
+
+
+
