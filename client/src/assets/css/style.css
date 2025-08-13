@@ -1638,6 +1638,11 @@ body {
   height: 140px;
 }
 
+.mobile-pricing-content .site-feature-col, 
+.mobile-pricing-content .site-name {
+  font-size: 1rem;
+}
+
 .mobile-pricing-content .site-feature-col-blank {
     background-color: var(--background-dot);
     border-top-left-radius: 10px;
@@ -1646,7 +1651,7 @@ body {
 
 .mobile-pricing-content .site-feature-header, 
 .mobile-pricing-content .site-feature-row {
-  margin-bottom: 0;
+  margin-bottom: .5px;
 }
 
 .mobile-pricing-content .site-feature-col.site-name-container {
@@ -1659,12 +1664,12 @@ margin-bottom: 1rem;
 .mobile-pricing-content .site-feature-row .site-feature-col:first-child, 
 .mobile-pricing-content .site-feature-row .site-feature-col:last-child {
   border-radius: 0;
-  height: 90px;
+  min-height: 90px;
 }
 
 .mobile-pricing-content .site-feature-cta-container.left.border-radius-override {
   height: 140px;
-  margin-top: 1rem;
+  margin: 1rem 0 5rem;
   background-color: var(--white);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1674,6 +1679,9 @@ margin-bottom: 1rem;
   border-top-left-radius: 10px;
 }
 
+.mobile-pricing-content .pricing-header-copy-container-bottom {
+  margin-top: -6rem;
+}
 
 .pricing-table-mobile {
   display: grid;
@@ -1682,13 +1690,13 @@ margin-bottom: 1rem;
 }
 
 .pricing-table-mobile .plan-feature-col {
-  min-height: 85px;
+  min-height: 122px;
   margin-bottom: 10px;
 }
 
-.pricing-table-mobile .plan-feature-col:first-child {
+/* .pricing-table-mobile .plan-feature-col:first-child {
   min-height: 105px;
-}
+} */
 
 .pricing-table-mobile .plan-feature-header,
 .pricing-table-mobile .plan-feature-row,
@@ -2594,11 +2602,6 @@ margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .pricing-header-copy {
-    padding: 1rem 0 0 0;
-    text-align: left;
   }
 
   .pricing-option-3 {
