@@ -2572,6 +2572,10 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 600px) {
+  .about-section {
+    padding: 1rem;
+  }
+
   .steps-section,
   .benefits-section,
   .work-section,
@@ -2596,6 +2600,18 @@ margin-bottom: 1rem;
 
   .intro-subhead {
     font-size: 1.1rem;
+  }
+
+  .case-studies-section {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .case-studies-container {
+    margin: 2rem 0 5rem;
+    padding: 2rem 1rem 0rem;
+    border-radius: 0.5rem;
+    max-width: 1190px;
+    background-color: var(--background-dot);
   }
 
   .pricing-header-copy-container {
