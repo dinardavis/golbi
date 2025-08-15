@@ -1,11 +1,11 @@
 // data/caseStudyData.js
-import dacthumbnail from "../assets/imgs/dac_thumbnail.png";
-import keystone from "../assets/imgs/keystone_thumbnail.png";
+import dacThumbnail from "../assets/imgs/dac_thumbnail.png";
+import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail.png";
 
 const caseStudyData = [
   {
     type: "Info-Packed Legal Nonprofit Platform",
-    thumbnail: dacthumbnail,
+    thumbnail: rochelleThumbnail,
     client: "Dependency Advocacy Center",
     industry: "Nonprofit Legal Services",
     objective:
@@ -23,7 +23,7 @@ const caseStudyData = [
   },
   {
     type: "Info-Packed Legal Nonprofit Platform",
-    thumbnail: keystone,
+    thumbnail: dacThumbnail,
     client: "Dependency Advocacy Center",
     industry: "Nonprofit Legal Services",
     objective:
