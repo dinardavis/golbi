@@ -65,6 +65,14 @@ export default function CaseStudies() {
             <CaseStudyCard key={index} {...item} />
           ))}
         </div>
+
+        <div className="testimonial-section">
+          <p className="testimonial-copy">
+            Working with Golbi was a super easy and delivered a huge upgrade from out previous site!
+          </p>
+          <p className="testimonial-author">-Nicole - Director of Operations</p>
+          <p className="testimonial-author">Dependency Advocacy Center</p>
+        </div>
       </div>
     </Section>
   );
