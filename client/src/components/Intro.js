@@ -32,7 +32,7 @@ export default function Intro() {
             <span className="">Golbi</span> is
             a web agency specializing in supporting small businesses.
           </p>
-          <p className="intro-subhead">Clear Pricing. Zero bloat. Just big results.</p>
+          <p className="intro-subhead">Clear Pricing. Easy Sign-up. Big Impact.</p>
 
           <div className="intro-button-container">
             <a href="#pricing">
