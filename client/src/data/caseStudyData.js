@@ -4,7 +4,7 @@ import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail.png";
 
 const caseStudyData = [
   {
-    type: "Life Coaching & Personal Growth Website",
+    type: "Life Coaching & Personal Development Website",
     thumbnail: rochelleThumbnail,
     client: "Rochelle Ruen Coaching",
     industry: "Personal Development",
@@ -22,7 +22,7 @@ const caseStudyData = [
     alignment: "left",
   },
   {
-    type: "Legal Advocacy & Nonprofit Website",
+    type: "Nonprofit Legal Services Website",
     thumbnail: dacThumbnail,
     client: "Dependency Advocacy Center",
     industry: "Nonprofit Legal Services",
