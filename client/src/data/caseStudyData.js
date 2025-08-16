@@ -4,7 +4,7 @@ import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail.png";
 
 const caseStudyData = [
   {
-    type: "Life Coaching & Personal Development Website",
+    type: "Solopreneur Coaching & Self-Development Website",
     thumbnail: rochelleThumbnail,
     client: "Rochelle Ruen Coaching",
     industry: "Personal Development",
