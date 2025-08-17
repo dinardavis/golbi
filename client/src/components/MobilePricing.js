@@ -117,14 +117,14 @@ export default function MobilePricing() {
               <div className="site-feature-col">
                 <h3 className="site-name">Your Business Phase</h3>
               </div>
-              <div className="site-feature-col site-feature-desc">Ideal for solopreneurs and early-stage businesses with a clear, focused offering.</div>
+              <div className="site-feature-col site-feature-desc">Built for growing teams focused on boosting visibility and conversions.</div>
             </div>
 
             <div className="site-feature-row">
               <div className="site-feature-col">
                 <h3 className="site-name">Custom Pages</h3>
               </div>
-              <div className="site-feature-col">Single Page Site</div>
+              <div className="site-feature-col">Up to 6 Pages</div>
             </div>
 
             <div className="site-feature-row">
@@ -138,21 +138,21 @@ export default function MobilePricing() {
               <div className="site-feature-col">
                 <h3 className="site-name">Lead-Gen Form</h3>
               </div>
-              <div className="site-feature-col">1 Form</div>
+              <div className="site-feature-col">Lead Capture Setup</div>
             </div>
 
             <div className="site-feature-row">
               <div className="site-feature-col">
                 <h3 className="site-name">SEO & Speed Setup</h3>
               </div>
-              <div className="site-feature-col">Basic</div>
+              <div className="site-feature-col">Foundation</div>
             </div>
 
             <div className="site-feature-row">
               <div className="site-feature-col">
                 <h3 className="site-name">Copy Support</h3>
               </div>
-              <div className="site-feature-col"><ImCross className="site-feature-x" /></div>
+              <div className="site-feature-col">Copy Editing</div>
             </div>
 
             <div className="site-feature-row">
