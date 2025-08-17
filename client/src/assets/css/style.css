@@ -758,6 +758,10 @@ body {
   display: none;
 }
 
+.case-study-text-container p {
+  max-width: 450px;
+}
+
 .case-study-text {
   display: flex;
   justify-content: center;
