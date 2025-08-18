@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Benefits from "./Benefits";
@@ -21,7 +21,7 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const scrollTo = params.get("scrollTo");
     if (scrollTo) {
@@ -32,7 +32,7 @@ export default function Home() {
     }
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (showModal) {
       document.body.style.overflow = "hidden";
     } else {
@@ -43,6 +43,43 @@ export default function Home() {
       document.body.style.overflow = "auto";
     };
   }, [showModal]);
+
+  // Add scroll-triggered animations
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.dataset.animationDelay || 0;
+          setTimeout(() => {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }, delay * 100);
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for scroll animations with staggered delays
+    const animatedElements = document.querySelectorAll(
+      ".hire-to-item, .benefits-item, .case-study-card, .work-item, .pricing-option, .faqs-question, .about-content, .bottom-cta-container"
+    );
+
+    animatedElements.forEach((el, index) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(30px)";
+      el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+      el.dataset.animationDelay = index % 6; // Stagger delays in groups of 6
+      observer.observe(el);
+    });
+
+    return () => {
+      animatedElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   return (
     <>
