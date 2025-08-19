@@ -1076,92 +1076,32 @@ body {
   border: 1.5px solid var(--accent-1);
 }
 
-/* WORK SECTION */
+/* TESTIMONIAL SECTION  */
 
-.work-section {
+.testimonial-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 5rem 2rem 2rem;
-}
-
-.work-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  margin: 2rem 0 5rem;
-  background: var(--white);
-  border-radius: 0.5rem;
-  max-width: 1190px;
-}
-
-.work-content {
-  display: flex;
-  padding: 1rem;
-}
-
-.work-copy-container {
-  /* align-self: flex-start; */
-}
-
-.work-header,
-.work-subhead {
-  font-family: "Oswald", sans-serif;
-  font-size: 3rem;
-  text-align: left;
-}
-
-.work-subhead {
-  margin-left: 2rem;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
-  width: 100%;
-  max-width: 1400px;
-  border-radius: 0.5rem;
+  text-align: center;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  background-color: #ffffff1d;
 }
 
-.work-item {
-  position: relative;
-  height: auto;
-  width: 100%;
-  transition: all 0.4s ease-in-out;
+.testimonial-copy {
+  max-width: 500px;
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.1;
 }
 
-.work-item:hover {
-  transform: rotate(5deg) scale(1.05);
-  z-index: 2;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.work-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--white);
-  z-index: 1;
-  opacity: 0.2;
-  transition: all linear 0.2s;
-  border-radius: 0.5rem;
-}
-
-.work-overlay:hover {
-  opacity: 0;
-}
-
-.work-screenshot {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  box-shadow: 4px 10px 12px #292f412f;
+.testimonial-author {
+  line-height: 1.2;
 }
 
 /* PRICING SECTION */
@@ -2748,6 +2688,10 @@ body {
 
   .pricing-cta-copy-2 {
     margin-bottom: 0.5rem;
+  }
+
+  .testimonial-section {
+    margin-bottom: 1rem;
   }
 }
 
