@@ -4,14 +4,14 @@ import elowen from "../assets/imgs/elowen_thumbnail.png"
 import keystone from "../assets/imgs/keystone_thumbnail.png"
 import stratuspoint from "../assets/imgs/stratuspoint_thumbnail.png"
 import donutmissit from "../assets/imgs/donutmissit_thumbnail.png"
-import rochelleruen from "../assets/imgs/rochelle_thumbnail_2.png"
+import rochelleruen from "../assets/imgs/rochelle_thumbnail.png"
 
 const images = [
   dacthumbnail,
-  elowen,
   rochelleruen,
   donutmissit,
   keystone,
+  elowen,
   stratuspoint,
 ];
 

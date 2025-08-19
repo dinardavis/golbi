@@ -1,6 +1,6 @@
 // data/caseStudyData.js
 import dacThumbnail from "../assets/imgs/dac_thumbnail.png";
-import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail.png";
+import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail_1.png";
 
 const caseStudyData = [
   {
