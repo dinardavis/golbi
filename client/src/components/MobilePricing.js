@@ -324,7 +324,7 @@ export default function MobilePricing() {
 
       <div className="plan-feature-row">
         <div className="plan-feature-col">
-          <h3 className="plan-name">Site Care Plan</h3>
+          <h3 className="plan-name">Care Plan</h3>
           <p>$295/mo</p>
         </div>
         <div className="plan-feature-col">
@@ -356,7 +356,7 @@ export default function MobilePricing() {
 
       <div className="plan-feature-row">
         <div className="plan-feature-col">
-          <h3 className="plan-name">Site Grow Plan</h3>
+          <h3 className="plan-name">Boost Plan</h3>
           <p>$595/mo</p>
         </div>
         <div className="plan-feature-col">
