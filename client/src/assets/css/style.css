@@ -1570,7 +1570,7 @@ body {
   padding: 1.5rem 1rem;
   color: var(--background-dark);
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   background-color: var(--white);
   box-shadow: 10px 0 10px inset #83838348;
@@ -1661,7 +1661,7 @@ body {
 
 .plan-name {
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .plan-feature-check {
