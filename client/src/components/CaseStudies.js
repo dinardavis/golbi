@@ -68,7 +68,7 @@ export default function CaseStudies() {
 
         <div className="testimonial-section">
           <p className="testimonial-copy">
-            Working with Golbi was a super easy, and delivered a huge upgrade from our previous site!
+            I'm so pleased with our new site! We’re continuing to work with them on new pages and features as we grow—highly recommend! 
           </p>
           <p className="testimonial-author">-Director of Operations</p>
           <p className="testimonial-author">Dependency Advocacy Center</p>
