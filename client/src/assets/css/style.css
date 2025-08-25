@@ -2157,6 +2157,7 @@ body {
   text-align: center;
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 4px 5px 9px rgba(192, 190, 189, 0.25);
 }
 
 .modal-close-button {
