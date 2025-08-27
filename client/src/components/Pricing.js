@@ -51,7 +51,7 @@ export default function Pricing() {
 
   const pricingPlans = [
     {
-      key: "launch",
+      key: "starter",
       name: "Launch Site",
       desc: "Get a professional web presence to boost your credibility.",
       monthly: 1995,
@@ -62,8 +62,8 @@ export default function Pricing() {
         "Basic SEO and site speed setup",
         "Business email setup",
       ],
-      linkMonthly: "https://buy.stripe.com/bJebJ3ezL8wd4nD22j2cg00",
-      linkQuarterly: "https://buy.stripe.com/dRm3cx1MZh2Jf2hcGX2cg03",
+      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
+      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
     },
     {
       key: "growth",
@@ -77,8 +77,8 @@ export default function Pricing() {
         "Brand polish (fonts, color tweaks)",
         "Lead capture setup",
       ],
-      linkMonthly: "https://buy.stripe.com/7sY6oJ63f3bT8DTeP52cg05",
-      linkQuarterly: "https://buy.stripe.com/28E3cx8bn3bT5rH36n2cg02",
+      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
+      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
     },
     {
       key: "scale",
@@ -92,8 +92,8 @@ export default function Pricing() {
         "1 landing page or funnel sequence",
         "Analytics setup",
       ],
-      linkMonthly: "https://buy.stripe.com/00w5kFdvH3bT9HXfT92cg04",
-      linkQuarterly: "https://buy.stripe.com/9B614pfDPfYF3jzgXd2cg01",
+      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
+      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
     },
   ];
 
@@ -110,8 +110,6 @@ export default function Pricing() {
           </p>
         </div>
       </div>
-      
-
 
       <MobilePricing />
 
@@ -216,9 +214,7 @@ export default function Pricing() {
             <button
               className="pricing-button button-pushable"
               onClick={() =>
-                (
-                  "_blank"
-                )
+                window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
               }
             >
               <span className="button-shadow"></span>
@@ -239,9 +235,7 @@ export default function Pricing() {
             <button
               className="pricing-button button-pushable"
               onClick={() =>
-                (
-                  "_blank"
-                )
+                window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
               }
             >
               <span className="button-shadow"></span>
@@ -262,22 +256,17 @@ export default function Pricing() {
             <button
               className="pricing-button button-pushable"
               onClick={() =>
-                (
-                  "_blank"
-                )
+                window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
               }
             >
               <span className="button-shadow"></span>
               <span className="button-accent-edge"></span>
               <span className="button-accent-front text">Get started</span>
             </button>
-        </div>    
-      </div>
+          </div>    
+        </div>
 
-
-        
-
-       {/* Support Plans Section */}
+    {/* Support Plans Section */}
     <div className="pricing-header pricing-header-2">
       <div className="pricing-header-copy-container pricing-header-copy-container-bottom">
         <p className="pricing-header-copy">
@@ -335,6 +324,9 @@ export default function Pricing() {
           <button
             // onClick={() => setShowModal(true)}
             className="support-button-pushable"
+            onClick={() =>
+              window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
+            }
           >
             <span className="support-button-shadow"></span>
             <span className="support-button-accent-edge"></span>
@@ -342,7 +334,6 @@ export default function Pricing() {
           </button>
         </div>
       </div>
-
 
       <div className="plan-feature-row">
         <div className="plan-feature-col">
@@ -368,6 +359,9 @@ export default function Pricing() {
           <button
             // onClick={() => setShowModal(true)}
             className="support-button-pushable"
+            onClick={() =>
+              window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
+            }
           >
             <span className="support-button-shadow"></span>
             <span className="support-button-accent-edge"></span>
@@ -376,14 +370,6 @@ export default function Pricing() {
         </div>
       </div>
     </div>
-    
-
-
- 
-
-
-
-
   
   {/* Custom Plan Inquiry Card */}
         <div className="pricing-option-3">
@@ -423,12 +409,7 @@ export default function Pricing() {
             <span className="button-accent-front text">Schedule a Call</span>
             </button>
           </div>
-
-
-        </div>
-
-
-      
+        </div>    
       </div>
     </Section>
   );
