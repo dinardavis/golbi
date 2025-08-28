@@ -38,64 +38,6 @@ const itemVariants = {
 };
 
 export default function Pricing() {
-  const [isQuarterly, setIsQuarterly] = useState(false);
-  const [showAllDetails, setShowAllDetails] = useState(false);
-
-  const toggleBilling = () => setIsQuarterly((prev) => !prev);
-  const toggleAllPlanDetails = () => setShowAllDetails((prev) => !prev);
-
-  const getPrice = (monthlyPrice) => {
-    const price = isQuarterly ? Math.round(monthlyPrice * 0.8) : monthlyPrice;
-    return `$${price}`;
-  };
-
-  const pricingPlans = [
-    {
-      key: "starter",
-      name: "Launch Site",
-      desc: "Get a professional web presence to boost your credibility.",
-      monthly: 1995,
-      features: [
-        "Up to 3 custom pages",
-        "Mobile-optimized design",
-        "1 lead-gen form (contact, quote, etc.)",
-        "Basic SEO and site speed setup",
-        "Business email setup",
-      ],
-      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-    },
-    {
-      key: "growth",
-      name: "Growth Site",
-      desc: "Robust website ideal for growing visibility and increased conversions.",
-      monthly: 3995,
-      features: [
-        "Up to 6 custom pages",
-        "Copy editing and CTA refinement",
-        "SEO foundation (metadata, image compression)",
-        "Brand polish (fonts, color tweaks)",
-        "Lead capture setup",
-      ],
-      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-    },
-    {
-      key: "scale",
-      name: "Scale Site",
-      desc: "For businesses with expanding audiences, and nuanced messaging.",
-      monthly: 5995,
-      features: [
-        "Up to 10 custom pages",
-        "Copywriting assistance (headline + messaging support)",
-        "Integrated scheduler, CRM, or forms (Calendly, HubSpot, etc.)",
-        "1 landing page or funnel sequence",
-        "Analytics setup",
-      ],
-      linkMonthly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-      linkQuarterly: "https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06",
-    },
-  ];
 
   return (
     <Section>
@@ -325,7 +267,7 @@ export default function Pricing() {
             // onClick={() => setShowModal(true)}
             className="support-button-pushable"
             onClick={() =>
-              window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
+              window.open("https://buy.stripe.com/7sY00l1MZdQx2fv0Yf2cg09", "_blank")
             }
           >
             <span className="support-button-shadow"></span>
@@ -360,7 +302,7 @@ export default function Pricing() {
             // onClick={() => setShowModal(true)}
             className="support-button-pushable"
             onClick={() =>
-              window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
+              window.open("https://buy.stripe.com/fZu28tbnzaEl8DT8qH2cg0a", "_blank")
             }
           >
             <span className="support-button-shadow"></span>
