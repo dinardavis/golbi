@@ -63,13 +63,13 @@ export default function MobileNav(props) {
         >
           How To
         </span>
-        <span
+        {/* <span
           className="mobile-link"
           onClick={() => handleNavClick("about")}
           style={{ cursor: "pointer" }}
         >
           Why Golbi
-        </span>
+        </span> */}
         <span
           className="mobile-link"
           onClick={() => handleNavClick("work")}

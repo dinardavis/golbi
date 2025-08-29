@@ -94,13 +94,13 @@ export default function Navbar({
           >
             How To
           </span>
-          <span
+          {/* <span
             className="nav-link main-link"
             onClick={() => handleNavigation("about")}
             style={{ cursor: "pointer" }}
           >
             Why Golbi
-          </span>
+          </span> */}
           <span
             className="nav-link main-link"
             onClick={() => handleNavigation("work")}

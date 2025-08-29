@@ -13,7 +13,7 @@ function Section({ children }) {
   return (
     <section
       ref={ref}
-      id="case-studies"
+      id="work"
       className="case-studies-section"
     >
       {children}
