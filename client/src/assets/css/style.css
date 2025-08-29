@@ -972,7 +972,7 @@ body {
   transform: translateY(20px);
   transition: opacity 0.4s ease, max-height 0.4s ease, transform 0.4s ease;
   pointer-events: none;
-  padding: 1rem;
+  padding: 0 1rem;
   max-width: 500px;
   height: 100%;
   color: var(--font-primary);
@@ -1093,7 +1093,7 @@ body {
 
 .testimonial-copy {
   max-width: 500px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.6rem;
   font-weight: 100;
   font-style: italic;
@@ -1684,9 +1684,9 @@ body {
   height: 100%;
 }
 
- .site-feature-col.site-name-container.left {
-    padding: 1rem;
-  }
+.site-feature-col.site-name-container.left {
+  padding: 1rem;
+}
 
 .mobile-pricing-content .site-feature-col,
 .mobile-pricing-content .site-name {
@@ -1734,7 +1734,7 @@ body {
 }
 
 .mobile-pricing-content .site-feature-col {
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .mobile-pricing-content .pricing-header-copy-container-bottom {
@@ -1797,7 +1797,10 @@ body {
   background-color: var(--white);
 }
 
-.mobile-pricing-content .site-feature-row .site-feature-col:first-child .site-name {
+.mobile-pricing-content
+  .site-feature-row
+  .site-feature-col:first-child
+  .site-name {
   color: var(--font-primary);
   font-weight: 500;
 }
@@ -2170,7 +2173,7 @@ body {
   text-align: center;
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
-    box-shadow: 4px 5px 9px rgba(192, 190, 189, 0.25);
+  box-shadow: 4px 5px 9px rgba(192, 190, 189, 0.25);
 }
 
 .modal-close-button {
@@ -2594,6 +2597,31 @@ body {
     margin-top: 2rem;
   }
 
+  .case-study-text-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .case-study-text.type-right,
+  .case-study-text.type-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s ease-out, height 0.3s ease-out;
+  }
+
+  .case-study-card.hovered .case-study-text.type-right,
+  .case-study-card.hovered .case-study-text.type-left {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+    height: 0px;
+    pointer-events: none;
+  }
+
   .case-study-card .case-study-inner {
     flex-direction: column;
   }
@@ -2611,6 +2639,7 @@ body {
   }
 
   .case-study-copy-container {
+    padding-top: 2.5rem;
     max-width: 100%;
   }
 }
