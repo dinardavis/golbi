@@ -1086,15 +1086,15 @@ body {
   width: 100%;
   padding: 2rem;
   text-align: center;
-  border: 2px solid var(--white);
-  border-radius: 10px;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
   background-color: #ffffff1d;
 }
 
 .testimonial-copy {
-  max-width: 500px;
+  max-width: 700px;
   margin-bottom: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 100;
   font-style: italic;
   line-height: 1.1;

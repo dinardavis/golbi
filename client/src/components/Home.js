@@ -12,6 +12,7 @@ import Steps from "./Steps";
 import AccountManagementModal from "./AccountManagementModal";
 import About from "./About";
 import CaseStudies from "./CaseStudies";
+import IntroTestimonial from "./IntroTestimonial";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -126,7 +127,8 @@ export default function Home() {
         setSuccess={setSuccess}
       />
       <Intro />
-      <ServicesTicker />
+      <IntroTestimonial />
+      {/* <ServicesTicker /> */}
       <About />
       <Steps />
       <Benefits />
