@@ -66,7 +66,7 @@ export default function Home() {
 
     // Observe elements for scroll animations with staggered delays
     const animatedElements = document.querySelectorAll(
-      ".hire-to-item, .benefits-item, .case-study-card, .work-item, .pricing-option, .faqs-question, .about-content, .bottom-cta-container"
+      ".hire-to-item, .benefits-item, .case-study-card, .work-item, .pricing-option, .faqs-question, .about-content, .bottom-cta-container, .site-feature-col, .plan-feature-col"
     );
 
     animatedElements.forEach((el, index) => {
