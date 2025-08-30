@@ -817,7 +817,6 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 600px;
   margin-bottom: 2rem;
   background-color: var(--white);
   padding: 1rem;
@@ -928,6 +927,7 @@ body {
 
 .case-study-inner {
   display: flex;
+  min-height: 600px;
 }
 
 .case-study-container.align-left {
