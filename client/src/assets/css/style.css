@@ -314,9 +314,9 @@ body {
 }
 
 .intro-subhead {
-  padding: 1.5rem 0;
-  font-size: 1.2rem;
-  font-weight: 300;
+  padding: 2rem 0 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 100;
   text-align: center;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
