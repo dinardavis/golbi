@@ -927,7 +927,6 @@ body {
 
 .case-study-inner {
   display: flex;
-  min-height: 600px;
 }
 
 .case-study-container.align-left {
