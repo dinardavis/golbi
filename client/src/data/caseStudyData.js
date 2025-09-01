@@ -19,6 +19,7 @@ const caseStudyData = [
     ],
     impact:
       "The site became a true extension of Rochelle’s coaching style — supportive, inspiring, and action-oriented. Visitors now move effortlessly from learning about her services to booking sessions, all while feeling personally connected to her mission. The result: higher engagement, more inquiries, and a brand presence that matches her real-life impact.",
+    demoSite: "https://dinardavis.github.io/dac_website/",
     alignment: "left",
   },
   {
@@ -37,6 +38,7 @@ const caseStudyData = [
     ],
     impact:
       "The new platform doesn’t just look better — it actively helps families in crisis get connected to the right resources faster. Staff save time with streamlined intake, donors engage more easily, and prospective hires see a clear picture of DAC’s mission and impact. The result is a site that works as hard for the cause as the team behind it.",
+    demoSite: "https://dinardavis.github.io/dac_website/",
     alignment: "right",
   }
   ,

@@ -8,6 +8,7 @@ export default function CaseStudyCard({
   objective,
   deliverables,
   impact,
+  demoSite,
   alignment = "left",
 }) {
   const [hovered, setHovered] = useState(false);
@@ -67,7 +68,11 @@ export default function CaseStudyCard({
             </ul>
             <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
             <div className="demo-button">
-              <button className="demo-button-pushable">
+              <button className="demo-button-pushable"
+              onClick={() =>
+                window.open(demoSite, "_blank")
+              }
+              >
                 <span className="demo-button-shadow"></span>
                 <span className="demo-button-accent-edge"></span>
                 <span className="demo-button-accent-front text">See Live Demo</span>
