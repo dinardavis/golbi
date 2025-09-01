@@ -2604,7 +2604,7 @@ body {
 
   .case-study-text.type-right,
   .case-study-text.type-left {
-    position: absolute;
+    position: initial;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2641,6 +2641,44 @@ body {
   .case-study-copy-container {
     padding-top: 2.5rem;
     max-width: 100%;
+  }
+}
+
+/* Mobile-first approach for case study cards - devices under 900px */
+@media (max-width: 900px) {
+  .case-study-card .case-study-inner {
+    flex-direction: column !important;
+  }
+
+  .case-study-text-container {
+    order: 2 !important;
+    margin-bottom: 1rem;
+  }
+
+  .case-study-hero-img-container {
+    order: 1 !important;
+  }
+
+  /* Make all content visible on mobile - no animations */
+  .case-study-text {
+    height: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .case-study-copy-container {
+    opacity: 1 !important;
+    height: auto !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    padding: 1rem 0;
+  }
+
+  /* Ensure no scrolling is needed */
+  .case-study-text-container {
+    max-height: none;
+    overflow: visible;
   }
 }
 
