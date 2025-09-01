@@ -147,7 +147,7 @@ export default function Pricing() {
             <p
               className="calendar-booking"
               onClick={() =>
-                window.open("https://calendly.com/golbi/30min", "_blank")
+                window.open("https://calendly.com/scheduling-golbi/30min", "_blank")
               }
             >
               Book a call to learn more
@@ -168,7 +168,7 @@ export default function Pricing() {
             <p
               className="calendar-booking"
               onClick={() =>
-                window.open("https://calendly.com/golbi/30min", "_blank")
+                window.open("https://calendly.com/scheduling-golbi/30min", "_blank")
               }
             >
               Book a call to learn more
@@ -189,7 +189,7 @@ export default function Pricing() {
             <p
               className="calendar-booking"
               onClick={() =>
-                window.open("https://calendly.com/golbi/30min", "_blank")
+                window.open("https://calendly.com/scheduling-golbi/30min", "_blank")
               }
             >
               Book a call to learn more

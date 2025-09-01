@@ -1969,7 +1969,7 @@ body {
 .bottom-cta-subhead {
   max-width: 700px;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .bottom-cta-lottie-wink {
@@ -2638,6 +2638,7 @@ body {
 
   .case-study-hero-img {
     max-width: 100%;
+    object-position: 20% 0;
   }
 
   .case-study-copy-container {
