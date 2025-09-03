@@ -66,6 +66,13 @@ const questionData = [
   },
   {
     id: 10,
+    question: "How does payment work?",
+    answer:
+      "We keep it simple: 50% to start, 50% before launch. The first payment reserves your build slot and kicks off production. After you’ve reviewed the final build, the remaining balance is due prior to delivery/go-live. Once paid, we push your site live and transfer admin access.",
+    showAnswer: false,
+  },
+  {
+    id: 11,
     question: "Do you offer refunds?",
     answer:
       "Due to the nature of custom work, refunds aren’t offered. But the goal is always to get it right, and revisions are always part of the process.",
