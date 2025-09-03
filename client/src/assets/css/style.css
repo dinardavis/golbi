@@ -1451,6 +1451,24 @@ body {
   box-shadow: 10px 0 10px inset #d1cfcf36;
 }
 
+.site-feature-payment-copy-container {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: none;
+  min-height: 70px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.site-feature-payment-copy {
+  background-color: var(--background-light);
+  color: var(--font-primary);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
 .site-name-container.left {
   box-shadow: none;
 }
