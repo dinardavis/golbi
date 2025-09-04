@@ -2654,9 +2654,9 @@ body {
     max-width: 100%;
   }
 
-  .case-study-hero-img {
+  img.case-study-hero-img--primary {
     max-width: 100%;
-    object-position: 20% 0;
+    object-position: 75% 0;
   }
 
   .case-study-copy-container {
