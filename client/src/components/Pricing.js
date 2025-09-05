@@ -71,7 +71,7 @@ export default function Pricing() {
 
         <div className="site-feature-payment-copy-container">
           <div className="site-feature-col-blank"></div>
-          <p className="site-feature-payment-copy">*** Simple 50/50 billing: 50% to start, 50% before launch.</p>
+          <p className="site-feature-payment-copy">Simple 50/50 billing: 50% to start, 50% before launch.</p>
         </div>
 
         <div className="site-feature-row">

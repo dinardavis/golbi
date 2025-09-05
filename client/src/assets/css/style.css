@@ -1452,21 +1452,24 @@ body {
 }
 
 .site-feature-payment-copy-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   box-shadow: none;
   min-height: 70px;
   width: 100%;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 }
 
 .site-feature-payment-copy {
-  background-color: var(--background-light);
-  color: var(--font-primary);
+  grid-column: 2 / -1;
+  /* background-color: var(--background-light); */
+  color: var(--font-secondary);
   padding: 2rem 1rem;
   border-radius: 10px;
+  border: 1px dashed var(--font-secondary);
 }
 
 .site-name-container.left {
