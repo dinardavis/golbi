@@ -1465,11 +1465,16 @@ body {
 
 .site-feature-payment-copy {
   grid-column: 2 / -1;
-  /* background-color: var(--background-light); */
-  color: var(--font-secondary);
+  background: linear-gradient(
+  135deg,
+  #eeeff2 0%,
+  #f6f7f9 40%,
+  #dfe3eb 100%
+);
+  color: var(--font-accent-1);
   padding: 2rem 1rem;
   border-radius: 10px;
-  border: 1px dashed var(--font-secondary);
+  line-height: 1.29;
 }
 
 .site-name-container.left {
