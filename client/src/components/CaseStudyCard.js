@@ -85,7 +85,7 @@ export default function CaseStudyCard({
           <div className="case-study-container-overlay"></div>
           <img
             src={thumbnail}
-            className="case-study-hero-img case-study-hero-img--primary"
+            className="case-study-hero-img case-study-hero-img"
             alt="case study thumbnail"
           />
         </div>

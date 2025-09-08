@@ -384,17 +384,17 @@ body {
 }
 
 .about-link {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-underline-offset: 3px;
   text-decoration-thickness: 1.5px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s ease-in-out;
 }
 
-.about-link:hover {
+/* .about-link:hover {
   color: var(--font-primary);
   transform: translateY(-1px);
-}
+} */
 
 .steps-section {
   display: flex;
@@ -1465,15 +1465,22 @@ body {
 
 .site-feature-payment-copy {
   grid-column: 2 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border: 1.5px solid var(--white);
+  border-radius: 10px;
   background: linear-gradient(
   135deg,
-  #eeeff2 0%,
-  #f6f7f9 40%,
-  #dfe3eb 100%
+  #ffffff1d 0%,
+  #ffffff30 25%,
+  #ffffff30 75%,
+  #ffffff1d 100%
 );
-  color: var(--font-accent-1);
-  padding: 2rem 1rem;
-  border-radius: 10px;
   line-height: 1.29;
 }
 
@@ -1710,6 +1717,27 @@ body {
 
 .mobile-pricing-content .site-feature-header {
   height: 100%;
+}
+
+.mobile-site-feature-payment-copy {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border: 1.5px solid var(--white);
+  border-radius: 10px;
+  background: linear-gradient(
+  135deg,
+  #ffffff1d 0%,
+  #ffffff30 25%,
+  #ffffff30 75%,
+  #ffffff1d 100%
+);
+  line-height: 1.29;
 }
 
 .site-feature-col.site-name-container.left {
@@ -2662,9 +2690,9 @@ body {
     max-width: 100%;
   }
 
-  img.case-study-hero-img--primary {
+  .case-studies-content-container > .case-study-card:nth-of-type(1) .case-study-hero-img  {
     max-width: 100%;
-    object-position: 75% 0;
+    object-position: 92% 0;
   }
 
   .case-study-copy-container {
@@ -2673,7 +2701,6 @@ body {
   }
 }
 
-/* Mobile-first approach for case study cards - devices under 900px */
 @media (max-width: 900px) {
   .case-study-card .case-study-inner {
     flex-direction: column !important;
@@ -2688,7 +2715,6 @@ body {
     order: 1 !important;
   }
 
-  /* Make all content visible on mobile - no animations */
   .case-study-text {
     height: auto !important;
     transform: none !important;
@@ -2701,10 +2727,9 @@ body {
     height: auto !important;
     transform: none !important;
     pointer-events: auto !important;
-    padding: 1rem 0;
+    padding: 1rem 0 0;
   }
 
-  /* Ensure no scrolling is needed */
   .case-study-text-container {
     max-height: none;
     overflow: visible;

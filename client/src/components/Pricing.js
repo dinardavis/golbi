@@ -56,6 +56,11 @@ export default function Pricing() {
       <MobilePricing />
 
       <div className="pricing-content">
+        <div className="site-feature-payment-copy-container">
+          <div className="site-feature-col-blank"></div>
+          <p className="site-feature-payment-copy">Simple 50/50 billing!<br></br>50% to start, 50% before launch</p>
+        </div>
+
         <div className="site-feature-header">
           <div className="site-feature-col-blank"></div>
           <div className="site-feature-col site-name-container left">
@@ -67,11 +72,6 @@ export default function Pricing() {
           <div className="site-feature-col site-name-container">
             <h3 className="site-header-name">Scale Site<br/><span>$5,995</span></h3>
           </div>
-        </div>
-
-        <div className="site-feature-payment-copy-container">
-          <div className="site-feature-col-blank"></div>
-          <p className="site-feature-payment-copy">Simple 50/50 billing!<br></br>50% to start, 50% before launch</p>
         </div>
 
         <div className="site-feature-row">

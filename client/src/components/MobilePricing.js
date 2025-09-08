@@ -12,6 +12,10 @@ import spider from "../assets/imgs/logo_spider_only.png";
 export default function MobilePricing() {
   return (
     <div className="mobile-pricing-content">
+        <div className="site-feature-payment-copy-container">
+          <p className="mobile-site-feature-payment-copy">Simple 50/50 billing!<br></br>50% to start, 50% before launch</p>
+        </div>
+
       <div className="mobile-site-card">
         <div className="site-feature-header">
           <div className="site-feature-col site-name-container left">
