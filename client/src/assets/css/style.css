@@ -419,6 +419,8 @@ body {
   border: 1.5px solid var(--white);
   border-radius: 10px;
   background-color: #ffffff1d;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .testimonial-copy {
