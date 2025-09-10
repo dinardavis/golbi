@@ -339,16 +339,24 @@ body {
 
 .about-section {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
   margin-top: 6rem;
+  height: 100%;
+}
+
+.about-section-inner {
+  display: flex;
+  position: relative;
+  width: 100%;
   height: 100%;
 }
 
 .about-content {
   position: relative;
+  max-width: 600px;
   padding: 3rem;
+  margin: 4rem 0 0 -5rem;
   color: var(--font-secondary);
   background-image: linear-gradient(to bottom right, #ff5d44 10%, #ef3e23 30%);
   border-radius: 1rem;
@@ -395,6 +403,48 @@ body {
   color: var(--font-primary);
   transform: translateY(-1px);
 } */
+
+/* TESTIMONIAL SECTION  */
+.testimonial-section {
+  position: relative;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 2rem;
+  margin-top: -8rem;
+  text-align: center;
+  border: 1.5px solid var(--white);
+  border-radius: 10px;
+  background-color: #ffffff1d;
+}
+
+.testimonial-copy {
+  max-width: 700px;
+  margin-bottom: 0.5rem;
+  font-size: 1.29rem;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.testimonial-author {
+  line-height: 1.2;
+}
+
+.testimonial-spider-1 {
+  position: absolute;
+  width: 60px;
+  opacity: 1;
+}
+
+.testimonial-spider-1 {
+  bottom: 0rem;
+  left: 4rem;
+  transform: rotate(0deg);
+}
 
 .steps-section {
   display: flex;
@@ -1076,34 +1126,6 @@ body {
   background: var(--accent-1);
   color: var(--font-secondary);
   border: 1.5px solid var(--accent-1);
-}
-
-/* TESTIMONIAL SECTION  */
-
-.testimonial-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 2rem;
-  text-align: center;
-  border-top: 1.5px solid var(--white);
-  border-bottom: 1.5px solid var(--white);
-  background-color: #ffffff1d;
-}
-
-.testimonial-copy {
-  max-width: 700px;
-  margin-bottom: 0.5rem;
-  font-size: 1.29rem;
-  font-weight: 100;
-  font-style: italic;
-  line-height: 1.1;
-}
-
-.testimonial-author {
-  line-height: 1.2;
 }
 
 /* PRICING SECTION */
@@ -2601,6 +2623,20 @@ body {
 
   .intro-cta-copy {
     margin: 0.5rem 0;
+  }
+
+  .testimonial-section {
+    margin-top: 0;
+    min-height: auto;
+  }
+
+  .about-section-inner {
+    flex-direction: column;
+  }
+
+  .about-content {
+    margin: 1rem 0 0 0;
+    max-width: 100%;
   }
 
   .case-studies-top-content-container {

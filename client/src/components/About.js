@@ -2,7 +2,8 @@ import React from "react";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import spider from "../assets/imgs/logo_spider_only.png";
-
+import IntroTestimonial from "./IntroTestimonial"
+import Intro from "./Intro";
 
 function Section({ children }) {
   const ref = useRef(null);
@@ -28,16 +29,18 @@ export default function About() {
   return (
     <>
       <Section>
-        <div className="about-content">
-          <img className="about-spider-1" src={spider} alt="Golbi spider" />
-          <p className="about-copy">Before creating Golbi, its founder (<a className="about-link">Dinar</a>) spent years shaping advertising and marketing initiatives for global giants like Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
+        <div className="about-section-inner">
+          <IntroTestimonial />
+          <div className="about-content">
+            <img className="about-spider-1" src={spider} alt="Golbi spider" />
+            <p className="about-copy">Before creating Golbi, its founder (<a className="about-link">Dinar</a>) spent years shaping advertising and marketing initiatives for global giants like Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
 
-          <p className="about-copy">Now, he provides that same standard of execution to small businesses without the overhead or agency fluff.</p>
+            <p className="about-copy">Now, he provides that same standard of execution to small businesses without the overhead or agency fluff.</p>
 
-          <p className="about-copy">Golbi is lean by design, delivering sharp, targeted, web work for businesses that want real results, not the runaround.</p>
-          <img className="about-spider-2" src={spider} alt="Golbi spider" />
+            <p className="about-copy">Golbi is lean by design, delivering sharp, targeted, web work for businesses that want real results, not the runaround.</p>
+            <img className="about-spider-2" src={spider} alt="Golbi spider" />
+          </div>
         </div>
-
       </Section>
     </>
   );
