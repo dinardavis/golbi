@@ -47,7 +47,7 @@ export default function Home() {
   // Add scroll-triggered animations
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.1,
+      threshold: 0.5,
       rootMargin: "0px 0px -50px 0px",
     };
 
@@ -65,7 +65,7 @@ export default function Home() {
 
     // Observe elements for scroll animations with staggered delays
     const animatedElements = document.querySelectorAll(
-      ".hire-to-item, .benefits-item, .case-study-card, .work-item, .pricing-option, .faqs-question, .about-content, .bottom-cta-container, .site-feature-col, .plan-feature-col"
+      ".hire-to-item, .testimonial-section,.benefits-item, .case-study-card, .work-item, .pricing-option, .faqs-question, .about-content, .bottom-cta-container, .site-feature-col, .plan-feature-col"
     );
 
     animatedElements.forEach((el, index) => {
