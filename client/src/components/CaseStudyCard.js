@@ -58,16 +58,7 @@ export default function CaseStudyCard({
           </div>
 
           <div className={`case-study-copy-container ${delayedHover ? "show" : ""}`}>
-            <p className="case-study-copy-item"><span>Industry: </span>{industry}</p>
-            <p className="case-study-copy-item"><span>Objective: </span>{objective}</p>
-            <ul className="case-study-copy-item case-study-copy-list">
-              <span>Project Deliverable: </span>
-              {deliverables.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-            <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
-            <div className="demo-button">
+          <div className="demo-button">
               <button className="demo-button-pushable"
               onClick={() =>
                 window.open(demoSite, "_blank")
@@ -78,6 +69,15 @@ export default function CaseStudyCard({
                 <span className="demo-button-accent-front text">See Live Demo</span>
               </button>
             </div>
+            <p className="case-study-copy-item"><span>Industry: </span>{industry}</p>
+            <p className="case-study-copy-item"><span>Objective: </span>{objective}</p>
+            <ul className="case-study-copy-item case-study-copy-list">
+              <span>Project Deliverable: </span>
+              {deliverables.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <p className="case-study-copy-item"><span>Impact: </span>{impact}</p>
           </div>
         </div>
 
