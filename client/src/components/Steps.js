@@ -66,10 +66,10 @@ export default function Steps() {
         
           <div className="intro-cta-copy-container">
             <div className="intro-cta-copy intro-cta-copy-2">
-            <div className="intro-cta-numbers">Step 1</div> Pick your build package and tell us what type of site your business needs.
+            <div className="intro-cta-numbers">Step 1</div> Pick your build package and let us know what your current business goals are.
             </div>
             <div className="intro-cta-copy intro-cta-copy-3">
-            <span className="intro-cta-numbers">Step 2</span> We get to work designing, building, and launching a site that converts.
+            <span className="intro-cta-numbers">Step 2</span> We get to work designing, building, and launching a site that helps achieve your goals.
             </div>
             <div className="intro-cta-copy intro-cta-copy-4">
             <span className="intro-cta-numbers">Step 3</span> Subscribe for monthly support, and tech peace of mind. Or don’t. It's up to you.

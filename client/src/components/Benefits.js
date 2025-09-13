@@ -72,7 +72,7 @@ export default function Benefits() {
             />
           </div>
           <h2 className="benefits-item-header">A unique business imprint.</h2>
-          <p className="benefits-item-copy">Cookie cutters are for cookies — not your site. Golbi delivers tailored, thoughtful builds with your voice and goals baked in. No templates. No fluff. No identity crisis.</p>
+          <p className="benefits-item-copy">Cookie cutters are for cookies — not your site. Golbi delivers tailored, thoughtful builds with your voice baked in. No templates, and no recycled ideas.</p>
         </div>
 
         <div className="benefits-item">
@@ -84,7 +84,7 @@ export default function Benefits() {
             />
           </div>
           <h2 className="benefits-item-header">All go, no bloat.</h2>
-          <p className="benefits-item-copy">No retainers. No idle hours. No mystery invoices. You pay for what gets done — simple as that. Want ongoing support? We offer that too, on your terms.</p>
+          <p className="benefits-item-copy">No retainers. No idle hours. No mystery invoices. You pay for what gets done — simple as that. Want ongoing support? We offer that too. The choice is yours.</p>
         </div>
 
         <div className="benefits-item">
