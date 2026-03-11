@@ -41,17 +41,17 @@ export default function CaseStudies() {
               <DiagonalScroller />
             
               <div className="products-items">
-                <div className="products-item">Lead Captures</div>
-                <div className="products-item">List Builders</div>
-                <div className="products-item">Launch Pages</div>
-                <div className="products-item">Brand Stories</div>
-                <div className="products-item">Promo Countdown Timers</div>
+                <div className="products-item">Lead Capture Forms</div>
+                <div className="products-item">Launch Landing Pages</div>
+                <div className="products-item">Brand Storytelling</div>
                 <div className="products-item">Testimonials</div>
-                <div className="products-item">Quick Edits</div>
-                <div className="products-item">Zapier Hooks</div>
-                <div className="products-item">Mobile Views</div>
-                <div className="products-item">Shop Pages</div>
-                <div className="products-item">SEO Enhancements</div>
+                <div className="products-item">Booking Integrations</div>
+                <div className="products-item">Email List Builders</div>
+                <div className="products-item">SEO Optimization</div>
+                <div className="products-item">Mobile-First Design</div>
+                <div className="products-item">Performance Optimization</div>
+                <div className="products-item">Service Pages</div>
+                <div className="products-item">Socials Linking</div>
                 <div className="products-item">And More...</div>
               </div>
 
@@ -60,7 +60,7 @@ export default function CaseStudies() {
         </div>
 
         <div className="case-studies-content-container">
-          <h3 className="case-studies-content-header">Client Snapshots</h3>
+          <h3 className="case-studies-content-header">Client Case Studies</h3>
           {caseStudyData.map((item, index) => (
             <CaseStudyCard key={index} {...item} />
           ))}

@@ -33,11 +33,12 @@ export default function About() {
           <IntroTestimonial />
           <div className="about-content">
             <img className="about-spider-1" src={spider} alt="Golbi spider" />
-            <p className="about-copy">Before creating Golbi, its founder (<a className="about-link">Dinar</a>) spent years shaping advertising and marketing initiatives for global giants like Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
+            <p className="about-copy">Before founding Golbi, its founder (<a className="about-link">Dinar</a>) worked on advertising and marketing initiatives for global brands including Pfizer, Disney, Coca-Cola, General Motors, and Procter & Gamble.</p>
 
-            <p className="about-copy">Now, he provides that same standard of execution to small businesses without the overhead or agency fluff.</p>
+            <p className="about-copy">Those companies invest heavily in understanding what makes people take action online.</p>
 
-            <p className="about-copy">Golbi is lean by design, delivering sharp, targeted, web work for businesses that want real results, not the runaround.</p>
+            <p className="about-copy">Golbi brings that same thinking to small businesses. Instead of generic templates or bloated agency processes, Golbi delivers focused, practical websites designed to help businesses communicate clearly, build trust, and generate new clients.</p>
+            <p className="about-copy">Lean by design. Strategic by experience.</p>
             <img className="about-spider-2" src={spider} alt="Golbi spider" />
           </div>
         </div>

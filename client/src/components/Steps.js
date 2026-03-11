@@ -30,31 +30,31 @@ export default function Steps() {
       <div className="steps-content text-center font-light">
       <div className="step-offer-container steps-left">
     <div className="intro-cta-copy intro-cta-copy-1">
-      <div className="steps-header oswald">Hire <span className="steps-golbi-name">Golbi</span> to:</div>
+      <div className="steps-header oswald">What <span className="steps-golbi-name">Golbi</span> does better:</div>
       <div className="hire-to-section">
         <div className="hire-to-item">
           <div className="icon-container">
             <FaTools className="hire-to-icon" />
           </div>
-          Build fast, clean sites designed to convert - not just look good.
+          Strong digital work begins with clarity. Years of advertising experience helps distill what makes your business valuable and why someone should care.
           </div> 
         <div className="hire-to-item">
           <div className="icon-container">
             <FaRegGem className="hire-to-icon" />
           </div>
-          Move on from <span className="no-wrap">cookie-cutter</span> templates. We design with intention and personality.</div> 
+         Every section has a job. The goal is to guide someone from curiosity to trust to action without confusion or friction.</div> 
 
         <div className="hire-to-item">
           <div className="icon-container">
             <RxRocket className="hire-to-icon" />
           </div>
-          Create custom Shopify or <span className="no-wrap">e-commerce</span> setups that move real product.</div> 
+         Automated tools can generate layouts, but strategy, taste, and restraint still require a thinking human.</div> 
 
         <div className="hire-to-item">
           <div className="icon-container">
             <FaMagnifyingGlassDollar className="hire-to-icon" />
           </div>
-          We optimize your site structure, speed, and content for search visibility.</div>
+          The final result should feel intentional, credible, and aligned with the way you actually work with clients.</div>
       </div>
     </div>
   </div>
@@ -66,13 +66,13 @@ export default function Steps() {
         
           <div className="intro-cta-copy-container">
             <div className="intro-cta-copy intro-cta-copy-2">
-            <div className="intro-cta-numbers">Step 1</div> Pick your build package and let us know what your current business goals are.
+            <div className="intro-cta-numbers">Step 1</div> Choose the website package that fits your business and share a few details about your goals.
             </div>
             <div className="intro-cta-copy intro-cta-copy-3">
-            <span className="intro-cta-numbers">Step 2</span> We get to work designing, building, and launching a site that helps achieve your goals.
+            <span className="intro-cta-numbers">Step 2</span> Golbi designs, builds, and launches a clean, modern website tailored to your services.
             </div>
             <div className="intro-cta-copy intro-cta-copy-4">
-            <span className="intro-cta-numbers">Step 3</span> Subscribe for monthly support, and tech peace of mind. Or don’t. It's up to you.
+            <span className="intro-cta-numbers">Step 3</span> After launch, you can keep Golbi on call for updates and improvements. Or simply take the site and run with it.
             </div>
           </div>
 
