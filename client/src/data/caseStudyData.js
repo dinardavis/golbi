@@ -5,6 +5,9 @@ import dacThumbnail3 from "../assets/imgs/dac_thumbnail4.png";
 import rochelleThumbnail from "../assets/imgs/rochelle_thumbnail_1.png";
 import rochelleThumbnail2 from "../assets/imgs/rochelle_thumbnail_4.png";
 import rochelleThumbnail3 from "../assets/imgs/rochelle_thumbnail_5.png";
+import opsThumbnail from "../assets/imgs/jordan_thumbnail1.png";
+import opsThumbnail2 from "../assets/imgs/jordan_thumbnail2.png";
+import opsThumbnail3 from "../assets/imgs/jordan_thumbnail3.png";
 
 const caseStudyData = [
   {
@@ -49,7 +52,26 @@ const caseStudyData = [
     demoSite: "https://golbi-llc.github.io/dac",
     alignment: "right",
   }
-  ,
+  ,{
+  type: "Fractional Operations Consulting",
+  flagText: "Multi-page",
+  thumbnail: opsThumbnail,
+  images: [opsThumbnail, opsThumbnail2, opsThumbnail3],
+  client: "Jordan Byrd Operations & Infrastructure",
+  industry: "Operations Consulting",
+  objective:
+    "Design a professional website for a fractional operations consultancy that clearly explains complex operational services and positions the firm as a trusted partner for growing businesses.",
+  deliverables: [
+    "• Multi-page site architecture designed to clearly communicate advisory services and engagement models",
+    "• Messaging structure to translate operational expertise into clear, accessible language for founders and leadership teams",
+    "• Dedicated service sections outlining infrastructure, systems, and operational leadership support",
+    "• Consultation request flow designed to capture qualified inbound inquiries",
+  ],
+  impact:
+    "The finished platform presents Jordan Byrd Operations & Infrastructure as a focused operational partner for companies that have outgrown informal systems. Clear service explanations, structured navigation, and a confident visual tone help visitors quickly understand the value of fractional operations leadership and take the next step toward a consultation.",
+  demoSite: "https://golbi-llc.github.io/jordanbyrd",
+  alignment: "left",
+},
 ];
 
 export default caseStudyData;

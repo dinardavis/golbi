@@ -21,17 +21,18 @@ export default function CaseStudyCard({
   const textContainerRef = useRef(null);
 
   const carouselImages = imagesProp?.length ? imagesProp : [thumbnail];
+  const isFirstSlide = carouselIndex === 0;
+  const isLastSlide = carouselIndex === carouselImages.length - 1;
 
   const goToPrev = (e) => {
     e.stopPropagation();
-    const len = carouselImages.length;
-    setCarouselIndex((i) => (i === 0 ? len - 1 : i - 1));
+    setCarouselIndex((i) => Math.max(0, i - 1));
   };
 
   const goToNext = (e) => {
     e.stopPropagation();
-    const len = carouselImages.length;
-    setCarouselIndex((i) => (i === len - 1 ? 0 : i + 1));
+    const last = carouselImages.length - 1;
+    setCarouselIndex((i) => Math.min(last, i + 1));
   };
 
   useEffect(() => {
@@ -135,6 +136,7 @@ export default function CaseStudyCard({
             className="case-study-carousel-arrow case-study-carousel-arrow-left"
             onClick={goToPrev}
             aria-label="Previous image"
+            disabled={isFirstSlide}
           >
             <IoChevronBack className="case-study-carousel-arrow-icon" />
           </button>
@@ -143,6 +145,7 @@ export default function CaseStudyCard({
             className="case-study-carousel-arrow case-study-carousel-arrow-right"
             onClick={goToNext}
             aria-label="Next image"
+            disabled={isLastSlide}
           >
             <IoChevronForward className="case-study-carousel-arrow-icon" />
           </button>

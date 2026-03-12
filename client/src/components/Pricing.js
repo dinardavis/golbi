@@ -134,7 +134,7 @@ export default function Pricing() {
             <button
               className="pricing-button button-pushable"
               onClick={() =>
-                window.open("https://buy.stripe.com/dRmbJ377jfYF7zP7mD2cg06", "_blank")
+                window.open("https://buy.stripe.com/aFa9AVezLcMt5rH8qH2cg0b", "_blank")
               }
             >
               <span className="button-shadow"></span>
@@ -155,7 +155,7 @@ export default function Pricing() {
             <button
               className="pricing-button button-pushable"
               onClick={() =>
-                window.open("https://buy.stripe.com/00w4gBcrD13L8DT6iz2cg07", "_blank")
+                window.open("https://buy.stripe.com/3cI28t3V7aElcU94ar2cg0c", "_blank")
               }
             >
               <span className="button-shadow"></span>

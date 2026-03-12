@@ -1143,6 +1143,14 @@ body {
   opacity: 1;
 }
 
+.case-study-carousel-arrow:disabled {
+  cursor: default;
+}
+
+.case-study-card:hover .case-study-carousel-arrow:disabled {
+  opacity: 0.25;
+}
+
 .case-study-carousel-arrow-icon {
   color: var(--white);
   font-size: 1.25rem;
@@ -2864,6 +2872,14 @@ body {
     padding: 0;
     margin-top: 3rem;
     height: 100%;
+  }
+
+  .site-feature-col:last-child.site-feature-desc {
+    display: block;
+  }
+
+  .case-study-copy-card .case-study-copy-item, .case-study-copy-card .case-study-copy-list{
+    max-width: 100%;
   }
 
   .work-content,
