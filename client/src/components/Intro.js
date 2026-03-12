@@ -34,7 +34,7 @@ export default function Intro() {
            
           </p>
 
-          <p className="intro-subhead-copy">Sure, AI can create a site. But Golbi makes sure your site <span>actually works</span> for your business.</p>
+          <p className="intro-subhead-copy">Sure, AI can create a site. But <span className="copy-highlight">Golbi</span> makes sure your site <span>actually works</span> for your business.</p>
      
           <p className="intro-subhead">Clear Pricing. Easy Sign-up. Big Impact.</p>
 
