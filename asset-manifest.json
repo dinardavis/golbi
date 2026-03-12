@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5110ea74.css",
+    "main.js": "/static/js/main.81a3d7fd.js",
+    "static/js/787.206ce5d4.chunk.js": "/static/js/787.206ce5d4.chunk.js",
+    "static/media/stratuspoint_thumbnail.png": "/static/media/stratuspoint_thumbnail.734a08d5e2c07443428f.png",
+    "static/media/donutmissit_thumbnail.png": "/static/media/donutmissit_thumbnail.604eb81e492f7265a48a.png",
+    "static/media/travel_thumbnail.png": "/static/media/travel_thumbnail.7d26b5b71a20b40dee91.png",
+    "static/media/dac_thumbnail3.png": "/static/media/dac_thumbnail3.9120e13a5d00bbabbc41.png",
+    "static/media/spacexclone_thumbnail.png": "/static/media/spacexclone_thumbnail.b46ef70b044ab347f87e.png",
+    "static/media/dac_thumbnail.png": "/static/media/dac_thumbnail.54aa01b4d4db14a8dfb4.png",
+    "static/media/dac_thumbnail4.png": "/static/media/dac_thumbnail4.35e7dfe2676a6fc94d08.png",
+    "static/media/keystone_thumbnail.png": "/static/media/keystone_thumbnail.4a24e903e4836af1e61a.png",
+    "static/media/rochelle_thumbnail_1.png": "/static/media/rochelle_thumbnail_1.491683db31c21c178b66.png",
+    "static/media/rochelle_thumbnail_4.png": "/static/media/rochelle_thumbnail_4.676587c9ca15cb15177e.png",
+    "static/media/elowen_thumbnail.png": "/static/media/elowen_thumbnail.ee759b8aa288411167b7.png",
+    "static/media/jordan_thumbnail2.png": "/static/media/jordan_thumbnail2.0f4b89428dcd0e3fadc9.png",
+    "static/media/rochelle_thumbnail_5.png": "/static/media/rochelle_thumbnail_5.62e7cea13cb4965f139b.png",
+    "static/media/jordan_thumbnail1.png": "/static/media/jordan_thumbnail1.6edec1ad9f68302687d3.png",
+    "static/media/jordan_thumbnail3.png": "/static/media/jordan_thumbnail3.060917e3322c8cc76f93.png",
+    "static/media/toyd_thumbnail.png": "/static/media/toyd_thumbnail.d1d4711c199840c56424.png",
+    "static/media/suitsupply_thumbnail.png": "/static/media/suitsupply_thumbnail.dc024529252b0ab43fc5.png",
+    "static/media/yourproject_thumbnail.png": "/static/media/yourproject_thumbnail.72568f920db0c2b8ff2e.png",
+    "static/media/golbi_logo.png": "/static/media/golbi_logo.1d70e00cd98ecf1e93d3.png",
+    "static/media/logo_spider_only.png": "/static/media/logo_spider_only.6c851db1061086daf287.png",
+    "static/media/golbi_404_eyes.png": "/static/media/golbi_404_eyes.510e50caa0a26018b091.png",
+    "index.html": "/index.html",
+    "main.5110ea74.css.map": "/static/css/main.5110ea74.css.map",
+    "main.81a3d7fd.js.map": "/static/js/main.81a3d7fd.js.map",
+    "787.206ce5d4.chunk.js.map": "/static/js/787.206ce5d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5110ea74.css",
+    "static/js/main.81a3d7fd.js"
+  ]
+}
