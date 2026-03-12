@@ -300,14 +300,14 @@ body {
 
 .intro-headline {
   position: relative;
-  max-width: 730px;
-  font-size: 5rem;
+  max-width: 800px;
+  font-size: 6.5rem;
   font-weight: 800;
   font-family: "Oswald";
   text-align: center;
   text-transform: uppercase;
   line-height: 1;
-  margin-top: 8rem;
+  margin-top: 12rem;
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -899,6 +899,11 @@ body {
   padding: 1rem 0 3rem;
 }
 
+.case-studies-content-container {
+  width: 100%;
+  min-width: 0;
+}
+
 .case-studies-subheader {
   align-self: center;
   text-align: center;
@@ -920,6 +925,9 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .case-study-card:hover {
@@ -980,6 +988,7 @@ body {
   will-change: transform, opacity;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .case-study-text-container::-webkit-scrollbar {
@@ -1065,6 +1074,8 @@ body {
 
 .case-study-inner {
   display: flex;
+  min-width: 0;
+  width: 100%;
 }
 
 .case-study-container.align-left {
@@ -1089,6 +1100,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 600px;
+  min-width: 0;
   border-radius: 7px;
   z-index: 10;
   box-shadow: 10px 10px 20px -12px rgba(0, 0, 0, 0.25);
@@ -1115,6 +1127,7 @@ body {
   height: 100%;
   min-height: 367px;
   max-width: 600px;
+  min-width: 0;
   object-fit: cover;
   border-radius: 7px;
   z-index: 10;
@@ -1168,6 +1181,16 @@ body {
 
 .case-study-carousel-arrow-right {
   right: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .case-study-carousel-arrow {
+    opacity: 0.7;
+  }
+
+  .case-study-carousel-arrow:disabled {
+    opacity: 0.25;
+  }
 }
 
 .case-study-copy-container {
@@ -3077,6 +3100,18 @@ body {
 
   .testimonial-section {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .case-studies-container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .case-study-card {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 

@@ -29,7 +29,7 @@ export default function Intro() {
       <Section>
         <div className="intro-header-container-left text-center">
           <p className="intro-headline">
-            <span className="intro-headline-gradient-layer">Turn your page views into clients.</span>
+            <span className="intro-headline-gradient-layer">Turn page views into sales</span>
         
            
           </p>

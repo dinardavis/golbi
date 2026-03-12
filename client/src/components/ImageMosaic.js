@@ -3,7 +3,7 @@ import ImageModal from './ImageModal';
 import Photo from './Photo';
 import '../assets/css/mosaicandmodal.css';
 
-import donutSite from '../assets/imgs/donutmissit_thumbnail.png';
+import jordanByrd from '../assets/imgs/jordan_thumbnail1.png';
 import dacSite from '../assets/imgs/dac_thumbnail.png';
 import suitSite from '../assets/imgs/suitsupply_thumbnail.png';
 import spaceSite from '../assets/imgs/spacexclone_thumbnail.png';
@@ -20,12 +20,9 @@ const rawImages = [
   keystone,
   stratuspoint,
   spaceSite,
-  donutSite,
+  jordanByrd,
   suitSite,
   toyd,
-
-
-
   yourSite,
 ];
 

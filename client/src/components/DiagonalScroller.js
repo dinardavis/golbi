@@ -3,13 +3,13 @@ import dacthumbnail from "../assets/imgs/dac_thumbnail.png"
 import elowen from "../assets/imgs/elowen_thumbnail.png"
 import keystone from "../assets/imgs/keystone_thumbnail.png"
 import stratuspoint from "../assets/imgs/stratuspoint_thumbnail.png"
-import donutmissit from "../assets/imgs/donutmissit_thumbnail.png"
+import jordanByrd from "../assets/imgs/jordan_thumbnail1.png"
 import rochelleruen from "../assets/imgs/rochelle_thumbnail_1.png"
 
 const images = [
   dacthumbnail,
   rochelleruen,
-  donutmissit,
+  jordanByrd,
   keystone,
   elowen,
   stratuspoint,
