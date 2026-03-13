@@ -301,7 +301,7 @@ body {
 .intro-headline {
   position: relative;
   max-width: 800px;
-  font-size: 6.5rem;
+  font-size: 5rem;
   font-weight: 800;
   font-family: "Oswald";
   text-align: center;
@@ -341,15 +341,19 @@ body {
   margin: 0 auto;
   font-size: 1.2rem;
   font-weight: 200;
+  line-height: 1.2;
   text-align: center;
   animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.intro-subhead-copy:nth-child(1 of .intro-subhead-copy) {
+    padding: .5rem 0 0;
 }
 
 .intro-subhead-copy span {
   font-style: italic;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.4;
 }
 
 .intro-subhead-copy .copy-highlight {
@@ -385,9 +389,8 @@ body {
 .about-section {
   display: flex;
   align-items: center;
-  padding: 4rem;
-  margin-top: 6rem;
-  height: 100%;
+  padding: 4rem 4rem 0;
+  margin-top: 10rem;
 }
 
 .about-section-inner {
@@ -457,9 +460,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  min-height: 250px;
   padding: 2rem;
-  margin-top: -8rem;
+  margin-top: -6rem;
   text-align: center;
   border: 1.5px solid var(--white);
   border-radius: 10px;

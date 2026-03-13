@@ -29,12 +29,11 @@ export default function Intro() {
       <Section>
         <div className="intro-header-container-left text-center">
           <p className="intro-headline">
-            <span className="intro-headline-gradient-layer">Turn page views into sales</span>
-        
-           
+            <span className="intro-headline-gradient-layer">Websites that actually make money</span>
           </p>
+           <p className="intro-subhead-copy">(Not just sit there looking pretty.)</p>
 
-          <p className="intro-subhead-copy">Sure, AI can create a site. But <span className="copy-highlight">Golbi</span> makes sure your site <span>actually works</span> for your business.</p>
+          <p className="intro-subhead-copy intro-subhead-copy-block" >Sure, AI can create a site. But <span className="copy-highlight">Golbi</span> makes sure your site <span>actually works</span> for your business.</p>
      
           <p className="intro-subhead">Clear Pricing. Easy Sign-up. Big Impact.</p>
 

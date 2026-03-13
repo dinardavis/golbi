@@ -13,11 +13,6 @@ function Section({ children }) {
     <section
       ref={ref}
       className="steps-section"
-      // style={{
-      //   transform: isInView ? "none" : "translateY(340px)",
-      //   opacity: isInView ? 1 : 0,
-      //   transition: "all .9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      // }}
     >
       {children}
     </section>
@@ -36,7 +31,7 @@ export default function Steps() {
           <div className="icon-container">
             <FaTools className="hire-to-icon" />
           </div>
-          Strong digital work begins with clarity. Years of advertising experience helps distill what makes your business valuable and why someone should care.
+          Years of advertising experience helps distill what makes your business valuable and how to show it.
           </div> 
         <div className="hire-to-item">
           <div className="icon-container">
@@ -62,7 +57,6 @@ export default function Steps() {
         <div id="how" className="step-offer-container steps-right">
    
           <div className="steps-header oswald">How <span className="steps-golbi-name">it</span> works:</div>
-          <p className="intro-cta-copy">Sign up with Golbi <br></br><span className="intro-cta-italic">only when you need to.</span></p>
         
           <div className="intro-cta-copy-container">
             <div className="intro-cta-copy intro-cta-copy-2">

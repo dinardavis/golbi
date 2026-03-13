@@ -48,7 +48,7 @@ export default function Benefits() {
           </div>
        
           <h2 className="benefits-item-header">Skip the DIY maze.</h2>
-          <p className="benefits-item-copy">There's speed to launch, and then there's just slapdash. And understanding what actually persuades a customer still takes judgment.Golbi combines modern tools with real strategy so you don’t have to guess your way through the build.</p>
+          <p className="benefits-item-copy">Sure, scrapbooking is fun. This isn't that. When it comes to the success of your business's image, you want a professional at the helm. So skip the headache of wearing yet another hat. </p>
         </div>
 
         <div className="benefits-item">
