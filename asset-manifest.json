@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b385a1ee.css",
-    "main.js": "/static/js/main.2c033f33.js",
+    "main.css": "/static/css/main.2ec0be79.css",
+    "main.js": "/static/js/main.ec9c7957.js",
     "static/js/787.206ce5d4.chunk.js": "/static/js/787.206ce5d4.chunk.js",
     "static/media/stratuspoint_thumbnail.png": "/static/media/stratuspoint_thumbnail.734a08d5e2c07443428f.png",
     "static/media/travel_thumbnail.png": "/static/media/travel_thumbnail.7d26b5b71a20b40dee91.png",
@@ -24,12 +24,12 @@
     "static/media/logo_spider_only.png": "/static/media/logo_spider_only.6c851db1061086daf287.png",
     "static/media/golbi_404_eyes.png": "/static/media/golbi_404_eyes.510e50caa0a26018b091.png",
     "index.html": "/index.html",
-    "main.b385a1ee.css.map": "/static/css/main.b385a1ee.css.map",
-    "main.2c033f33.js.map": "/static/js/main.2c033f33.js.map",
+    "main.2ec0be79.css.map": "/static/css/main.2ec0be79.css.map",
+    "main.ec9c7957.js.map": "/static/js/main.ec9c7957.js.map",
     "787.206ce5d4.chunk.js.map": "/static/js/787.206ce5d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b385a1ee.css",
-    "static/js/main.2c033f33.js"
+    "static/css/main.2ec0be79.css",
+    "static/js/main.ec9c7957.js"
   ]
 }
